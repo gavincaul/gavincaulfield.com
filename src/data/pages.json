@@ -1,0 +1,138 @@
+{
+  "pages":{
+    "spotify": {
+      "why":"Music is a very important piece of my life. I dedicate a lot of my free time to listening, playing, and writing music. For that, I, whenever and wherever I can, try to bend my coding capabilities to improve upon my leisure. For that, I am a frequent user of Spotify API, specifically [Spotipy](https://spotipy.readthedocs.io/en/2.24.0/).",
+      "projects": {
+        "iMessageToSpotify Scraper": {
+          "img": "./imgs/clout.jpg",
+          "desc": "The main purpose of this tool is to take spotify songs sent through iMessage, using the library imessage-reader, and add them into a playlist owned by me (or the person who changes the code for themself). However, I also implemented a spreadsheet uploader, supported by a google API, in order to keep track of who sent every song.",
+          "links": {
+            "title": "https://github.com/gavincaul/iMessageSpotifyScraper",
+            "playlist": "https://open.spotify.com/playlist/4hTY6FrGjAl26aw9QzrUzM?si=55346e50ca0d4bc9"
+          }
+        },
+        "24Hour Manager": {
+          "img": "./imgs/24.jpg",
+          "desc": "In preparation for a 26 hour road trip to Colorado, my fellow music-addicted companion and I insisted on making a playlist for the journey. With ~150 songs each, we knew this playlist would be a mess. So, I took the liberty of creating a program to manage this playlist, including reordering of songs (s.t. Time leads into Great Gig) and balancing the playlist (s.t. we don’t listen Thick as a Brick right into 2112)",
+          "links": {
+            "title": ""
+          }
+        },
+        "Spotify Album Wheel Spinner": {
+          "img": "./imgs/spotifywheel.jpg",
+          "desc": "I have a lot of albums saved on Spotify, and I frequently can’t choose which to listen to. For that, I developed a site that’ll pull from a user’s Spotify account and create a wheel of saved albums to spin. ***N.B. Because of Spotify API settings, the project is not for public use, for that, I need to reach out to Spotify***",
+          "links": {
+            "title": "https://github.com/gavincaul/SpotifyAlbumWheelSpin"
+          }
+        },
+        "AutoUpdateLoooong": {
+          "img": "./imgs/loooong.jpg",
+          "desc": "I have a playlist titled ‘loooooong’, it’s songs I like that are usually 12+ mins. This program automatically updates the playlist.",
+          "links": {
+            "title": ""
+          }
+        },
+        "LastFM Management": {
+          "img": "./imgs/lfmspot.jpg",
+          "desc": "LastFM is an application that tracks every song you listen to on a platform (for me, it’s Spotify). I integrated the Last FM API to find and remove my least listened to songs from my playlists.",
+          "links": {
+            "title": ""
+          }
+        },
+        "Mix Maker": {
+          "img": "./imgs/mix.jpg",
+          "desc": "Do you ever get frustrated with Spotify’s Mix creation? If you’re employed, probably not. I do!!!! For that, I wrote a script that’ll create mixes based on Genres (i.e. Rap) that’ll produce a mix of only songs I KNOW! Now I can listen to my mixes",
+          "links": {
+            "title": ""
+          }
+        }
+      }
+    },
+    "research": {
+      "why": "I began working at UD’s HCI Lab in 2023 for Delaware INBRE. Here, I primarily worked with VR and AR equipment and C# scripting to create programs that benefit select groups. Frequently work with .NET Framework 6.0 and C# development for REST/API development.",
+      "projects": {
+        "Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments": {
+          "img": "./imgs/towards.jpg",
+          "desc": "This work presents a VR environment with a generative AI virtual assistant to support human anatomy education, allowing the user to communicate verbally with the virtual assistant. I assisted in the development and testing of the program, along with revision to the submitted paper. Won “Honorable Mention” at the AIxVR 2024 Conference",
+          "links": {
+            "title": "https://ieeexplore.ieee.org/abstract/document/10445563",
+            "video": "https://www.youtube.com/watch?v=hYIlLYu_lpk"
+          }
+        },
+        "Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality": {
+          "img": "./imgs/enhancing.jpg",
+          "desc": "A program to move physical rehabilitation – specifically balance training – onto an augmented reality platform. Developed the program, led and managed a pilot test of the program, including analysis of the effectiveness of VR vs AR, and created and presented poster at NERIC 2023.",
+          "links": {
+            "title": "https://www.canva.com/design/DAFqUuJjh2M/XswU-kcsR5MxPFSFznI4Bw/edit?utm_content=DAFqUuJjh2M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+          }
+        }
+      }
+    },
+    "work": {
+      "why": "Some of the work experience I have attributed to my name 😎",
+      "projects": {
+        "HenHacks 2025 (Apr 2024 - May 2025)": {
+          "img": "./imgs/henhacks.jpg",
+          "desc": "I am responsible for the volunteers at UD’s 3rd annual Hackathon, HenHacks 2025. Under this role, I recruit, train, and manage over 80+ volunteers for the near 36 hour event.",
+          "links": {
+            "title": "https://www.henhackshackathon.com/"
+          }
+        },
+        "UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)": {
+          "img": "./imgs/cpus.jpg",
+          "desc": "As a UD CPU, I am responsible for collaborating with other undergraduate students to create an inviting and exciting Computer and Information Science community at UD. Some of the events I have managed include\nCISC Career Fair (pictured)\nWhiteboard interview preparation\nMeet Your Professors!\nPersonal Project Showcase\nCareer Readiness\nConcentration/Advising Nights\nand more!",
+          "links": {
+            "title": "https://www.instagram.com/udcpus/"
+          }
+        },
+        "Berkely Technology Services Command Center Analyst (June 2024 - November 2024)": {
+          "img": "./imgs/berkley.jpg",
+          "desc": "At BTS, I worked with enterprise schedulers (TIDAL), computer networking, UNIX/LINUX server management, software development, data center management, and LUMEN & Cisco.",
+          "links": {
+          }
+        }
+      }
+    },
+    "potpourri": {
+      "why": "Aside from Spotify, work, and research, I work on projects that don’t fit under a specific category. Here are some of those projects.",
+      "projects": {
+        "ColtonCaulfield.com": {
+          "img": "./imgs/coltoncaulfield.jpg",
+          "desc": "A website dedicated to the works of my brother, Colton Caulfield. Developed and maintained by me, design and data managed by my brother.",
+          "links": {
+            "title": "https://www.coltoncaulfield.com"
+          }
+        },
+        "HoloFlash": {
+          "img": "./imgs/holoflash.jpg",
+          "desc": "Winner of Best Use of AI in Education at 2024 HenHacks \nOur application empowers students by utilizing Googles Gemini AI to swiftly convert audio files, pdfs, and images into flashcards relating to the inputs subject matter. On top of this, users can also review their flashcards in augmented reality using the Microsoft Hololens, hence the name of our project \"Holo-Flash\". Developed the HoloLens AR application, along with REST development for the site.",
+          "links": {
+            "github": "https://github.com/janahmedprg/flashcards",
+            "devpost": "https://devpost.com/software/holoflash"
+          }
+        },
+        "WebsiteSetup": {
+          "img": "./imgs/websitesetup.jpg",
+          "desc": "Setting up a website can be a hassle, what if you could do it for free in just a few clicks? WebsiteSetup.py is a script I wrote to help me with that. This script deploys a React Page hosted on GitHub Pages, All managed on CLI.",
+          "links": {
+            "title": ""
+          }
+        }
+      }
+    },
+    "about": {
+      "bio": {
+        "img": "./imgs/memountain.jpg",
+        "text": "Driven by creativity, curiosity, and neurodivergency, Gavin strives to create and produce projects to the best of his ability. Every detail, from text font to color scheme, matters to Gavin. Seeking creative outlets from as young as 7 years old, he manages to combine his intellectual abilities with his creativity in his projects, work, and hobbies."
+      },
+      "github": {
+        "img": "./imgs/coding.jpg",
+        "text": "Attached is the GitHub of Gavin. He specializes in many languages, including Python, C/C++, JS/TSX, etc."
+      },
+      "music": {
+        "img": "./imgs/septronix.jpg",
+        "text": "From a young age, Gavin was driven by music. He picked up percussion in 4th grade and hasn't put it down since. From then, he has picked up numerous instruments like Piano and Guitar. Additionally, his band (pictured left) Septronix has released their latest single, 'No More Chances', check it out!"
+      }
+    }
+  }
+}
