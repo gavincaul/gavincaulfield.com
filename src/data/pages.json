@@ -15,7 +15,7 @@
           "img": "./imgs/24.jpg",
           "desc": "In preparation for a 26 hour road trip to Colorado, my fellow music-addicted companion and I insisted on making a playlist for the journey. With ~150 songs each, we knew this playlist would be a mess. So, I took the liberty of creating a program to manage this playlist, including reordering of songs (s.t. Time leads into Great Gig) and balancing the playlist (s.t. we don’t listen Thick as a Brick right into 2112)",
           "links": {
-            "title": ""
+            "title": "https://github.com/gavincaul/SpotifyProjects/blob/master/24hr.py"
           }
         },
         "Spotify Album Wheel Spinner": {
@@ -29,21 +29,21 @@
           "img": "./imgs/loooong.jpg",
           "desc": "I have a playlist titled ‘loooooong’, it’s songs I like that are usually 12+ mins. This program automatically updates the playlist.",
           "links": {
-            "title": ""
+            "title": "https://github.com/gavincaul/SpotifyProjects/blob/master/autoupdateloooong.py"
           }
         },
         "LastFM Management": {
           "img": "./imgs/lfmspot.jpg",
           "desc": "LastFM is an application that tracks every song you listen to on a platform (for me, it’s Spotify). I integrated the Last FM API to find and remove my least listened to songs from my playlists.",
           "links": {
-            "title": ""
+            "title": "https://github.com/gavincaul/SpotifyProjects/blob/master/LastFMManage.py"
           }
         },
         "Mix Maker": {
           "img": "./imgs/mix.jpg",
           "desc": "Do you ever get frustrated with Spotify’s Mix creation? If you’re employed, probably not. I do!!!! For that, I wrote a script that’ll create mixes based on Genres (i.e. Rap) that’ll produce a mix of only songs I KNOW! Now I can listen to my mixes",
           "links": {
-            "title": ""
+            "title": "https://github.com/gavincaul/SpotifyProjects/blob/master/mixmaker.py"
           }
         }
       }
