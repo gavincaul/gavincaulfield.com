@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+https://www.figma.com/design/r5ymH4GSwOqlzJeCq5AP4J/Personal-Website-Draft?node-id=0-1&t=cEZrYnWzJa58dBPM-1
 
 ## Available Scripts
 
