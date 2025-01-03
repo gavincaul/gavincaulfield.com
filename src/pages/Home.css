@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Slab:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+.background {
+    background: linear-gradient(90deg, #303030, #161616);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    font-size: 80px;
+    margin-top: 4%;
+    color: rgb(245, 245, 245);
+    font-family: Abel, Sans-serif;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+
+
+
+
+.iframeTransition{
+    position: absolute;
+    animation: expand 1s forwards;
+}
+@keyframes expand {
+    from {
+        transform: translate(var(--translate-sx, 0), var(--translate-sy, 0)) scale(0);
+    }
+    to{
+        transform: translate(var(--translate-ex, 0), var(--translate-ey, 0)) scale(1);
+    }
+}
+
+.imageTransition{
+    position: absolute;
+    animation: imgExpand 1s forwards;
+}
+
+@keyframes imgExpand {
+    from {
+        transform: translate(10px, -90%) scale(0);
+    }
+    to{
+        transform: translate(-180px, -30%) scale(1);
+    }
+}
+
+
+
+.imgs{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+.pfp{
+    border-radius: 8px;
+    border:  2mm ridge rgba(31, 138, 129, 0.6);
+}
+
+.subpics {
+    opacity: 0;
+    transition-duration: 2s;
+    transition-timing-function: ease;
+
+    &:active{
+        opacity: 100;
+    }
+}
+
+
+.stacked-imgs {
+    display: grid;
+    flex-direction: column;
+    align-items: stretch;
+}
+.stacked-imgs img {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+
+.stacked-imgs img:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.stacked-imgs img:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+
+.questions{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 5rem;
+    margin-left: 5rem;
+    max-width: 45%;
+}
+.answer{
+    
+    color: white;
+    font-family: Ubuntu, Sans-serif;
+    font-size: 20px;
+    text-align: left;
+    text-overflow: wrap;
+    font-weight: 300;
+    padding-bottom: 2rem;
+    line-height: 179%;
+
+}
+.q{
+    font-weight: 400;
+    font-size: 40px;
+    vertical-align: sub;
+}
