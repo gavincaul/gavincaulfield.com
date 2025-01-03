@@ -10,6 +10,8 @@ import myhouse from '../data/myhouse.jpg';
 
 export default function Home() {
     const [hoveredImage, setHoveredImage] = useState(null);
+    const [hoveredTitle, setHoveredTitle] = useState(false);
+    const [badgeAnim, setBadgeAnim] = useState(false);
 
     const iframeData = {
         gotg: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.2950710952705!2d-104.88626000502411!3d38.871490358429114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87135012b5cc9c93%3A0x4e9df5263bf6dab!2sGarden%20of%20the%20Gods!5e0!3m2!1sen!2sus!4v1735935741255!5m2!1sen!2sus",
@@ -19,12 +21,26 @@ export default function Home() {
 
     return (
         <div className="background">
-            <div className="name">Gavin Caulfield</div>
+            <div className="name"
+                onMouseEnter={() => {
+                    setHoveredTitle(true);
+                    setBadgeAnim(true);
+                  }}
+                  onMouseLeave={() => {
+                    setBadgeAnim(false);
+                    setTimeout(() => {
+                        setHoveredTitle(badgeAnim);
+                      }, 1000);
+                    }}
+            >
+                Gavin Caulfield
+                {hoveredTitle && (<div className="namebadge" style={{animation: badgeAnim ? "badge 0.5s forwards, snakeBox 1.5s infinite" : "badgeReverse 0.5s forwards, snakeBox 1.5s infinite"}}>gavdog</div>)}
+            </div>
             <HomeNavBar />
             <div className="imgs">
                 <div className="stacked-imgs">
                     <div
-                        className="hover-container"
+
                         onMouseEnter={() => setHoveredImage("gotg")}
                         onMouseLeave={() => setHoveredImage(null)}
                     >
@@ -32,7 +48,7 @@ export default function Home() {
                         {hoveredImage === "gotg" && (<iframe title="gotg" className="iframeTransition" src={iframeData.gotg} width="200" height="150" style={{'--translate-sx': '-200px', '--translate-sy': '0%', '--translate-ex': '-420px', '--translate-ey': '-80%', border: "dashed #DB2B39" }} allowFullScreen="" loading="eager" referrerPolicy="no-referrer-when-downgrade" ></iframe>)}
                     </div>
                     <div
-                        className="hover-container"
+
                         onMouseEnter={() => setHoveredImage("yuri")}
                         onMouseLeave={() => setHoveredImage(null)}
                     >
@@ -42,14 +58,14 @@ export default function Home() {
                 </div>
                 <img src={LinkedInPFP} className="pfp" alt="LinkedIn Profile" />
                 <div className="stacked-imgs">
-                    <div className="hover-container"
+                    <div 
                         onMouseEnter={() => setHoveredImage("arch")}
                         onMouseLeave={() => setHoveredImage(null)}
                     >
                         <img src={arch} style={{ borderColor: "#85B79D" }} className="pfp subpics" alt="arch" />
                         {hoveredImage === "arch" && (<iframe title="arch" className="iframeTransition" src={iframeData.arch} width="200" height="150" style={{'--translate-sx': '-200px', '--translate-sy': '0%', '--translate-ex': '-20px', '--translate-ey': '-85%', border: "dashed #85B79D" }} allowFullScreen="" loading="eager" referrerPolicy="no-referrer-when-downgrade" ></iframe>)}
                     </div>
-                    <div className="hover-container" 
+                    <div 
                         onMouseEnter={() => setHoveredImage("chicago")} 
                         onMouseLeave={() => setHoveredImage(null)}
                     >

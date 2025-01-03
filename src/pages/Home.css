@@ -18,6 +18,53 @@
     margin-bottom: 1rem;
 }
 
+.namebadge{
+    font-size: 20px;
+    position: absolute;
+    border-radius: 15px;
+    padding: 1px 4px;
+    border: 4px ridge transparent;
+    animation: none;
+}
+
+@keyframes badge {
+    from {
+        transform: translate(400px, -200%) scale(0);
+    }
+    to{
+        transform: translate(450px, -370%) scale(1);
+    }
+}
+
+@keyframes badgeReverse {
+    from {
+        transform: translate(450px, -370%) scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: translate(400px, -200%) scale(0);
+        opacity: 0;
+    }
+}
+
+
+@keyframes snakeBox {
+    0% {
+        border-color: blue;
+    }
+    25% {
+        border-color: red;
+    }
+    50% {
+        border-color: orange;
+    }
+    75% {
+        border-color: yellow;
+    }
+    100% {
+        border-color: green;
+    }
+}
 
 
 
