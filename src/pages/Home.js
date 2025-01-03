@@ -13,6 +13,9 @@ export default function Home() {
     const [hoveredTitle, setHoveredTitle] = useState(false);
     const [badgeAnim, setBadgeAnim] = useState(false);
 
+
+
+    
     const iframeData = {
         gotg: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.2950710952705!2d-104.88626000502411!3d38.871490358429114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87135012b5cc9c93%3A0x4e9df5263bf6dab!2sGarden%20of%20the%20Gods!5e0!3m2!1sen!2sus!4v1735935741255!5m2!1sen!2sus",
         arch: "https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d1558.5240655614928!2d-90.18584880225833!3d38.62477378654032!3m2!1i1024!2i768!4f13.1!2m1!1sst%20louis%20arch!5e0!3m2!1sen!2sus!4v1735940144832!5m2!1sen!2sus",
