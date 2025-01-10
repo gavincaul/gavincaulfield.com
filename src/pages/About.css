@@ -10,7 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 5rem;
 }
 
 .popupControls {
@@ -148,4 +148,53 @@ button.savebutton img {
   button.clearsesh img {
     width: 15px;
     height: auto;
+  }
+
+
+  .aboutItems{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5rem;
+    row-gap: 50px;
+    margin-bottom: 43rem;
+  }
+
+  .aboutItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto; 
+    column-gap: 20px;
+    align-items: center;
+    width: 60vw;
+  }
+  
+  .aboutItem img {
+    width: 75%;
+    height: auto;
+    border: 4px ridge;
+    grid-column: 1; 
+    grid-row: span 3; 
+  }
+  
+  .aboutItem h1 {
+    grid-column: 2; 
+    grid-row: 1;
+    font-size: 2rem;
+    color: white;
+  }
+  
+  .aboutItem p {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: 1.5rem;
+    color: white;
+  }
+  
+  .aboutItem a {
+    grid-column: 2;
+    grid-row: 3;
+    font-size: 1.5rem;
+    color: white;
   }

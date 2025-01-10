@@ -4,6 +4,8 @@ import clear from "../data/clear.png";
 import history from "../data/history.png";
 import saveimg from "../data/save.png";
 import clearsesh from "../data/x.png";
+import pagesData from "../data/pages.json";
+import orel from "../data/orel.png";
 
 export default function About() {
   const canvasRef = useRef(null);
@@ -13,6 +15,8 @@ export default function About() {
   const [historyItems, setHistoryItems] = useState([]);
   const [isHistoryVisible, setIsHistoryVisible] = useState(false);
   const ctxRef = useRef(null);
+
+  const aboutData = pagesData.pages.about;
   const timeout = (delay) => new Promise((res) => setTimeout(res, delay));
   let saveValue = sessionStorage.length;
   let letters = [
@@ -591,11 +595,13 @@ export default function About() {
       canvas.addEventListener("mousedown", startDrawing);
       canvas.addEventListener("mousemove", draw);
       canvas.addEventListener("mouseup", stopDrawing);
+      canvas.addEventListener("mouseleave", stopDrawing);
 
       return () => {
         canvas.removeEventListener("mousedown", startDrawing);
         canvas.removeEventListener("mousemove", draw);
         canvas.removeEventListener("mouseup", stopDrawing);
+        canvas.removeEventListener("mouseleave", stopDrawing);
       };
     },
     // eslint-disable-next-line
@@ -681,6 +687,29 @@ export default function About() {
           </div>
         )}
       </div>
+      <div className="aboutItems">
+        {Object.keys(aboutData).map((key, index) => {
+          // eslint-disable-next-line
+          const { img, text, color, order, link } = aboutData[key];
+          const picture = require(`../data/imgs/${img}`);
+          console.log(picture);
+          return (
+            <div className="aboutItem" key={index}>
+              <img src={picture} alt={key} style={{ borderColor: color }} />
+              <h1>{key.charAt(0).toUpperCase() + key.slice(1)}</h1>
+              <p dangerouslySetInnerHTML={{ __html: text.replace(/\n/g, '<br />') }} />
+              <a
+                href={link[1]}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {link[0]}
+              </a>
+            </div>
+          );
+        })}
+      </div>
+      <img src={orel} alt="orel" style={{ height: "100px", width: "auto" }} />
     </div>
   );
 }
