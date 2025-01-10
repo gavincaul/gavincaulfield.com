@@ -1,17 +1,151 @@
 .background {
-    background: linear-gradient(90deg, #303030, #161616);
-    min-height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background: linear-gradient(90deg, #303030, #161616);
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.drawing-board {
-    flex: 1;
+.drawCanvas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
 }
 
-.drawing-board canvas {
-    width: 100%;
-    height: 590px;
-    border-radius: 10px;
+.popupControls {
+  display: grid;
+  margin-bottom: 10rem;
+  margin-left: 39rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+  row-gap: 50px;
+  position: absolute;
+  animation: fadeIn 7s;
+  justify-items: center;
+  align-items: center;
 }
+
+.popup {
+  font-size: 20px;
+  position: absolute;
+  border-radius: 15px;
+  padding: 4px 8px;
+  text-align: center;
+  color: white;
+  margin-bottom: 3rem;
+  background-color: rgb(160, 71, 160);
+  border: 4px ridge transparent;
+  width: 100%;
+  height: auto;
+  white-space: nowrap;
+  grid-row: 1;
+  grid-column: span 2;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+button.clear img {
+  width: 20px;
+  height: auto;
+}
+button.history img {
+  width: 26px;
+  height: auto;
+}
+
+button.clear,
+button.history,
+button.savebutton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: rgb(200, 200, 255);
+  border: none;
+  border-radius: 8px;
+  padding: 10px;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+button.clear:active,
+button.history:active,
+button.clearsesh:active,
+button.savebutton:active {
+  transform: scale(0.9);
+}
+
+button.clear {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+button.history {
+  grid-row: 2;
+  grid-column: 2;
+}
+button.savebutton img {
+  width: 20px;
+  height: auto;
+}
+
+.save {
+  position: absolute;
+  margin-top: 9.6rem;
+  margin-left: 31.8rem;
+  animation: fadeIn 2s;
+}
+
+.historyDisplay {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 5rem;
+    margin-left: 56rem;
+    animation: fadeIn 0.5s;
+    max-height: 40vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    width: auto;
+  }
+  
+  .historyItem img {
+    width: 90px;
+    height: 40px;
+    border: 4px ridge rgb(180, 55, 55);
+  }
+  
+  .clearsesh {
+    position: absolute;
+    top: 0px; 
+    right: 0px;
+    z-index: 10;
+  }
+  
+  button.clearsesh {
+    width: 22px;
+    height: 22px;
+    background-color: rgb(255, 74, 83);
+    transition: transform 0.1s ease;
+    border: 1px ridge red;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+  }
+  button.clearsesh img {
+    width: 15px;
+    height: auto;
+  }
