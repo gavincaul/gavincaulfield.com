@@ -1,12 +1,12 @@
 import { useState } from 'react';
 import './Home.css';
 import HomeNavBar from '../components/HomeNavBar.tsx';
-import LinkedInPFP from '../data/LinkedInPFP.jpg';
-import gotg from '../data/gotg.jpeg';
-import chicago from '../data/chicago.jpeg';
-import meandyurt from '../data/meandyurt.jpeg';
-import arch from '../data/arch.jpeg';
-import myhouse from '../data/myhouse.jpg';
+import LinkedInPFP from '../data/home/LinkedInPFP.jpg';
+import gotg from '../data/home/gotg.jpeg';
+import chicago from '../data/home/chicago.jpeg';
+import meandyurt from '../data/home/meandyurt.jpeg';
+import arch from '../data/home/arch.jpeg';
+import myhouse from '../data/home/myhouse.jpg';
 
 export default function Home() {
     const [hoveredImage, setHoveredImage] = useState(null);

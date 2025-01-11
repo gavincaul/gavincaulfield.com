@@ -7,15 +7,15 @@ function HomeNavBar() {
     <div className="grid">
       <nav id="HomeNavBar">
         <div className="bar" style={{ borderColor: "#135618" }}></div>
-        <NavLink className="nav-link" to="/About">
+        <NavLink className="nav-link" to="/about">
           About
         </NavLink>
         <div className="bar" style={{ borderColor: "#2E6032" }}></div>
-        <NavLink className="nav-link" to="/Experience">
+        <NavLink className="nav-link" to="/experience">
           Experience
         </NavLink>
         <div className="bar"style={{ borderColor: "#2E6032" }} ></div>
-        <NavLink className="nav-link" to="/Resume">
+        <NavLink className="nav-link" to="/resume">
           Resume
         </NavLink>
         <div className="bar" style={{ borderColor: "#135618" }}></div>

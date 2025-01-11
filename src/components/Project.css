@@ -1,0 +1,38 @@
+
+.projectItem {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: auto; 
+    column-gap: 20px;
+    align-items: center;
+    width: 30vw;
+  }
+  
+  .projectItem img {
+    width: 75%;
+    height: auto;
+    border: 4px ridge;
+    grid-column: 1; 
+    grid-row: span 3; 
+  }
+  
+  .projectItem h1 {
+    grid-column: 2; 
+    grid-row: 1;
+    font-size: auto;
+    color: white;
+  }
+  
+  .projectItem p {
+    grid-column: 2;
+    grid-row: 2;
+    font-size: auto;
+    color: white;
+  }
+  
+  .projectItem a {
+    grid-column: 2;
+    grid-row: 3;
+    font-size: auto;
+    color: white;
+  }
