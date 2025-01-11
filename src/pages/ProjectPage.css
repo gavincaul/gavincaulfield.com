@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+.why{
+    color: white;
+    text-align: center;
+    font-size: larger;
+    margin-top: 1rem;
+    font-family: Ubuntu, sans-serif;
+    width:30%;
+}
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .projectRow {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  .projectElement {
+    width: calc(100% / 3 - 20px); 
+    margin: 10px;
+  }
+  

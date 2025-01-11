@@ -1,6 +1,8 @@
 import './App.css';
 import Home from './pages/Home.js'
 import About from './pages/About.js'
+import Experience from './pages/Experience.js'
+import Project from './pages/ProjectPage.js'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -10,6 +12,8 @@ function App() {
         <Routes>
           <Route exact path="/" element={<Home />}/>
           <Route exact path="/about" element={<About />}/>
+          <Route exact path="/experience" element={<Experience />}/>
+          <Route exact path="/experience/:id" element={<Project />} />
           <Route exact path="*" element={<Home />}/>
         </Routes>
       </Router>

@@ -1,7 +1,7 @@
 {
-  "pages":{
+  "pages": {
     "spotify": {
-      "why":"Music is a very important piece of my life. I dedicate a lot of my free time to listening, playing, and writing music. For that, I, whenever and wherever I can, try to bend my coding capabilities to improve upon my leisure. For that, I am a frequent user of Spotify API, specifically [Spotipy](https://spotipy.readthedocs.io/en/2.24.0/).",
+      "why": "Music is a very important piece of my life. I dedicate a lot of my free time to listening, playing, and writing music. For that, I, whenever and wherever I can, try to bend my coding capabilities to improve upon my leisure. For that, I am a frequent user of Spotify API, specifically [Spotipy](https://spotipy.readthedocs.io/en/2.24.0/).",
       "projects": {
         "iMessageToSpotify Scraper": {
           "img": "clout.jpg",
@@ -88,8 +88,7 @@
         "Berkely Technology Services Command Center Analyst (June 2024 - November 2024)": {
           "img": "berkley.jpg",
           "desc": "At BTS, I worked with enterprise schedulers (TIDAL), computer networking, UNIX/LINUX server management, software development, data center management, and LUMEN & Cisco.",
-          "links": {
-          }
+          "links": {}
         }
       }
     },
@@ -120,6 +119,17 @@
         }
       }
     },
+    "creative": {
+      "projects": {
+        "Finding Nolan": {
+          "img": "websitesetup.jpg",
+          "desc": "In 2021-22, I sought out to create a movie with my floormates called Finding Nolan. I wrote, edited, filmed, and directed the entire piece. It is a ~35 min epic on youtube. Check it out. TOOLS: Final Cut Pro, Celtx",
+          "links": {
+            "youtube": "https://www.youtube.com/watch?v=tXKc5YrpZ4M"
+          }
+        }
+      }
+    },
     "about": {
       "bio": {
         "img": "memountain.jpg",
@@ -140,7 +150,10 @@
         "text": "From a young age, Gavin was driven by music. He picked up percussion in 4th grade and hasn't put it down since. From then, he has picked up numerous instruments like Piano and Guitar. Additionally, his band (pictured left) Septronix has released their latest single, 'No More Chances', check it out!",
         "color": "#F49F0A",
         "order": 0,
-        "link": ["Septronix", "https://open.spotify.com/artist/4M1xFt5CVBJlL5VkWCX4Jd?si=uUa9QAdPRd-awHPSh_INhA"]
+        "link": [
+          "Septronix",
+          "https://open.spotify.com/artist/4M1xFt5CVBJlL5VkWCX4Jd?si=uUa9QAdPRd-awHPSh_INhA"
+        ]
       }
     }
   }

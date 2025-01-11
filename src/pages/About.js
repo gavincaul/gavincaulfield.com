@@ -1,11 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import "./About.css";
-import clear from "../data/clear.png";
-import history from "../data/history.png";
-import saveimg from "../data/save.png";
-import clearsesh from "../data/x.png";
+import clear from "../data/about/clear.png";
+import history from "../data/about/history.png";
+import saveimg from "../data/about/save.png";
+import clearsesh from "../data/about/x.png";
 import pagesData from "../data/pages.json";
-import orel from "../data/orel.png";
+import orel from "../data/about/orel.png";
 
 export default function About() {
   const canvasRef = useRef(null);
