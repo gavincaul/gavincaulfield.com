@@ -1,9 +1,9 @@
 import React from 'react';
 import './Project.css';
 
-function Project({ img, text, color, link, projectKey }) {  // Destructure props
+function Project({ index, img, text, color, link, projectKey }) {  // Destructure props
   return (  
-    <div className='projectItem'>
+    <div className={index === 0 ? "projectItemLeft" : "projectItemRight"}>
       <img src={img} alt={projectKey} style={{ borderColor: color }} />
       <h1>{projectKey.charAt(0).toUpperCase() + projectKey.slice(1)}</h1>
       <p dangerouslySetInnerHTML={{ __html: text.replace(/\n/g, '<br />') }} />

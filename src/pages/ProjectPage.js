@@ -29,7 +29,7 @@ export default function Projects() {
 
     return (
       <div className="projectElement" key={index}>
-        <Project img={picture} text={desc} color={projects[key].color} link={links} projectKey={key} />
+        <Project index={index%2} img={picture} text={desc} color={projects[key].color} link={links} projectKey={key} />
       </div>
     );
   });
