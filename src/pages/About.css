@@ -112,7 +112,7 @@ button.savebutton img {
 .historyDisplay {
     display: flex;
     flex-direction: column;
-    position: fixed;
+    position: absolute;
     top: 5rem;
     margin-left: 56rem;
     animation: fadeIn 0.5s;
