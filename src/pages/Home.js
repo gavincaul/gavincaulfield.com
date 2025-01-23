@@ -40,6 +40,7 @@ export default function Home() {
                 {hoveredTitle && (<div className="namebadge" style={{animation: badgeAnim ? "badge 0.5s forwards, snakeBox 1.5s infinite" : "badgeReverse 0.5s forwards, snakeBox 1.5s infinite"}}>gavdog</div>)}
             </div>
             <HomeNavBar />
+            <div className="centerConsole">
             <div className="imgs">
                 <div className="stacked-imgs">
                     <div
@@ -96,6 +97,7 @@ export default function Home() {
                 <div className='answer'>
                     <span className='q'>HOW:   </span> Drink of the month: <a style={{ color: '#12EDED' }} href="https://m.media-amazon.com/images/I/71NYrDMBZ3L.jpg" target='_blank' rel="noopener noreferrer">celsius kiwi guava.</a>
                 </div>
+            </div>
             </div>
         </div>
     );

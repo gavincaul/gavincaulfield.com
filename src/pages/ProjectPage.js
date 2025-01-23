@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from "react-router-dom";
+import { useLocation, useParams, useNavigate } from "react-router-dom";
 import { React, useEffect, useState } from "react";
 import pagesData from "../data/pages.json";
 import Project from '../components/Project.tsx';
@@ -10,21 +10,25 @@ export default function Projects() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [data, setData] = useState(null);
-
+  let passedProjects;
+  const location = useLocation();
+  if(location.state !== null){
+    passedProjects = location.state.mapProjects;
+  }
   useEffect(() => {
-    const pageData = pagesData.pages[id];
+    const pageData = passedProjects ? passedProjects : pagesData.pages[id];
     if (pageData) {
       setData(pageData);
     } else {
       navigate('/experience');
     }
-  }, [id, navigate]);
+  }, [id, navigate, passedProjects]);
+
 
   if (!data) return <div>Loading...</div>;
-
   const { projects, why } = data;
   const rowCount = 2;
-
+  console.log(projects)
   const projectArray = Object.keys(projects).map((key, index) => {
     const { img, desc, links } = projects[key];  
     const picture = require(`../data/imgs/${img}`);

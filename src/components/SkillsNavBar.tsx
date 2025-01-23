@@ -1,33 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import './SkillsNavBar.css'
 import pagesData from "../data/pages.json";
 import { useNavigate } from "react-router-dom";
 
-
-
-
-
-export default function SkillsNavBar(){
+export default function SkillsNavBar() {
     const navigate = useNavigate();
-    const skills  = pagesData.skills;
+    const skills = pagesData.skills;
+    const [activeSkill, setActiveSkill] = useState(null);
 
     function handleSkillsClick(id) {
+        setActiveSkill(id);  
         navigate(`/experience/skills/${id}`);
     }
 
-    const highlight = () => {
-        this.style = {"background": "rgb(215, 204, 204)"} //needs fix
-    }
-
-    return(
-
+    return (
         <div className='navSkills'>
             {Object.keys(skills).map((e, index) => (
-                <div className='skillsLink' onClick={() => handleSkillsClick(e)} key={index}> 
-                {e}
-                </div>    
+                <div
+                    className={`skillsLink ${activeSkill === e ? 'active' : ''}`}
+                    onClick={() => handleSkillsClick(e)}
+                    key={index}
+                >
+                    {e}
+                </div>
             ))}
         </div>
-        
-    )
+    );
 }
