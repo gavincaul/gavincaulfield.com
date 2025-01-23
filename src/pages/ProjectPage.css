@@ -6,7 +6,8 @@
     font-size: larger;
     margin-top: 1rem;
     font-family: Ubuntu, sans-serif;
-    width:30%;
+    width:50%;
+    margin-bottom: 5rem;
 }
 .projects {
     display: flex;
@@ -21,7 +22,7 @@
   }
   
   .projectElement {
-    width: calc(100% / 3 - 20px); 
+    width: calc(100% / 2 - 20px); 
     margin: 10px;
   }
   

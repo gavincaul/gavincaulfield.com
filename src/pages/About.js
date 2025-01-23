@@ -6,6 +6,8 @@ import saveimg from "../data/about/save.png";
 import clearsesh from "../data/about/x.png";
 import pagesData from "../data/pages.json";
 import orel from "../data/about/orel.png";
+import NavBar from "../components/NavBar.tsx";
+
 
 export default function About() {
   const canvasRef = useRef(null);
@@ -649,6 +651,7 @@ export default function About() {
 
   return (
     <div className="background">
+      <NavBar></NavBar>
       <div className="drawCanvas">
         <canvas
           ref={canvasRef}

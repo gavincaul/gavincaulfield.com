@@ -120,6 +120,7 @@
       }
     },
     "creative": {
+      "why": "Creative outlets for me",
       "projects": {
         "Finding Nolan": {
           "img": "websitesetup.jpg",
@@ -156,5 +157,236 @@
         ]
       }
     }
+  },
+  "skills": {
+    "programming": {
+      "Python": {
+        "time": "4 years",
+        "experience": 5,
+        "projects": []
+      },
+      "C": {
+        "time": "3 years",
+        "experience": 3,
+        "projects": []
+      },
+      "C++": {
+        "time": "3 years",
+        "experience": 4,
+        "projects": []
+      },
+      "Java": {
+        "time": "3 years",
+        "experience": 2,
+        "projects": []
+      },
+      "Javascript": {
+        "time": "3 years",
+        "experience": 3,
+        "projects": []
+      },
+      "Typescript": {
+        "time": "3 years",
+        "experience": 4,
+        "projects": []
+      },
+      "C#": {
+        "time": "2 years",
+        "experience": 5,
+        "projects": []
+      },
+      "R": {
+        "time": "2 years",
+        "experience": 2,
+        "projects": []
+      },
+      "SQL": {
+        "time": "1 year",
+        "experience": 3,
+        "projects": []
+      },
+      "HTML/CSS": {
+        "time": "3 years",
+        "experience": 4,
+        "projects": []
+      },
+      "Bash": {
+        "time": "3 years",
+        "experience": 3,
+        "projects": []
+      },
+      "Linux": {
+        "time": "3 years",
+        "experience": 5,
+        "projects": []
+      },
+      ".NET": {
+        "time": "2 years",
+        "experience": 4,
+        "projects": []
+      },
+      "Parallel Programming": {
+        "time": "1 year",
+        "experience": 2,
+        "projects": []
+      }
+
+    },
+    "software development and tools": {
+      "Agile": {
+        "time": "2 years",
+        "experience": 3,
+        "projects": []
+      },
+      "Git": {
+        "time": "4 years",
+        "experience": 5,
+        "projects": []
+      },
+      "Virtual/Augmented Reality": {
+        "time": "2 years",
+        "experience": 4,
+        "projects": []
+      },
+      "React": {
+        "time": "2 years",
+        "experience": 4,
+        "projects": []
+      },
+      "Netlify": {
+        "time": "1 year",
+        "experience": 2,
+        "projects": []
+      },
+      "Domain Management": {
+        "time": "2 years",
+        "experience": 3,
+        "projects": []
+      },
+      "Network Management": {
+        "time": "2 years",
+        "experience": 4,
+        "projects": []
+      },
+      "REST API": {
+        "time": "2 years",
+        "experience": 3,
+        "projects": []
+      },
+      "NetTools": {
+        "time": "2 years",
+        "experience": 3,
+        "projects": []
+      }
+    },
+    "applications": {
+      "Visual Studio/Code": {
+        "time": "3 years",
+        "experience": 4,
+        "projects": []
+      },
+      "CLI": {
+        "time": "3 years",
+        "experience": 4,
+        "projects": []
+      },
+      "Wireshark": {
+        "time": "2 years",
+        "experience": 2,
+        "projects": []
+      },
+      "Solarwinds": {
+        "time": "1 year",
+        "experience": 3,
+        "projects": []
+      },
+      "Tidal -- Full name?": {
+        "time": "1 year",
+        "experience": 3,
+        "projects": []
+      },  
+      "Unity3D/2D": {
+        "time": "2 years",
+        "experience": 5,
+        "projects": []
+      },
+      "Oracle": {
+        "time": "1 year",
+        "experience": 2,
+        "projects": []
+      },
+      "MongoDB": {
+        "time": "2 years",
+        "experience": 1,
+        "projects": []
+      },
+      "Google Workshop -- name check": {
+        "time": "5+ years",
+        "experience": 5,
+        "projects": []
+      }
+    },
+    "additional": {
+      "Clinical Research": {
+        "time": "2 years",
+        "experience": 4,
+        "projects": []
+      },
+      "Data Analysis":{
+        "time": "2 years",
+        "experience": 2,
+        "projects": []
+      },
+      "Creative Writing": {
+        "time": "5+ years",
+        "experience": 5,
+        "projects": []
+      },
+      "Report Writing": {
+        "time": "2 years",
+        "experience": 3,
+        "projects": []
+      },
+      "Final Cut Pro": {
+        "time": "4 years",
+        "experience": 4,
+        "projects": []
+      },
+      "Adobe Photoshop": {
+        "time": "2 years",
+        "experience": 2,
+        "projects": []
+      },
+      "Public Speaking": {
+        "time": "5+ years",
+        "experience": 4,
+        "projects": []
+      },
+      "Musical Abilities": {
+        "time": "10+ years",
+        "experience": 5,
+        "projects": []
+      }
+    }
+  },
+  "accolades":{
+    "GPA":{
+      "overall": 3.9,
+      "major": 3.85,
+      "year": "2021-2025"
+    },
+    "Dean's List":{
+      "recipient": "7x",
+      "year": "2021-2025"
+    },
+    "Hatem M. Khalil Memorial Award":{
+      "desc": "XYZ",
+      "year": "2024"
+    },
+    "John S Sousa Award":{
+      "desc": "XYZ",
+      "year": "2021"
+    }
+
   }
 }

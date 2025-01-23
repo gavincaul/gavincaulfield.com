@@ -6,6 +6,9 @@ import potpourri from "../data/projects/potpurri.jpg";
 import research from "../data/projects/research.jpg";
 import spotify from "../data/projects/spotify.jpg";
 import work from "../data/projects/work.jpg";
+import NavBar from "../components/NavBar.tsx";
+import SkillsNavBar from "../components/SkillsNavBar.tsx";
+
 
 export default function Experience() {
   const [hoveredImage, setHoveredImage] = useState(null);
@@ -25,6 +28,9 @@ export default function Experience() {
 
   return (
     <div className="background">
+          <SkillsNavBar />
+      <NavBar />
+  
       <div className="title">
         Projects
         <div className="subtext">

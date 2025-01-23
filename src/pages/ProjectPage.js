@@ -3,6 +3,8 @@ import { React, useEffect, useState } from "react";
 import pagesData from "../data/pages.json";
 import Project from '../components/Project.tsx';
 import "./ProjectPage.css"
+import NavBar from "../components/NavBar.tsx";
+
 
 export default function Projects() {
   const { id } = useParams();
@@ -41,8 +43,9 @@ export default function Projects() {
 
   return (
     <div className="background">
+      <NavBar />
       <div className="title">{id}</div>
-      <div className="why">{why}</div>
+      <div className="why" dangerouslySetInnerHTML={{ __html: why.replace(/\n/g, '<br />') }}></div>
       <div className="projects">
         {rows.map((row, rowIndex) => (
           <div className="projectRow" key={rowIndex}>
