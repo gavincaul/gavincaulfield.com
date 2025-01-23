@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;1,200&display=swap');
 
-.navSkills{
+.navSkills {
     height: 3rem;
     display: flex;
     justify-content: space-evenly;
@@ -9,16 +9,24 @@
     position: absolute;
     top: 90px;
 }
-.skillsLink{
+
+.skillsLink {
     font-family: Ubuntu, sans-serif;
     color: white;
     font-size: medium;
     transition: transform 0.2s ease-in-out;
     border-radius: 45px;
     padding: 10px 20px;
-    background: rgb(215, 204, 204);
-    &:hover {
-        transform: scale(1.05);
-        font-style: bold;
-    }
+    background: radial-gradient(rgb(141, 34, 34), rgb(209, 75, 75));
+    cursor: pointer;
+}
+
+.skillsLink:hover {
+    transform: scale(1.05);
+}
+
+
+.skillsLink.active {
+    background: rgb(100, 150, 200); 
+    color: white;
 }

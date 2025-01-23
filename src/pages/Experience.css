@@ -10,19 +10,41 @@
     align-items: center;
     justify-content: center;
 }
+.title-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%; 
+    margin-top: 7rem;
+}
 
-.title {
+.skillAccButton {
+    font-family: Ubuntu, sans-serif;
+    color: white;
+    border: none;
+    font-size: medium;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 45px;
+    padding: 10px 20px;
+    background: radial-gradient(rgb(141, 34, 34), rgb(209, 75, 75));
+    cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+.titleexp {
     font-family: Codystar, sans-serif;
     font-size: 50px;
     color: white;
     text-align: center;
-    margin-top: 7rem;
 }
-
 .subtext {
-    padding-top: 1rem;
+    padding-top: 3rem;
     font-family: Ubuntu, sans-serif;
     font-size: 18px;
+    text-align: center;
+    color: white;
     width: 60%;
     line-height: 2rem;
     margin: auto;
