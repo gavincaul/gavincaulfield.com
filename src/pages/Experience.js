@@ -8,7 +8,6 @@ import spotify from "../data/projects/spotify.jpg";
 import work from "../data/projects/work.jpg";
 import NavBar from "../components/NavBar.tsx";
 
-
 export default function Experience() {
   const [hoveredImage, setHoveredImage] = useState(null);
   const navigate = useNavigate();
@@ -17,10 +16,10 @@ export default function Experience() {
     navigate(`/experience/${id}`);
   }
   function handleSkillsClick() {
-    navigate('/experience/skills')
+    navigate("/experience/skills");
   }
   function handleAccoladesClick() {
-    navigate('/experience/accolades')
+    navigate("/experience/accolades");
   }
 
   const projects = [
@@ -61,9 +60,13 @@ export default function Experience() {
       <NavBar />
 
       <div className="title-container">
-        <button className="skillAccButton" onClick={handleSkillsClick}>Skills</button>
+        <button className="button-45" onClick={handleSkillsClick}>
+          Skills
+        </button>
         <div className="titleexp">Projects</div>
-        <button className="skillAccButton" onClick={handleAccoladesClick}>Accolades</button>
+        <button className="button-45" onClick={handleAccoladesClick}>
+          Accolades
+        </button>
       </div>
       <div className="subtext">
         I work in a lot of areas, not all coinciding within each other. Please

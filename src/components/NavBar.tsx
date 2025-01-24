@@ -1,26 +1,56 @@
-import React from 'react';
-import './NavBar.css'
+import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import './NavBar.css';
 
+export default function NavBar() {
+  const [isOpen, setIsOpen] = useState(false);
 
-export default function NavBar(){
+  const toggleNav = () => {
+    setIsOpen(!isOpen);
+  };
 
-    return(
-
-        <div className='nav'>
-            <NavLink className='link' to='/home'>
-                GC
+  return (
+    <div className="navcontainer">
+      <div
+        className={`button ${isOpen ? '' : 'open'}`}
+        onClick={toggleNav}
+        role="button"
+        aria-label="Toggle navigation"
+        tabIndex={0}
+      >
+        <nav className={`nav ${isOpen ? 'open' : ''}`}>
+          <div className="navlinks">
+            <NavLink
+              to="/"
+              className="navlink"
+              style={{ animationDelay: '300ms' }}
+            >
+              Home
             </NavLink>
-            <NavLink className="link" to="/about">
-                About
+            <NavLink
+              to="/about"
+              className="navlink"
+              style={{ animationDelay: '400ms' }}
+            >
+              About
             </NavLink>
-            <NavLink className="link" to="/experience">
-                Experience
+            <NavLink
+              to="/experience"
+              className="navlink"
+              style={{ animationDelay: '500ms' }}
+            >
+              Experience
             </NavLink>
-            <NavLink className="link" to="/resume">
-                Resume
+            <NavLink
+              to="/resume"
+              className="navlink"
+              style={{ animationDelay: '600ms' }}
+            >
+              Resume
             </NavLink>
-        </div>
-        
-    )
+          </div>
+        </nav>
+      </div>
+    </div>
+  );
 }

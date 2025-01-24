@@ -1,6 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Codystar&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
+
+.button-45 {
+    align-items: center;
+    justify-content: center;
+    background-color: #FFE7E7;
+    background-position: 0 0;
+    border: 1px solid #FEE0E0;
+    border-radius: 11px;
+    width: 40%;
+    box-sizing: border-box;
+    color: #D33A2C;
+    cursor: pointer;
+    display: flex;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 33.4929px;
+    list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+    padding: 2px 12px;
+    text-align: center;
+    text-decoration: none;
+    text-shadow: none;
+    text-underline-offset: 1px;
+    transition: border .2s ease-in-out,box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    word-break: break-word;
+  }
+  
+  .button-45:active,
+  .button-45:hover,
+  .button-45:focus {
+    outline: 0;
+  }
+  
+  
+  .button-45:active {
+    background-color: #D33A2C;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+  }
+  
+  .button-45:hover {
+    background-color: #FFE3E3;
+    border-color: #FAA4A4;
+  }
+  
+  .button-45:active:hover,
+  .button-45:focus:hover,
+  .button-45:focus {
+    background-color: #D33A2C;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+  }
 .background {
     background: linear-gradient(90deg, #303030, #161616);
     min-height: 100vh;
@@ -11,33 +66,24 @@
     justify-content: center;
 }
 .title-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    row-gap: 10px;
+    grid-template-rows: 2fr 1fr;
     align-items: center;
-    justify-content: space-between;
+    justify-items: center;
     width: 30%; 
-    margin-top: 7rem;
+    margin-top: 3rem;
 }
 
-.skillAccButton {
-    font-family: Ubuntu, sans-serif;
-    color: white;
-    border: none;
-    font-size: medium;
-    transition: transform 0.2s ease-in-out;
-    border-radius: 45px;
-    padding: 10px 20px;
-    background: radial-gradient(rgb(141, 34, 34), rgb(209, 75, 75));
-    cursor: pointer;
-    &:hover {
-        transform: scale(1.05);
-    }
-}
 
 .titleexp {
     font-family: Codystar, sans-serif;
     font-size: 50px;
     color: white;
     text-align: center;
+    grid-row: 1;
+    grid-column: span 2;
 }
 .subtext {
     padding-top: 3rem;
