@@ -38,7 +38,7 @@ export default function SkillsPage() {
   }
 
   return (
-    <div className="background">
+    <div className="skillsbackground">
       <NavBar />
       <SkillsNavBar />
       <div className="skillsRow">

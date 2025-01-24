@@ -16,11 +16,11 @@ export default function Resume() {
     <div className="background">
       <NavBar />
       <div className="title-container">
-        <button className="skillAccButton" onClick={handleSkillsClick}>
+        <button className="button-45" onClick={handleSkillsClick}>
           Skills
         </button>
         <div className="titleexp">Resume</div>
-        <button className="skillAccButton" onClick={handleAccoladesClick}>
+        <button className="button-45" onClick={handleAccoladesClick}>
           Accolades
         </button>
       </div>

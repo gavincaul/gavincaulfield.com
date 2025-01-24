@@ -1,0 +1,48 @@
+.accoladesBackground {
+    background: linear-gradient(90deg, #303030, #161616);
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    color: white;
+  }
+  
+  .accoladesContainer {
+    margin-top: 7rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    width: 80%;
+    max-width: 1200px;
+  }
+  
+  .accoladeCard {
+    background: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: white;
+    width: 300px;
+  }
+  
+  .accoladeCard h3 {
+    margin-bottom: 10px;
+    color: #f0db4f;
+  }
+  
+  .accoladeCard ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .accoladeCard ul li {
+    margin-bottom: 5px;
+  }
+  
+  .accoladeCard p {
+    margin: 0;
+  }
+  

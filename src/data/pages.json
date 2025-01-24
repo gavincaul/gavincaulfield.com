@@ -371,22 +371,27 @@
   },
   "accolades":{
     "GPA":{
-      "overall": 3.9,
-      "major": 3.85,
-      "year": "2021-2025"
+      "Description": "My college GPA, through CS and Non-CS classes.",
+      "Overall": 3.9,
+      "CS": 3.85,
+      "Years": "2021-2025"
     },
     "Dean's List":{
-      "recipient": "7x",
-      "year": "2021-2025"
+      "Recipient": "7x (each semester)",
+      "Years": "2021-2025"
     },
     "Hatem M. Khalil Memorial Award":{
-      "desc": "XYZ",
+      "Description": "Awarded the Hatem M. Khalil Memorial Award in recognition of outstanding achievement in software engineering at the University of Delaware's CIS Department.",
       "year": "2024"
     },
-    "John S Sousa Award":{
-      "desc": "XYZ",
+    "John Philip Sousa Award":{
+      "desc": "Recipient of the John Philip Sousa Award, honoring superior musicianship, outstanding dedication, and exemplary leadership.",
       "year": "2021"
+    },
+    "AIxVR 2024 Conference Honorable Mention": {
+      "Project": "Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+      "Recognition": "Honorable Mention",
+      "Conference": "AIxVR 2024"
     }
-
   }
 }
