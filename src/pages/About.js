@@ -8,7 +8,6 @@ import pagesData from "../data/pages.json";
 import orel from "../data/about/orel.png";
 import NavBar from "../components/NavBar.tsx";
 
-
 export default function About() {
   const canvasRef = useRef(null);
   const [isDrawing, setIsDrawing] = useState(false);
@@ -17,6 +16,9 @@ export default function About() {
   const [historyItems, setHistoryItems] = useState([]);
   const [isHistoryVisible, setIsHistoryVisible] = useState(false);
   const ctxRef = useRef(null);
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   const aboutData = pagesData.pages.about;
   const timeout = (delay) => new Promise((res) => setTimeout(res, delay));
@@ -700,12 +702,12 @@ export default function About() {
             <div className="aboutItem" key={index}>
               <img src={picture} alt={key} style={{ borderColor: color }} />
               <h1>{key.charAt(0).toUpperCase() + key.slice(1)}</h1>
-              <p dangerouslySetInnerHTML={{ __html: text.replace(/\n/g, '<br />') }} />
-              <a
-                href={link[1]}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <p
+                dangerouslySetInnerHTML={{
+                  __html: text.replace(/\n/g, "<br />"),
+                }}
+              />
+              <a href={link[1]} target="_blank" rel="noopener noreferrer">
                 {link[0]}
               </a>
             </div>

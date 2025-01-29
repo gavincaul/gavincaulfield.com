@@ -163,7 +163,17 @@
       "Python": {
         "time": "4 years",
         "experience": 5,
-        "projects": []
+        "projects": [
+          "spotify/projects/iMessageToSpotify Scraper",
+          "spotify/projects/24Hour Manager",
+          "spotify/projects/Spotify Album Wheel Spinner",
+          "spotify/projects/AutoUpdateLoooong",
+          "spotify/projects/LastFM Management",
+          "spotify/projects/Mix Maker",
+          "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)",
+          "potpourri/projects/HoloFlash",
+          "potpourri/projects/WebsiteSetup"
+        ]
       },
       "C": {
         "time": "3 years",
@@ -182,27 +192,43 @@
       },
       "Javascript": {
         "time": "3 years",
-        "experience": 3,
-        "projects": []
+        "experience": 3.5,
+        "projects": [
+          "potpourri/projects/HoloFlash",
+          "potpourri/projects/WebsiteSetup",
+          "potpourri/projects/ColtonCaulfield.com",
+          "spotify/projects/Spotify Album Wheel Spinner"
+        ]
       },
       "Typescript": {
         "time": "3 years",
         "experience": 4,
-        "projects": []
+        "projects": [
+          "potpourri/projects/HoloFlash",
+          "potpourri/projects/WebsiteSetup",
+          "potpourri/projects/ColtonCaulfield.com",
+          "spotify/projects/Spotify Album Wheel Spinner"
+        ]
       },
-      "C#": {
+      "Csharp": {
         "time": "2 years",
         "experience": 5,
-        "projects": []
+        "projects": [
+          "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
+          "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments"
+        ]
       },
       "R": {
         "time": "2 years",
         "experience": 2,
-        "projects": []
+        "projects": [
+          "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
+          "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments"
+        ]
       },
       "SQL": {
         "time": "1 year",
-        "experience": 3,
+        "experience": 2.5,
         "projects": []
       },
       "HTML/CSS": {
@@ -212,103 +238,171 @@
       },
       "Bash": {
         "time": "3 years",
-        "experience": 3,
-        "projects": []
+        "experience": 2.5,
+        "projects": [
+          "potpourri/projects/WebsiteSetup",
+          "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)"
+        ]
       },
       "Linux": {
         "time": "3 years",
         "experience": 5,
-        "projects": []
+        "projects": [
+          "potpourri/projects/WebsiteSetup",
+          "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)"
+        ]
       },
       ".NET": {
         "time": "2 years",
         "experience": 4,
-        "projects": []
+        "projects": [
+          "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
+          "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments"
+        ]
       },
       "Parallel Programming": {
         "time": "1 year",
         "experience": 2,
         "projects": []
       }
-
     },
     "software development and tools": {
       "Agile": {
         "time": "2 years",
         "experience": 3,
-        "projects": []
+        "projects": [
+          "potpourri/projects/ColtonCaulfield.com",
+          "spotify/projects/Spotify Album Wheel Spinner"
+        ]
       },
       "Git": {
         "time": "4 years",
         "experience": 5,
-        "projects": []
+        "projects": [
+          "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+          "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
+          "potpourri/projects/ColtonCaulfield.com",
+          "potpourri/projects/HoloFlash",
+          "potpourri/projects/WebsiteSetup"
+        ]
       },
       "Virtual/Augmented Reality": {
         "time": "2 years",
-        "experience": 4,
-        "projects": []
+        "experience": 3.5,
+        "projects": [
+          "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+          "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality"
+        ]
       },
       "React": {
         "time": "2 years",
         "experience": 4,
-        "projects": []
+        "projects": [
+          "spotify/projects/Spotify Album Wheel Spinner",
+          "potpourri/projects/ColtonCaulfield.com",
+          "potpourri/projects/HoloFlash",
+          "potpourri/projects/WebsiteSetup"
+        ]
       },
       "Netlify": {
         "time": "1 year",
-        "experience": 2,
-        "projects": []
+        "experience": 1.5,
+        "projects": ["spotify/projects/Spotify Album Wheel Spinner"]
       },
       "Domain Management": {
         "time": "2 years",
         "experience": 3,
-        "projects": []
+        "projects": [
+          "potpourri/projects/ColtonCaulfield.com",
+          "potpourri/projects/HoloFlash",
+          "potpourri/projects/WebsiteSetup"
+        ]
       },
       "Network Management": {
         "time": "2 years",
         "experience": 4,
-        "projects": []
+        "projects": [
+          "potpourri/projects/ColtonCaulfield.com",
+          "potpourri/projects/HoloFlash",
+          "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)"
+        ]
       },
       "REST API": {
         "time": "2 years",
-        "experience": 3,
-        "projects": []
+        "experience": 2.5,
+        "projects": [
+          "potpourri/projects/HoloFlash",
+          "potpourri/projects/WebsiteSetup",
+          "spotify/projects/Spotify Album Wheel Spinner"
+        ]
       },
       "NetTools": {
         "time": "2 years",
-        "experience": 3,
-        "projects": []
+        "experience": 3.5,
+        "projects": [
+          "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)"
+        ]
       }
     },
     "applications": {
       "Visual Studio/Code": {
         "time": "3 years",
         "experience": 4,
-        "projects": []
+        "projects": [
+          "potpourri/projects/ColtonCaulfield.com",
+          "potpourri/projects/HoloFlash",
+          "potpourri/projects/WebsiteSetup",
+          "spotify/projects/iMessageToSpotify Scraper",
+          "spotify/projects/24Hour Manager",
+          "spotify/projects/Spotify Album Wheel Spinner",
+          "spotify/projects/AutoUpdateLoooong",
+          "spotify/projects/LastFM Management",
+          "spotify/projects/Mix Maker",
+          "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+          "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality"
+        ]
       },
       "CLI": {
         "time": "3 years",
         "experience": 4,
-        "projects": []
+        "projects": [
+          "spotify/projects/iMessageToSpotify Scraper",
+          "spotify/projects/24Hour Manager",
+          "spotify/projects/Spotify Album Wheel Spinner",
+          "spotify/projects/AutoUpdateLoooong",
+          "spotify/projects/LastFM Management",
+          "spotify/projects/Mix Maker",
+          "potpourri/projects/WebsiteSetup"
+        ]
       },
       "Wireshark": {
         "time": "2 years",
         "experience": 2,
-        "projects": []
+        "projects": [
+          "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)"
+        ]
       },
       "Solarwinds": {
         "time": "1 year",
         "experience": 3,
-        "projects": []
+        "projects": [
+          "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)"
+        ]
       },
-      "Tidal -- Full name?": {
+      "Tidal Enterprise Scheduler": {
         "time": "1 year",
-        "experience": 3,
-        "projects": []
-      },  
+        "experience": 2.5,
+        "projects": [
+          "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)"
+        ]
+      },
       "Unity3D/2D": {
         "time": "2 years",
         "experience": 5,
-        "projects": []
+        "projects": [
+          "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+          "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality"
+        ]
       },
       "Oracle": {
         "time": "1 year",
@@ -318,49 +412,70 @@
       "MongoDB": {
         "time": "2 years",
         "experience": 1,
-        "projects": []
+        "projects": ["potpourri/projects/HoloFlash"]
       },
-      "Google Workshop -- name check": {
+      "Google Workplace": {
         "time": "5+ years",
         "experience": 5,
-        "projects": []
+        "projects": [
+          "creative/projects/Finding Nolan",
+          "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+          "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
+          "work/projects/HenHacks 2025 (Apr 2024 - May 2025)",
+          "work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)",
+          "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)"
+        ]
       }
     },
     "additional": {
       "Clinical Research": {
         "time": "2 years",
         "experience": 4,
-        "projects": []
+        "projects": [
+          "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+          "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality"
+        ]
       },
-      "Data Analysis":{
+      "Data Analysis": {
         "time": "2 years",
         "experience": 2,
-        "projects": []
+        "projects": [
+          "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+          "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
+          "potpourri/projects/HoloFlash"
+        ]
       },
       "Creative Writing": {
         "time": "5+ years",
         "experience": 5,
-        "projects": []
+        "projects": [
+          "work/projects/HenHacks 2025 (Apr 2024 - May 2025)",
+          "work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)"
+        ]
       },
       "Report Writing": {
         "time": "2 years",
         "experience": 3,
-        "projects": []
+        "projects": [
+          "work/projects/HenHacks 2025 (Apr 2024 - May 2025)",
+          "work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)"
+        ]
       },
       "Final Cut Pro": {
         "time": "4 years",
         "experience": 4,
-        "projects": []
+        "projects": ["creative/projects/Finding Nolan"]
       },
       "Adobe Photoshop": {
         "time": "2 years",
         "experience": 2,
-        "projects": []
+        "projects": ["creative/projects/Finding Nolan"]
       },
       "Public Speaking": {
         "time": "5+ years",
         "experience": 4,
-        "projects": []
+        "projects": ["work/projects/HenHacks 2025 (Apr 2024 - May 2025)",
+"work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)"]
       },
       "Musical Abilities": {
         "time": "10+ years",
@@ -369,29 +484,34 @@
       }
     }
   },
-  "accolades":{
-    "GPA":{
+  "accolades": {
+    "GPA": {
       "Description": "My college GPA, through CS and Non-CS classes.",
       "Overall": 3.9,
       "CS": 3.85,
       "Years": "2021-2025"
     },
-    "Dean's List":{
+    "Dean's List": {
       "Recipient": "7x (each semester)",
       "Years": "2021-2025"
     },
-    "Hatem M. Khalil Memorial Award":{
+    "Hatem M. Khalil Memorial Award": {
       "Description": "Awarded the Hatem M. Khalil Memorial Award in recognition of outstanding achievement in software engineering at the University of Delaware's CIS Department.",
-      "year": "2024"
+      "Year": "2024"
     },
-    "John Philip Sousa Award":{
-      "desc": "Recipient of the John Philip Sousa Award, honoring superior musicianship, outstanding dedication, and exemplary leadership.",
-      "year": "2021"
+    "John Philip Sousa Award": {
+      "Description": "Recipient of the John Philip Sousa Award, honoring superior musicianship, outstanding dedication, and exemplary leadership.",
+      "Year": "2021"
     },
     "AIxVR 2024 Conference Honorable Mention": {
       "Project": "Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
       "Recognition": "Honorable Mention",
       "Conference": "AIxVR 2024"
+    },
+    "Winner of 'Best Use of AI in Education'": {
+      "Project": "Holoflash",
+      "Description": "At HenHacks 2024, my group and I won the above award for our Study in Augmented Reality tool, Holoflash.",
+      "Year": "2024"
     }
   }
 }

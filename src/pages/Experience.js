@@ -1,4 +1,4 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Experience.css";
 import creative from "../data/projects/creative.jpg";
@@ -12,6 +12,9 @@ export default function Experience() {
   const [hoveredImage, setHoveredImage] = useState(null);
   const navigate = useNavigate();
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   function handleProjectClick(id) {
     navigate(`/experience/${id}`);
   }
@@ -86,7 +89,8 @@ export default function Experience() {
               style={{ borderColor: project.color }}
               onClick={() => handleProjectClick(project.id)}
             />
-            <p>{project.id.toUpperCase()}</p>
+            <div className="project-title">{project.id}</div>
+            <div className="project-title">{project.id}</div>
             {hoveredImage === project.id && (
               <div className="projectwindow">
                 <div className="flavor-text">{project.text}</div>

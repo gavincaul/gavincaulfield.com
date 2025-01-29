@@ -27,6 +27,9 @@ export default function AccoladesPage() {
   const navigate = useNavigate();
   const [accolades, setAccolades] = useState({});
 
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, []);
   useEffect(() => {
     const accolades = accoladesData.accolades;
     if (accolades) {
