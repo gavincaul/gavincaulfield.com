@@ -10,7 +10,9 @@ export default function SkillsPage() {
   const { id } = useParams();
   const navigate = useNavigate();
   const [skills, setSkills] = useState({});
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   useEffect(() => {
     const skills = skillsData.skills[id];
     if (skills) {
