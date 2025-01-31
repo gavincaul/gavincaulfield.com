@@ -11,7 +11,13 @@ export default function StarRating({ rating }) {
             {Array.from({ length: fullStars }).map((_, i) => (
                 <span key={`full-${i}`} className="star">★</span>
             ))}
-            {hasHalfStar && <span className="star half">☆</span>} 
+            {hasHalfStar && (
+                <span key="half" className="star half">
+                    <span style={{ width: '50%', overflow: 'hidden' }}>
+                        ★
+                    </span>
+                </span>
+            )}
             {Array.from({ length: emptyStars }).map((_, i) => (
                 <span key={`empty-${i}`} className="star empty">★</span>
             ))}

@@ -1,94 +1,131 @@
 {
   "pages": {
     "spotify": {
-      "why": "Music is a very important piece of my life. I dedicate a lot of my free time to listening, playing, and writing music. For that, I, whenever and wherever I can, try to bend my coding capabilities to improve upon my leisure. For that, I am a frequent user of Spotify API, specifically [Spotipy](https://spotipy.readthedocs.io/en/2.24.0/).",
+      "why": "Music is a very important piece of my life. I dedicate a lot of my free time to listening, playing, and writing music. For that, I, whenever and wherever I can, try to bend my coding capabilities to improve upon my leisure. For that, I am a frequent user of Spotify API, specifically <a style='color: red;' href='https://spotipy.readthedocs.io/en/2.24.0/' target='_blank' rel='noopener noreferrer'>Spotipy</a>.",
       "projects": {
         "iMessageToSpotify Scraper": {
           "img": "clout.jpg",
           "desc": "The main purpose of this tool is to take spotify songs sent through iMessage, using the library imessage-reader, and add them into a playlist owned by me (or the person who changes the code for themself). However, I also implemented a spreadsheet uploader, supported by a google API, in order to keep track of who sent every song.",
-          "links": {
-            "title": "https://github.com/gavincaul/iMessageSpotifyScraper",
-            "playlist": "https://open.spotify.com/playlist/4hTY6FrGjAl26aw9QzrUzM?si=55346e50ca0d4bc9"
-          }
+          "links": [
+            "GitHub Repo", "https://github.com/gavincaul/iMessageSpotifyScraper",
+            "Playlist", "https://open.spotify.com/playlist/4hTY6FrGjAl26aw9QzrUzM?si=55346e50ca0d4bc9"
+          ],
+          "hidden": 0
         },
         "24Hour Manager": {
           "img": "24.jpg",
           "desc": "In preparation for a 26 hour road trip to Colorado, my fellow music-addicted companion and I insisted on making a playlist for the journey. With ~150 songs each, we knew this playlist would be a mess. So, I took the liberty of creating a program to manage this playlist, including reordering of songs (s.t. Time leads into Great Gig) and balancing the playlist (s.t. we don’t listen Thick as a Brick right into 2112)",
-          "links": {
-            "title": "https://github.com/gavincaul/SpotifyProjects/blob/master/24hr.py"
-          }
+          "links": [
+            "GitHub", "https://github.com/gavincaul/SpotifyProjects/blob/master/24hr.py"
+          ],
+          "hidden": 0
         },
         "Spotify Album Wheel Spinner": {
           "img": "spotifywheel.jpg",
           "desc": "I have a lot of albums saved on Spotify, and I frequently can’t choose which to listen to. For that, I developed a site that’ll pull from a user’s Spotify account and create a wheel of saved albums to spin. ***N.B. Because of Spotify API settings, the project is not for public use, for that, I need to reach out to Spotify***",
-          "links": {
-            "title": "https://github.com/gavincaul/SpotifyAlbumWheelSpin"
-          }
+          "links": [
+            "GitHub Repo", "https://github.com/gavincaul/SpotifyAlbumWheelSpin"
+          ],
+          "hidden": 0
         },
         "AutoUpdateLoooong": {
           "img": "loooong.jpg",
           "desc": "I have a playlist titled ‘loooooong’, it’s songs I like that are usually 12+ mins. This program automatically updates the playlist.",
-          "links": {
-            "title": "https://github.com/gavincaul/SpotifyProjects/blob/master/autoupdateloooong.py"
-          }
+          "links": [
+            "GitHub", "https://github.com/gavincaul/SpotifyProjects/blob/master/autoupdateloooong.py"
+          ],
+          "hidden": 0
         },
         "LastFM Management": {
           "img": "lfmspot.jpg",
           "desc": "LastFM is an application that tracks every song you listen to on a platform (for me, it’s Spotify). I integrated the Last FM API to find and remove my least listened to songs from my playlists.",
-          "links": {
-            "title": "https://github.com/gavincaul/SpotifyProjects/blob/master/LastFMManage.py"
-          }
+          "links": [
+            "GitHub", "https://github.com/gavincaul/SpotifyProjects/blob/master/LastFMManage.py"
+          ],
+          "hidden": 0
         },
         "Mix Maker": {
           "img": "mix.jpg",
           "desc": "Do you ever get frustrated with Spotify’s Mix creation? If you’re employed, probably not. I do!!!! For that, I wrote a script that’ll create mixes based on Genres (i.e. Rap) that’ll produce a mix of only songs I KNOW! Now I can listen to my mixes",
-          "links": {
-            "title": "https://github.com/gavincaul/SpotifyProjects/blob/master/mixmaker.py"
-          }
+          "links": [
+            "GitHub", "https://github.com/gavincaul/SpotifyProjects/blob/master/mixmaker.py"
+          ],
+          "hidden": 0
         }
       }
     },
     "research": {
-      "why": "I began working at UD’s HCI Lab in 2023 for Delaware INBRE. Here, I primarily worked with VR and AR equipment and C# scripting to create programs that benefit select groups. Frequently work with .NET Framework 6.0 and C# development for REST/API development.",
+      "why": "I began working at UD’s HCI Lab in 2023 for Delaware INBRE. Here, I primarily work with VR and AR equipment and C# scripting to create programs that benefit select groups. Frequently work with .NET Framework 6.0 and C# development for REST/API development.",
       "projects": {
         "Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments": {
           "img": "towards.jpg",
           "desc": "This work presents a VR environment with a generative AI virtual assistant to support human anatomy education, allowing the user to communicate verbally with the virtual assistant. I assisted in the development and testing of the program, along with revision to the submitted paper. Won “Honorable Mention” at the AIxVR 2024 Conference",
-          "links": {
-            "title": "https://ieeexplore.ieee.org/abstract/document/10445563",
-            "video": "https://www.youtube.com/watch?v=hYIlLYu_lpk"
-          }
+          "links": [
+            "Paper", "https://ieeexplore.ieee.org/abstract/document/10445563",
+            "Demo", "https://www.youtube.com/watch?v=hYIlLYu_lpk",
+            "Honorable Mention", "https://sites.udel.edu/hci-lab/2024/01/23/2064/"
+          ],
+          "hidden": 0
         },
         "Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality": {
           "img": "enhancing.jpg",
           "desc": "A program to move physical rehabilitation – specifically balance training – onto an augmented reality platform. Developed the program, led and managed a pilot test of the program, including analysis of the effectiveness of VR vs AR, and created and presented poster at NERIC 2023.",
-          "links": {
-            "title": "https://www.canva.com/design/DAFqUuJjh2M/XswU-kcsR5MxPFSFznI4Bw/edit?utm_content=DAFqUuJjh2M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-          }
+          "links": [
+            "Poster", "https://www.canva.com/design/DAFqUuJjh2M/XswU-kcsR5MxPFSFznI4Bw/edit?utm_content=DAFqUuJjh2M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+          ],
+          "hidden": 0
+        },
+        "Virtual Patient Simulation for Nursing Students": {
+          "desc": "This project aims to develop a comprehensive training platform for women’s health and sexual health. The platform will provide nursing students with various scenarios to help them acquire different skills and competencies. Developed in Unity 3D, the program allows communication between a Midwife and nursing students in training via a virtual avatar.",
+          "img": "midwifery.jpg",
+          "links": [
+            "Demo","https://gitlab.eecis.udel.edu/hci-lab/midwife-project#english"
+          ],
+          "hidden": 0
+        },
+        "ChatGPT-assisted Medical Examination training in Mixed Reality": {
+          "desc": "This project used the Microsoft Hololens 2 to create a quiz environment to probe medical students on anatomical questions related to their field. In the project were two mediums of communication for ChatGPT: a blackboard that supported TTS and STT, and a GPT-embodied virtual avatar.",
+          "img": "MRChat.jpg",
+          "links": [
+            "GitHub Repo", "https://github.com/HCI-UD/ChatGPTMR",
+            "Demo", "https://github.com/HCI-UD/ChatGPTMR?tab=readme-ov-file#demo-video"
+          ],
+          "hidden": 0
         }
       }
     },
     "work": {
-      "why": "Some of the work experience I have attributed to my name 😎",
+      "why": "I’ve worked in many different areas, but my experience at every place has one thing in common—I like to keep busy and take on roles where I can actually make an impact. Whether it’s organizing a hackathon, running events for UD’s CS department, or writing code in research labs and internships, I enjoy being hands-on and problem-solving in real time. Here’s some of what I’ve done.",
       "projects": {
         "HenHacks 2025 (Apr 2024 - May 2025)": {
           "img": "henhacks.jpg",
           "desc": "I am responsible for the volunteers at UD’s 3rd annual Hackathon, HenHacks 2025. Under this role, I recruit, train, and manage over 80+ volunteers for the near 36 hour event.",
-          "links": {
-            "title": "https://www.henhackshackathon.com/"
-          }
+          "links": [
+            "Website", "https://www.henhackshackathon.com/"
+          ],
+          "hidden": 0
         },
         "UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)": {
           "img": "cpus.jpg",
-          "desc": "As a UD CPU, I am responsible for collaborating with other undergraduate students to create an inviting and exciting Computer and Information Science community at UD. Some of the events I have managed include\nCISC Career Fair (pictured)\nWhiteboard interview preparation\nMeet Your Professors!\nPersonal Project Showcase\nCareer Readiness\nConcentration/Advising Nights\nand more!",
-          "links": {
-            "title": "https://www.instagram.com/udcpus/"
-          }
+          "desc": "As a UD CPU, I am responsible for collaborating with other undergraduate students to create an inviting and exciting Computer and Information Science community at UD. Some of the events I have managed include...\n\nCISC Career Fair (pictured), Whiteboard interview preparation, Meet Your Professors!, Personal Project Showcase, Career Readiness, Concentration/Advising Nights, and more!",
+          "links": [
+            "Instagram", "https://www.instagram.com/udcpus/"
+          ],
+          "hidden": 0
         },
         "Berkely Technology Services Command Center Analyst (June 2024 - November 2024)": {
           "img": "berkley.jpg",
           "desc": "At BTS, I worked with enterprise schedulers (TIDAL), computer networking, UNIX/LINUX server management, software development, data center management, and LUMEN & Cisco.",
-          "links": {}
+          "links": [],
+          "hidden": 0
+        },
+        "Human-Computer Interaction Lab Research Assistant": {
+          "img": "hcilab.jpg",
+          "desc": "At the HCI Lab, I primarily developed Unity programs in C# and under .NET for various VR related projects. Additionally, I worked with motion-tracking software and facial scanning and rendering within my projects. Outside of development, I assisted in writing and editing research papers in the lab, including my PI’s NSF Career grant (which she was awarded).",
+          "links": [
+            "HCI Website", "https://sites.udel.edu/hci-lab/"
+          ],
+          "hidden": 0
         }
       }
     },
@@ -97,25 +134,50 @@
       "projects": {
         "ColtonCaulfield.com": {
           "img": "coltoncaulfield.jpg",
-          "desc": "A website dedicated to the works of my brother, Colton Caulfield. Developed and maintained by me, design and data managed by my brother.",
-          "links": {
-            "title": "https://www.coltoncaulfield.com"
-          }
+          "desc": "A website dedicated to the works of my brother, Colton Caulfield. Developed and maintained by me; design and data managed by Colton.",
+          "links": [
+            "Website", "https://www.coltoncaulfield.com"
+          ],
+          "hidden": 0
         },
         "HoloFlash": {
           "img": "holoflash.jpg",
-          "desc": "Winner of Best Use of AI in Education at 2024 HenHacks \nOur application empowers students by utilizing Googles Gemini AI to swiftly convert audio files, pdfs, and images into flashcards relating to the inputs subject matter. On top of this, users can also review their flashcards in augmented reality using the Microsoft Hololens, hence the name of our project \"Holo-Flash\". Developed the HoloLens AR application, along with REST development for the site.",
-          "links": {
-            "github": "https://github.com/janahmedprg/flashcards",
-            "devpost": "https://devpost.com/software/holoflash"
-          }
+          "desc": "Winner of Best Use of AI in Education at 2024 HenHacks \n\nOur application empowers students by utilizing Googles Gemini AI to swiftly convert audio files, pdfs, and images into flashcards relating to the inputs subject matter. On top of this, users can also review their flashcards in augmented reality using the Microsoft Hololens, hence the name of our project \"Holo-Flash\". Developed the HoloLens AR application, along with REST development for the site.",
+          "links": [
+            "github", "https://github.com/janahmedprg/flashcards",
+            "devpost", "https://devpost.com/software/holoflash"
+          ],
+          "hidden": 0
         },
         "WebsiteSetup": {
           "img": "websitesetup.jpg",
           "desc": "Setting up a website can be a hassle, what if you could do it for free in just a few clicks? WebsiteSetup.py is a script I wrote to help me with that. This script deploys a React Page hosted on GitHub Pages, All managed on CLI.",
-          "links": {
-            "title": ""
-          }
+          "links": [
+            
+          ],
+          "hidden": 0
+        },
+        "gavincaulfield.com": {
+          "img": "mypage.jpg",
+          "desc": "This website! Built in Jan 2025 via React framework, GH-Pages, and love <3",
+          "links": [
+            "...", "/secret"
+          ],
+          "hidden": 0
+        },
+        "Restaurant Menu": {
+          "img": "restaurant.jpg",
+          "desc": "A purely frontend React web page built with my group mates for CISC275 - Intro to Software Engineering. The page mocks a restaurant order page, supporting favorites, ratings, cart ‘orders,’ and much more.",
+          "links": [
+            "Website", "https://andrewango.github.io/restaurant-menu/"
+          ],
+          "hidden": 0
+        },
+        "ICPC 2023": {
+          "img": "icpc.jpg",
+          "desc": "In 2023, I had the privilege of representing University of Delaware CIS at the International Competitive Programming Competition in John Hopkins. My teammates and I diligently brainstormed for 5+ hours on about 8 difficult programming scenarios, submitting solutions as we went.",
+          "links": [],
+          "hidden": 0
         }
       }
     },
@@ -123,30 +185,71 @@
       "why": "Creative outlets for me",
       "projects": {
         "Finding Nolan": {
-          "img": "websitesetup.jpg",
-          "desc": "In 2021-22, I sought out to create a movie with my floormates called Finding Nolan. I wrote, edited, filmed, and directed the entire piece. It is a ~35 min epic on youtube. Check it out. TOOLS: Final Cut Pro, Celtx",
-          "links": {
-            "youtube": "https://www.youtube.com/watch?v=tXKc5YrpZ4M"
-          }
+          "img": "findingnolan.jpg",
+          "desc": "In 2021-22, I sought out to create a movie with my floormates called Finding Nolan. I wrote, edited, filmed, and directed the entire piece. It is a ~35 min epic on youtube. Check it out.",
+          "links": [
+            "YouTube", "https://www.youtube.com/watch?v=tXKc5YrpZ4M"
+          ],
+          "hidden": 0
+        },
+        "Septronix": {
+          "img": "septronixproject.jpg",
+          "desc": "Off a whim and a *drummer wanted* poster, I joined Brandon and Steven’s band Septronix in 2023. In the last two years, the three of us have bonded to a great trio, working on live music, playing at gigs, and developing original songs for studio release. As of January 2025, we have release one single, No More Chances, with an EP on the way!",
+          "links": [
+            "Spotify", "https://open.spotify.com/artist/4M1xFt5CVBJlL5VkWCX4Jd"
+          ],
+          "hidden": 0
+        },
+        "The Diner": {
+          "img": "diner.jpg",
+          "desc": "A collaborative video created by my group for my final in DANC209 - Dance in Film. The video illustrates the deficit stalking may have on somebody. Selected from the class and presented at the end of the year showcase, Last Chance to Dance.",
+          "links": [
+            "Video", "https://drive.google.com/file/d/1pBo8JEaoi3qPXhftr8rPPACy76TxAqRD/view?usp=sharing"
+          ],
+          "hidden": 0
+        },
+        "Percussion & Drums": {
+          "img": "drums.jpg",
+          "desc": "Began playing percussion in 2013, drums in 2016, and haven’t put either down since.",
+          "links": [
+            
+          ],
+          "hidden": 0
+        },
+        "Piano": {
+          "img": "piano.jpg",
+          "desc": "Began playing piano in 2016, self taught.",
+          "links": [
+
+          ],
+          "hidden": 0
+        },
+        "Other instruments": {
+          "img": "otherinstruments.jpg",
+          "desc": "There are other instruments I am capable of playing, but don’t consider my main instruments. These include guitar, ukulele, trumpet, and bass (unless you include the recorder too 😉)",
+          "links": [
+
+          ],
+          "hidden": 0
         }
       }
     },
     "about": {
-      "bio": {
+      "human": {
         "img": "memountain.jpg",
         "text": "Driven by creativity, curiosity, and neurodivergency, Gavin strives to create and produce projects to the best of his ability. Every detail, from text font to color scheme, matters to Gavin. Seeking creative outlets from as young as 7 years old, he manages to combine his intellectual abilities with his creativity in his projects, work, and hobbies.",
         "color": "#49C6E5",
         "order": 0,
-        "link": ["Github", "https://github.com/gavincaul"]
+        "link": []
       },
-      "github": {
+      "programmer": {
         "img": "coding.jpg",
-        "text": "Attached is the GitHub of Gavin. He specializes in many languages, including Python, C/C++, JS/TSX, etc. Like most projects, Gavin strives for perfection in his code, not dropping a project until it is complete to his measure. Additionally, Gavin frequently will go on a coding binge to exercise his brain, before or after picking up one of his creative arts. \nPICTURED: Gavin and his friend Eli celebrating their in 2024.",
+        "text": "Attached is the GitHub of Gavin. He specializes in many languages, including Python, C/C++, JS/TSX, etc. Like most projects, Gavin strives for perfection in his code, not dropping a project until it is complete to his measure. Additionally, Gavin frequently will go on a coding binge to exercise his brain, before or after picking up one of his creative arts. \n\nPICTURED: Gavin and his friend Eli celebrating their hackathon submission <a style='color: white;' href='https://www.gavincaulfield.com/experience/potpourri#holoflash' target='_blank' rel='noopener noreferrer'>HoloFlash</a> in 2024.",
         "color": "#7A6174",
         "order": 1,
-        "link": ["Hackathon Project", "https://devpost.com/software/holoflash"]
+        "link": ["Hackathon Project", "https://devpost.com/software/holoflash","Github", "https://github.com/gavincaul"]
       },
-      "music": {
+      "musician": {
         "img": "septronix.jpg",
         "text": "From a young age, Gavin was driven by music. He picked up percussion in 4th grade and hasn't put it down since. From then, he has picked up numerous instruments like Piano and Guitar. Additionally, his band (pictured left) Septronix has released their latest single, 'No More Chances', check it out!",
         "color": "#F49F0A",
@@ -172,18 +275,19 @@
           "spotify/projects/Mix Maker",
           "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)",
           "potpourri/projects/HoloFlash",
-          "potpourri/projects/WebsiteSetup"
+          "potpourri/projects/WebsiteSetup",
+          "potpourri/projects/ICPC 2023"
         ]
       },
       "C": {
         "time": "3 years",
         "experience": 3,
-        "projects": []
+        "projects": ["potpourri/projects/ICPC 2023"]
       },
       "C++": {
         "time": "3 years",
         "experience": 4,
-        "projects": []
+        "projects": ["potpourri/projects/ICPC 2023"]
       },
       "Java": {
         "time": "3 years",
@@ -197,7 +301,9 @@
           "potpourri/projects/HoloFlash",
           "potpourri/projects/WebsiteSetup",
           "potpourri/projects/ColtonCaulfield.com",
-          "spotify/projects/Spotify Album Wheel Spinner"
+          "potpourri/projects/Restaurant Menu",
+          "spotify/projects/Spotify Album Wheel Spinner",
+          "potpourri/projects/gavincaulfield.com"
         ]
       },
       "Typescript": {
@@ -207,7 +313,9 @@
           "potpourri/projects/HoloFlash",
           "potpourri/projects/WebsiteSetup",
           "potpourri/projects/ColtonCaulfield.com",
-          "spotify/projects/Spotify Album Wheel Spinner"
+          "potpourri/projects/Restaurant Menu",
+          "spotify/projects/Spotify Album Wheel Spinner",
+          "potpourri/projects/gavincaulfield.com"
         ]
       },
       "Csharp": {
@@ -215,7 +323,10 @@
         "experience": 5,
         "projects": [
           "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
-          "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments"
+          "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+          "work/projects/Human-Computer Interaction Lab Research Assistant",
+          "research/projects/Virtual Patient Simulation for Nursing Students",
+          "research/projects/ChatGPT-assisted Medical Examination training in Mixed Reality"
         ]
       },
       "R": {
@@ -223,7 +334,10 @@
         "experience": 2,
         "projects": [
           "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
-          "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments"
+          "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+          "work/projects/Human-Computer Interaction Lab Research Assistant",
+          "research/projects/Virtual Patient Simulation for Nursing Students",
+          "research/projects/ChatGPT-assisted Medical Examination training in Mixed Reality"
         ]
       },
       "SQL": {
@@ -234,7 +348,13 @@
       "HTML/CSS": {
         "time": "3 years",
         "experience": 4,
-        "projects": []
+        "projects": [
+          "potpourri/projects/Restaurant Menu",
+          "potpourri/projects/HoloFlash",
+          "potpourri/projects/WebsiteSetup",
+          "potpourri/projects/ColtonCaulfield.com",
+          "potpourri/projects/gavincaulfield.com"
+        ]
       },
       "Bash": {
         "time": "3 years",
@@ -249,7 +369,9 @@
         "experience": 5,
         "projects": [
           "potpourri/projects/WebsiteSetup",
-          "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)"
+          "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)",
+          "work/projects/Human-Computer Interaction Lab Research Assistant",
+          "potpourri/projects/gavincaulfield.com"
         ]
       },
       ".NET": {
@@ -257,7 +379,10 @@
         "experience": 4,
         "projects": [
           "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
-          "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments"
+          "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+          "work/projects/Human-Computer Interaction Lab Research Assistant",
+          "research/projects/Virtual Patient Simulation for Nursing Students",
+          "research/projects/ChatGPT-assisted Medical Examination training in Mixed Reality"
         ]
       },
       "Parallel Programming": {
@@ -272,7 +397,10 @@
         "experience": 3,
         "projects": [
           "potpourri/projects/ColtonCaulfield.com",
-          "spotify/projects/Spotify Album Wheel Spinner"
+          "spotify/projects/Spotify Album Wheel Spinner",
+          "potpourri/projects/Restaurant Menu",
+          "work/projects/Human-Computer Interaction Lab Research Assistant",
+          "potpourri/projects/gavincaulfield.com"
         ]
       },
       "Git": {
@@ -283,7 +411,12 @@
           "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
           "potpourri/projects/ColtonCaulfield.com",
           "potpourri/projects/HoloFlash",
-          "potpourri/projects/WebsiteSetup"
+          "potpourri/projects/WebsiteSetup",
+          "potpourri/projects/Restaurant Menu",
+          "work/projects/Human-Computer Interaction Lab Research Assistant",
+          "potpourri/projects/gavincaulfield.com",
+          "research/projects/Virtual Patient Simulation for Nursing Students",
+          "research/projects/ChatGPT-assisted Medical Examination training in Mixed Reality"
         ]
       },
       "Virtual/Augmented Reality": {
@@ -291,7 +424,9 @@
         "experience": 3.5,
         "projects": [
           "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
-          "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality"
+          "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
+          "work/projects/Human-Computer Interaction Lab Research Assistant",
+          "research/projects/ChatGPT-assisted Medical Examination training in Mixed Reality"
         ]
       },
       "React": {
@@ -301,7 +436,8 @@
           "spotify/projects/Spotify Album Wheel Spinner",
           "potpourri/projects/ColtonCaulfield.com",
           "potpourri/projects/HoloFlash",
-          "potpourri/projects/WebsiteSetup"
+          "potpourri/projects/WebsiteSetup",
+          "potpourri/projects/Restaurant Menu"
         ]
       },
       "Netlify": {
@@ -315,7 +451,8 @@
         "projects": [
           "potpourri/projects/ColtonCaulfield.com",
           "potpourri/projects/HoloFlash",
-          "potpourri/projects/WebsiteSetup"
+          "potpourri/projects/WebsiteSetup",
+          "potpourri/projects/gavincaulfield.com"
         ]
       },
       "Network Management": {
@@ -324,7 +461,8 @@
         "projects": [
           "potpourri/projects/ColtonCaulfield.com",
           "potpourri/projects/HoloFlash",
-          "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)"
+          "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)",
+          "work/projects/Human-Computer Interaction Lab Research Assistant"
         ]
       },
       "REST API": {
@@ -359,7 +497,11 @@
           "spotify/projects/LastFM Management",
           "spotify/projects/Mix Maker",
           "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
-          "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality"
+          "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
+          "work/projects/Human-Computer Interaction Lab Research Assistant",
+          "potpourri/projects/gavincaulfield.com",
+          "research/projects/Virtual Patient Simulation for Nursing Students",
+          "research/projects/ChatGPT-assisted Medical Examination training in Mixed Reality"
         ]
       },
       "CLI": {
@@ -401,7 +543,10 @@
         "experience": 5,
         "projects": [
           "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
-          "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality"
+          "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
+          "work/projects/Human-Computer Interaction Lab Research Assistant",
+          "research/projects/Virtual Patient Simulation for Nursing Students",
+          "research/projects/ChatGPT-assisted Medical Examination training in Mixed Reality"
         ]
       },
       "Oracle": {
@@ -423,7 +568,11 @@
           "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
           "work/projects/HenHacks 2025 (Apr 2024 - May 2025)",
           "work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)",
-          "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)"
+          "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)",
+          "potpourri/projects/Restaurant Menu",
+          "work/projects/Human-Computer Interaction Lab Research Assistant",
+          "research/projects/Virtual Patient Simulation for Nursing Students",
+          "research/projects/ChatGPT-assisted Medical Examination training in Mixed Reality"
         ]
       }
     },
@@ -433,7 +582,10 @@
         "experience": 4,
         "projects": [
           "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
-          "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality"
+          "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
+          "work/projects/Human-Computer Interaction Lab Research Assistant",
+          "research/projects/Virtual Patient Simulation for Nursing Students",
+          "research/projects/ChatGPT-assisted Medical Examination training in Mixed Reality"
         ]
       },
       "Data Analysis": {
@@ -442,7 +594,10 @@
         "projects": [
           "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
           "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
-          "potpourri/projects/HoloFlash"
+          "potpourri/projects/HoloFlash",
+          "work/projects/Human-Computer Interaction Lab Research Assistant",
+          "research/projects/Virtual Patient Simulation for Nursing Students",
+          "research/projects/ChatGPT-assisted Medical Examination training in Mixed Reality"
         ]
       },
       "Creative Writing": {
@@ -450,7 +605,9 @@
         "experience": 5,
         "projects": [
           "work/projects/HenHacks 2025 (Apr 2024 - May 2025)",
-          "work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)"
+          "work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)",
+          "work/projects/Human-Computer Interaction Lab Research Assistant",
+          "creative/projects/Septronix"
         ]
       },
       "Report Writing": {
@@ -458,29 +615,75 @@
         "experience": 3,
         "projects": [
           "work/projects/HenHacks 2025 (Apr 2024 - May 2025)",
-          "work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)"
+          "work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)",
+          "work/projects/Human-Computer Interaction Lab Research Assistant",
+          "research/projects/Virtual Patient Simulation for Nursing Students"
         ]
       },
       "Final Cut Pro": {
         "time": "4 years",
         "experience": 4,
-        "projects": ["creative/projects/Finding Nolan"]
+        "projects": [
+          "creative/projects/Finding Nolan",
+          "work/projects/Human-Computer Interaction Lab Research Assistant",
+          "creative/projects/The Diner"
+        ]
       },
       "Adobe Photoshop": {
         "time": "2 years",
         "experience": 2,
-        "projects": ["creative/projects/Finding Nolan"]
+        "projects": [
+          "creative/projects/Finding Nolan",
+          "work/projects/Human-Computer Interaction Lab Research Assistant",
+          "creative/projects/The Diner"
+        ]
       },
       "Public Speaking": {
         "time": "5+ years",
         "experience": 4,
-        "projects": ["work/projects/HenHacks 2025 (Apr 2024 - May 2025)",
-"work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)"]
+        "projects": [
+          "work/projects/HenHacks 2025 (Apr 2024 - May 2025)",
+          "work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)",
+          "work/projects/Human-Computer Interaction Lab Research Assistant"
+        ]
       },
       "Musical Abilities": {
         "time": "10+ years",
         "experience": 5,
-        "projects": []
+        "projects": [
+          "creative/projects/Septronix",
+          "creative/projects/Percussion & Drums",
+          "creative/projects/Piano"
+        ]
+      },
+      "Teamwork": {
+        "time": "10+ years",
+        "experience": 5,
+        "projects": [
+          "creative/projects/Septronix",
+          "potpourri/projects/ICPC 2023",
+          "work/projects/HenHacks 2025 (Apr 2024 - May 2025)",
+          "work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)",
+          "creative/projects/The Diner"
+        ]
+      },
+      "Leadership": {
+        "time": "10+ years",
+        "experience": 5,
+        "projects": [
+          "work/projects/HenHacks 2025 (Apr 2024 - May 2025)",
+          "work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)"
+        ]
+      },
+      "Communication": {
+        "time": "10+ years",
+        "experience": 5,
+        "projects": [
+          "potpourri/projects/ICPC 2023",
+          "work/projects/Human-Computer Interaction Lab Research Assistant",
+          "work/projects/HenHacks 2025 (Apr 2024 - May 2025)",
+          "work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)"
+        ]
       }
     }
   },

@@ -11,6 +11,23 @@
   justify-content: center;
   align-items: center;
   margin-top: 5rem;
+  position: relative;
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+}
+canvas {
+  width: 100%;
+  height: auto;
+}
+@media (max-width: 600px) {
+  .canvas-container {
+    max-width: 90%;
+  }
+  canvas {
+    width: 90%;
+    height: auto;
+  }
 }
 
 .popupControls {
@@ -110,91 +127,166 @@ button.savebutton img {
 }
 
 .historyDisplay {
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    top: 5rem;
-    margin-left: 56rem;
-    animation: fadeIn 0.5s;
-    max-height: 40vh;
-    overflow-y: scroll;
-    overflow-x: hidden;
-    width: auto;
-  }
-  
-  .historyItem img {
-    width: 90px;
-    height: 40px;
-    border: 4px ridge rgb(180, 55, 55);
-  }
-  
-  .clearsesh {
-    position: absolute;
-    top: 0px; 
-    right: 0px;
-    z-index: 10;
-  }
-  
-  button.clearsesh {
-    width: 22px;
-    height: 22px;
-    background-color: rgb(255, 74, 83);
-    transition: transform 0.1s ease;
-    border: 1px ridge red;
-    display: flex; 
-    justify-content: center; 
-    align-items: center; 
-  }
-  button.clearsesh img {
-    width: 15px;
-    height: auto;
-  }
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 5rem;
+  margin-left: 56rem;
+  animation: fadeIn 0.5s;
+  max-height: 40vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  width: auto;
+}
 
+.historyItem img {
+  width: 90px;
+  height: 40px;
+  border: 4px ridge rgb(180, 55, 55);
+}
 
+.clearsesh {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  z-index: 10;
+}
+
+button.clearsesh {
+  width: 22px;
+  height: 22px;
+  background-color: rgb(255, 74, 83);
+  transition: transform 0.1s ease;
+  border: 1px ridge red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+button.clearsesh img {
+  width: 15px;
+  height: auto;
+}
+
+.aboutItems {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8rem;
+  row-gap: 10rem;
+  margin-bottom: 43rem;
+}
+
+.aboutItem {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 20px;
+  align-items: center;
+  width: 50vw;
+}
+
+.aboutItem img {
+  width: 75%;
+  height: auto;
+  border: 4px ridge;
+  grid-column: 1;
+  grid-row: span 5;
+}
+
+.aboutItem h1 {
+  grid-column: 2;
+  grid-row: 1;
+  font-size: 2vw;
+  color: white;
+}
+
+.aboutItem p {
+  grid-column: 2;
+  grid-row: 2 span 3;
+  font-size: 1vw;
+  color: white;
+}
+
+.aboutItem a {
+  grid-column: 2;
+  grid-row: 5;
+  font-size: 1vw;
+  color: white;
+}
+
+.aboutItemFlip {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  column-gap: 20px;
+  align-items: center;
+  width: 50vw;
+}
+
+.aboutItemFlip img {
+  width: 75%;
+  height: auto;
+  border: 4px ridge;
+  grid-column: 2;
+  grid-row: span 5;
+  justify-self: end;
+}
+
+.aboutItemFlip h1 {
+  grid-column: 1;
+  grid-row: 1;
+  font-size: 2vw;
+  color: white;
+}
+
+.aboutItemFlip p {
+  grid-column: 1;
+  grid-row: 2 span 5;
+  font-size: 1vw;
+  color: white;
+}
+
+.aboutItemFlip a {
+  grid-column: 1;
+  grid-row: 5;
+  font-size: 1vw;
+  color: white;
+}
+
+@media (max-width: 768px) {
   .aboutItems{
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    margin-top: 5rem;
-    row-gap: 50px;
-    margin-bottom: 43rem;
+    margin-bottom: 20rem;
+    row-gap: 5rem;
   }
-
   .aboutItem {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: auto; 
-    column-gap: 20px;
-    align-items: center;
-    width: 60vw;
+    width: 90vw;
   }
-  
   .aboutItem img {
-    width: 75%;
-    height: auto;
-    border: 4px ridge;
-    grid-column: 1; 
-    grid-row: span 3; 
+    width: 100%;
   }
-  
   .aboutItem h1 {
-    grid-column: 2; 
-    grid-row: 1;
-    font-size: 2rem;
-    color: white;
+    font-size: 4vw;
   }
-  
   .aboutItem p {
-    grid-column: 2;
-    grid-row: 2;
-    font-size: 1.5rem;
-    color: white;
+    font-size: 3vw;
   }
-  
+  .aboutItemFlip {
+    width: 90vw;
+  }
   .aboutItem a {
-    grid-column: 2;
-    grid-row: 3;
-    font-size: 1.5rem;
-    color: white;
+    font-size: 3vw;
   }
+  .aboutItemFlip img {
+    width: 100%;
+  }
+  .aboutItemFlip h1 {
+    font-size: 4vw;
+  }
+  .aboutItemFlip p {
+    font-size: 3vw;
+  }
+  .aboutItemFlip a {
+    font-size: 3vw;
+  }
+}

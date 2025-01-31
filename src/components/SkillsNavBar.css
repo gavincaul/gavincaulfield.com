@@ -30,3 +30,27 @@
     background: rgb(100, 150, 200); 
     color: white;
 }
+@media (max-width: 768px) {  
+    .navSkills {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+    }
+
+    .skillsLink {
+        font-size: 14px;  
+        padding: 8px 15px;  
+        margin-bottom: 1rem; 
+    }
+
+    .skillsLink:hover {
+        transform: scale(1.03); 
+    }
+
+    .skillsLink.active {
+        background: rgb(100, 150, 200);
+        color: white;
+    }
+}

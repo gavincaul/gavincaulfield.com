@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import NavBar from "../components/NavBar.tsx";
 import myresume from "../data/Caulfield, Gavin Resume.jpg";
 import "./Resume.css";
@@ -27,7 +27,34 @@ export default function Resume() {
           Accolades
         </button>
       </div>
-      <img src={myresume} alt="Resume" className="resume-image" />
+      <div className="button-container">
+        <a
+          href="https://www.linkedin.com/in/gavincaulfield"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="social-button button-linkedin">LinkedIn</button>
+        </a>
+        <a
+          href="https://github.com/gavincaul"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="social-button button-github">GitHub</button>
+        </a>
+        <a
+          href="https://scholar.google.com/citations?user=IdAPR7sAAAAJ&hl=en"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <button className="social-button button-scholar">
+            Google Scholar
+          </button>
+        </a>
+      </div>
+      <a href={myresume} target="_blank" rel="noopener noreferrer">
+        <img src={myresume} alt="Resume" className="resume-image" />
+      </a>
     </div>
   );
 }

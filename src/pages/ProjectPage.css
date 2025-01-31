@@ -6,6 +6,7 @@
   color: white;
   text-align: center;
   margin-top: 4rem;
+  text-transform: capitalize;
 }
 
 .why{
@@ -13,7 +14,7 @@
     text-align: center;
     font-size: larger;
     margin-top: 1rem;
-    font-family: Ubuntu, sans-serif;
+    font-family: Source Sans 3, sans-serif;
     width:50%;
     margin-bottom: 5rem;
 }
@@ -39,5 +40,10 @@
   .projectElement {
     width: calc(100% / 2 - 20px); 
     margin: 10px;
+  }
+  @media (max-width: 768px) {
+    .why{
+      width: 90%;
+    }
   }
   
