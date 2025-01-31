@@ -14,6 +14,7 @@ export default function Home() {
   const [badgeAnim, setBadgeAnim] = useState(false);
   // eslint-disable-next-line
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+    // eslint-disable-next-line
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
