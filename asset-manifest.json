@@ -1,17 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.3925a47b.css",
-    "main.js": "/static/js/main.78a39d7a.js",
-    "static/js/488.a3fd151d.chunk.js": "/static/js/488.a3fd151d.chunk.js",
+    "main.css": "/static/css/main.084106b7.css",
+    "main.js": "/static/js/main.775fcfaa.js",
+    "static/js/488.90a49996.chunk.js": "/static/js/488.90a49996.chunk.js",
     "static/media/work.jpg": "/static/media/work.a3e12f3bcfda915c124a.jpg",
+    "static/media/septronixproject.jpg": "/static/media/septronixproject.e62488e5fde8996a7bcb.jpg",
     "static/media/potpurri.jpg": "/static/media/potpurri.fd641c127f7ed80cbf62.jpg",
     "static/media/research.jpg": "/static/media/research.9eedbaf0e91f7b9df206.jpg",
     "static/media/creative.jpg": "/static/media/creative.881e3f54eda4bd61f7d1.jpg",
+    "static/media/otherinstruments.jpg": "/static/media/otherinstruments.ad448f12aadd68f031b4.jpg",
     "static/media/Caulfield, Gavin Resume.jpg": "/static/media/Caulfield, Gavin Resume.6cfe320fd522d0ee3a6e.jpg",
     "static/media/septronix.jpg": "/static/media/septronix.05515f4b9e0c830916cd.jpg",
     "static/media/cpus.jpg": "/static/media/cpus.26cf1bec065a8f297f14.jpg",
+    "static/media/mypage.jpg": "/static/media/mypage.b14bfdcc874b9d20ad00.jpg",
     "static/media/berkley.jpg": "/static/media/berkley.0ce059c59474a7cfeae8.jpg",
     "static/media/memountain.jpg": "/static/media/memountain.6ceddb65d93f71e07ead.jpg",
+    "static/media/drums.jpg": "/static/media/drums.a402410dd3d00288e389.jpg",
     "static/media/coding.jpg": "/static/media/coding.222cb4b8550e18f73133.jpg",
     "static/media/enhancing.jpg": "/static/media/enhancing.3b91c5d33facc3becc39.jpg",
     "static/media/towards.jpg": "/static/media/towards.5adb5173c367d24bc129.jpg",
@@ -24,9 +28,17 @@
     "static/media/orel.png": "/static/media/orel.7f9e43449d2a917ad03e.png",
     "static/media/lfmspot.jpg": "/static/media/lfmspot.7f6025b38afbb4f686c7.jpg",
     "static/media/spotifywheel.jpg": "/static/media/spotifywheel.fa60e4e59b0b79909ee9.jpg",
+    "static/media/hcilab.jpg": "/static/media/hcilab.260d73ef2c282b644dbd.jpg",
+    "static/media/icpc.jpg": "/static/media/icpc.2c6034a263343c0a3c5a.jpg",
+    "static/media/piano.jpg": "/static/media/piano.67ace7beae6e8d0c11d7.jpg",
+    "static/media/midwifery.jpg": "/static/media/midwifery.289a41f4a23cf2b87cb3.jpg",
     "static/media/coltoncaulfield.jpg": "/static/media/coltoncaulfield.62f3725cff27ada939f7.jpg",
+    "static/media/restaurant.jpg": "/static/media/restaurant.f70296109bf56ab4797b.jpg",
+    "static/media/MRChat.jpg": "/static/media/MRChat.29dd0b995958f6bb6d07.jpg",
+    "static/media/findingnolan.jpg": "/static/media/findingnolan.c6ef314757b8d0fcc030.jpg",
     "static/media/myhouse.jpg": "/static/media/myhouse.3e150e0bf40ee6511a62.jpg",
     "static/media/henhacks.jpg": "/static/media/henhacks.a5b714dc3bfc660ad19c.jpg",
+    "static/media/diner.jpg": "/static/media/diner.bf5c23fb110ed117417f.jpg",
     "static/media/LinkedInPFP.jpg": "/static/media/LinkedInPFP.ab5bd2e66fd2446b07a8.jpg",
     "static/media/mix.jpg": "/static/media/mix.9566403638b5bb1dc4b2.jpg",
     "static/media/gotg.jpeg": "/static/media/gotg.890e31595d7143173598.jpeg",
@@ -34,12 +46,12 @@
     "static/media/chicago.jpeg": "/static/media/chicago.2dd09fe4ed1da1e35d86.jpeg",
     "static/media/clear.png": "/static/media/clear.bc10b6da1e09534a0c3e.png",
     "index.html": "/index.html",
-    "main.3925a47b.css.map": "/static/css/main.3925a47b.css.map",
-    "main.78a39d7a.js.map": "/static/js/main.78a39d7a.js.map",
-    "488.a3fd151d.chunk.js.map": "/static/js/488.a3fd151d.chunk.js.map"
+    "main.084106b7.css.map": "/static/css/main.084106b7.css.map",
+    "main.775fcfaa.js.map": "/static/js/main.775fcfaa.js.map",
+    "488.90a49996.chunk.js.map": "/static/js/488.90a49996.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.3925a47b.css",
-    "static/js/main.78a39d7a.js"
+    "static/css/main.084106b7.css",
+    "static/js/main.775fcfaa.js"
   ]
 }
