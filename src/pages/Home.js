@@ -29,6 +29,7 @@ export default function Home() {
     return () => {
       window.removeEventListener('resize', handleResize);
     };
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
     window.scrollTo(0, 0);
