@@ -15,7 +15,7 @@ export default function Skill({ name, time, experience, projects }) {
 
   const handleSkillMap = () => {
     if (mappedProjects["projects"]) {
-      navigate(`/experience/${name}#projects`, { state: { mapProjects:mappedProjects } });
+      navigate(`/experience/${encodeURIComponent(name)}#projects`, { state: { mapProjects:mappedProjects } });
     }
   };
 
@@ -29,6 +29,7 @@ export default function Skill({ name, time, experience, projects }) {
           projectData = projectData[index];
         });
         const name = projectPath.split("/").pop();
+        if(projectData===undefined){console.log(projectPath, name)}
         acc[name] = {
           //@ts-ignore
           img: projectData.img,
@@ -56,12 +57,12 @@ export default function Skill({ name, time, experience, projects }) {
         <div>
           <div className="skillAttributeBlock" style={{ "--id": 5 }}>
             <div className="item">
-              Time: {time} 
+            <span className="label">Time: </span>&nbsp;{time} 
             </div>
           </div>
           <div className="skillAttributeBlock" style={{ "--id": 8 }}>
             <div className="item">
-              Experience:
+            <span className="label">Experience:</span> 
               <StarRating rating={experience} />
             </div>
           </div>

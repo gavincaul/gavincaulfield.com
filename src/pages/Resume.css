@@ -8,10 +8,52 @@
   align-items: center;
 }
 .resume-image {
-  margin-top: 3rem;
+  margin-top: 1rem;
   margin-bottom: 10rem;
-    width: 45%;
+  width: 45%;
   height: auto;
   object-fit: contain;
   border: ridge 3mm rgba(110, 107, 107, 0.6);
+}
+
+.button-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 10px;
+  width: 10%;
+  min-width: fit-content;
+  min-height: fit-content;
+  margin-top: 5em;
+}
+
+.social-button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button-linkedin {
+  background-color: #0077b5;
+}
+
+.button-github {
+  background-color: #333;
+}
+
+.button-scholar {
+  background-color: #1c5a57; 
+}
+
+.social-button:hover {
+  opacity: 0.8;
+}
+@media (max-width: 768px) {
+  .resume-image{
+    width: 97%;
+    border: ridge 2mm rgba(110, 107, 107, 0.6);
+  }
 }

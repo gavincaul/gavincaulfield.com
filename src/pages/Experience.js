@@ -16,6 +16,7 @@ export default function Experience() {
     window.scrollTo(0, 0);
   }, []);
   function handleProjectClick(id) {
+    console.log("handling");
     navigate(`/experience/${id}`);
   }
   function handleSkillsClick() {
@@ -80,6 +81,7 @@ export default function Experience() {
           <div
             key={project.id}
             className="project"
+            onClick={() => handleProjectClick(project.id)}
             onMouseEnter={() => setHoveredImage(project.id)}
             onMouseLeave={() => setHoveredImage(null)}
           >

@@ -16,6 +16,8 @@ export default function About() {
   const [historyItems, setHistoryItems] = useState([]);
   const [isHistoryVisible, setIsHistoryVisible] = useState(false);
   const ctxRef = useRef(null);
+  // eslint-disable-next-line
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -533,6 +535,20 @@ export default function About() {
     ],
   ];
 
+  const createPattern = (ctx) => {
+    const patternCanvas = document.createElement("canvas");
+    const patternCtx = patternCanvas.getContext("2d");
+    patternCanvas.width = 20;
+    patternCanvas.height = 20;
+
+    patternCtx.fillStyle = "white";
+    patternCtx.fillRect(0, 0, 20, 20);
+    patternCtx.strokeStyle = "lightgray";
+    patternCtx.strokeRect(0, 0, 40, 40);
+
+    return ctx.createPattern(patternCanvas, "repeat");
+  };
+
   useEffect(
     () => {
       const canvas = canvasRef.current;
@@ -543,7 +559,7 @@ export default function About() {
       ctx.strokeStyle = "black";
       function clearBoard() {
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-        ctx.fillStyle = "white";
+        ctx.fillStyle = createPattern(ctx);
         ctx.fillRect(0, 0, canvas.width, canvas.height);
         setIsClear(true);
       }
@@ -596,16 +612,19 @@ export default function About() {
       };
 
       // Add event listeners
-      canvas.addEventListener("mousedown", startDrawing);
-      canvas.addEventListener("mousemove", draw);
-      canvas.addEventListener("mouseup", stopDrawing);
-      canvas.addEventListener("mouseleave", stopDrawing);
-
+      if (!isMobile) {
+        canvas.addEventListener("mousedown", startDrawing);
+        canvas.addEventListener("mousemove", draw);
+        canvas.addEventListener("mouseup", stopDrawing);
+        canvas.addEventListener("mouseleave", stopDrawing);
+      }
       return () => {
-        canvas.removeEventListener("mousedown", startDrawing);
-        canvas.removeEventListener("mousemove", draw);
-        canvas.removeEventListener("mouseup", stopDrawing);
-        canvas.removeEventListener("mouseleave", stopDrawing);
+        if (!isMobile) {
+          canvas.removeEventListener("mousedown", startDrawing);
+          canvas.removeEventListener("mousemove", draw);
+          canvas.removeEventListener("mouseup", stopDrawing);
+          canvas.removeEventListener("mouseleave", stopDrawing);
+        }
       };
     },
     // eslint-disable-next-line
@@ -616,7 +635,7 @@ export default function About() {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = "white";
+    ctx.fillStyle = createPattern(ctx);
     ctx.fillRect(0, 0, canvas.width, canvas.height);
     setIsClear(true);
   };
@@ -661,7 +680,7 @@ export default function About() {
           height="200"
           style={{ border: "4px ridge rgb(180, 55, 55)" }}
         />
-        {isLoaded && (
+        {!isMobile && isLoaded && (
           <div className="popupControls">
             <div className="popup">Want to try?</div>
             <button className="clear" onClick={clearBoard}>
@@ -672,14 +691,14 @@ export default function About() {
             </button>
           </div>
         )}
-        {!isClear && (
+        {!isMobile && !isClear && (
           <div className="save">
             <button className="savebutton" onClick={() => save(saveValue)}>
               <img src={saveimg} alt="save" />
             </button>
           </div>
         )}
-        {isHistoryVisible && historyItems.length > 0 && (
+        {!isMobile && isHistoryVisible && historyItems.length > 0 && (
           <div className="historyDisplay">
             {historyItems.map((dataURL, index) => (
               <div key={index} className="historyItem">
@@ -699,7 +718,10 @@ export default function About() {
           const picture = require(`../data/imgs/${img}`);
           console.log(picture);
           return (
-            <div className="aboutItem" key={index}>
+            <div
+              className={order === 0 ? "aboutItem" : "aboutItemFlip"}
+              key={index}
+            >
               <img src={picture} alt={key} style={{ borderColor: color }} />
               <h1>{key.charAt(0).toUpperCase() + key.slice(1)}</h1>
               <p
@@ -707,9 +729,26 @@ export default function About() {
                   __html: text.replace(/\n/g, "<br />"),
                 }}
               />
-              <a href={link[1]} target="_blank" rel="noopener noreferrer">
-                {link[0]}
-              </a>
+              <div style={{ display: "flex", gap: "10px" }}>
+                {link.map((l, linkIndex) => {
+                  if (linkIndex % 2 === 0) {
+                    const linkName = l;
+                    const linkURL = link[linkIndex + 1];
+                    return (
+                      <a
+                        key={linkIndex}
+                        href={linkURL}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{ display: "block", margin: "5px 0" }}
+                      >
+                        {linkName}
+                      </a>
+                    );
+                  }
+                  return null;
+                })}
+              </div>
             </div>
           );
         })}

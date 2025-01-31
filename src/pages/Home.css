@@ -173,3 +173,46 @@
   font-size: 40px;
   vertical-align: sub;
 }
+@media (max-width: 768px) {
+  .centerConsole {
+    width: 95%;
+  }
+  .name{
+    margin-bottom: 6rem;
+    line-height: 5rem;
+  }
+  .namebadge{
+    line-height: 1.8rem;
+  }
+  .pfp{
+    border: 1mm ridge rgba(31, 138, 129, 0.6);
+    width: 100%;
+    height: 100%;
+  }
+
+  .stacked-imgs img {
+    width: 111%;
+    height: 111%;
+  }
+  .stacked-imgs{
+    gap: 1rem;
+    margin-right: 1.08rem;
+  }
+  .questions{
+    width: 90%;
+  }
+  .answer{
+    font-size: 18px;
+  }
+  .q{
+    font-size: 30px;
+  }
+}
+@keyframes mobile {
+  from {
+    transform: translate(185px, -330%) scale(0);
+  }
+  to {
+    transform: translate(185px, 50%) scale(1);
+  }
+}

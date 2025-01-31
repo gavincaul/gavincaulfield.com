@@ -14,3 +14,15 @@
 .star.empty {
     color: #808080; 
 }
+@media (max-width: 768px) {  
+    .star {
+        font-size: 1.2rem;
+        color: #ebd038; 
+        
+    }
+    .star-rating {
+        display: flex;
+        gap: 0px; 
+        margin-left: 0rem;
+    }
+}
