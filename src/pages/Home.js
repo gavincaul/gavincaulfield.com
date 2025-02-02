@@ -221,13 +221,13 @@ export default function Home() {
           </div>
           <div className="answer">
             <span className="q">WHERE: </span> Newark, Delaware -- New York, New
-            York;
+            York.
           </div>
           <div className="answer">
             <span className="q">WHEN: </span> Now, today, tomorrow, and always.
           </div>
           <div className="answer">
-            <span className="q">WHY: </span> I can't help my curiosity; it'll kill me one day (^･ｪ･^)
+            <span className="q">WHY: </span> I can't help my curiosity; it'll kill me one day (^･ｪ･^).
           </div>
           <div className="answer">
             <span className="q">HOW: </span> Drink of the month:{" "}

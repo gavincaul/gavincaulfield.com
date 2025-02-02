@@ -15,7 +15,12 @@
   object-fit: contain;
   border: ridge 3mm rgba(110, 107, 107, 0.6);
 }
-
+.resume-container{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+}
 .button-container {
   display: flex;
   justify-content: space-between;
