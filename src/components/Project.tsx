@@ -5,7 +5,7 @@ function Project({ index, img, text, color, links, projectKey }) {  // Destructu
   return (  
     <div className={index === 0 ? "projectItemLeft" : "projectItemRight"}>
       <img src={img} alt={projectKey} style={{ borderColor: color }} />
-      <h1>{projectKey.charAt(0).toUpperCase() + projectKey.slice(1)}</h1>
+      <h1>{projectKey}</h1>
       <p dangerouslySetInnerHTML={{ __html: text.replace(/\n/g, '<br />') }} />
       <div style={{"display": "flex", "gap":"10px", justifyContent: index === 0 ? "flex-start" : "flex-end"}}>
                 {links.map((l, linkIndex) => {

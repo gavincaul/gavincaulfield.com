@@ -18,6 +18,7 @@ export default function Resume() {
   return (
     <div className="background">
       <NavBar />
+
       <div className="title-container">
         <button className="button-45" onClick={handleSkillsClick}>
           Skills
@@ -27,6 +28,7 @@ export default function Resume() {
           Accolades
         </button>
       </div>
+      
       <div className="button-container">
         <a
           href="https://www.linkedin.com/in/gavincaulfield"
@@ -52,9 +54,16 @@ export default function Resume() {
           </button>
         </a>
       </div>
-      <a href={myresume} target="_blank" rel="noopener noreferrer">
-        <img src={myresume} alt="Resume" className="resume-image" />
-      </a>
+
+      <div className="resume-container">
+        <a
+          href={myresume}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img src={myresume} alt="Resume" className="resume-image" />
+        </a>
+      </div>
     </div>
   );
 }

@@ -95,7 +95,7 @@
       }
     },
     "work": {
-      "why": "I’ve worked in many different areas, but my experience at every place has one thing in common—I like to keep busy and take on roles where I can actually make an impact. Whether it’s organizing a hackathon, running events for UD’s CS department, or writing code in research labs and internships, I enjoy being hands-on and problem-solving in real time. Here’s some of what I’ve done.",
+      "why": "I’ve worked in many different areas, but my experience at every place has one thing in common—I like to keep busy and take on roles where I can actually make an impact. Whether it’s organizing a hackathon, running events for UD’s CS department, or writing code in research labs and internships, I enjoy being hands-on and problem-solving in real time. Here’s some of what I’ve accomplished.",
       "projects": {
         "HenHacks 2025 (Apr 2024 - May 2025)": {
           "img": "henhacks.jpg",
@@ -130,7 +130,7 @@
       }
     },
     "potpourri": {
-      "why": "Aside from Spotify, work, and research, I work on projects that don’t fit under a specific category. Here are some of those projects.",
+      "why": "Aside from Spotify, work, and research, I work on projects that don’t fit under a specific category. Following are some of those projects.",
       "projects": {
         "ColtonCaulfield.com": {
           "img": "coltoncaulfield.jpg",
@@ -157,7 +157,7 @@
           ],
           "hidden": 0
         },
-        "gavincaulfield.com": {
+        "GavinCaulfield.com": {
           "img": "mypage.jpg",
           "desc": "This website! Built in Jan 2025 via React framework, GH-Pages, and love <3",
           "links": [
@@ -175,7 +175,7 @@
         },
         "ICPC 2023": {
           "img": "icpc.jpg",
-          "desc": "In 2023, I had the privilege of representing University of Delaware CIS at the International Competitive Programming Competition in John Hopkins. My teammates and I diligently brainstormed for 5+ hours on about 8 difficult programming scenarios, submitting solutions as we went.",
+          "desc": "In 2023, I had the privilege of representing University of Delaware CIS at the International Competitive Programming Competition at John Hopkins. My teammates and I diligently brainstormed for 5+ hours on about 8 difficult programming scenarios, submitting solutions as we went.",
           "links": [],
           "hidden": 0
         }
@@ -186,7 +186,7 @@
       "projects": {
         "Finding Nolan": {
           "img": "findingnolan.jpg",
-          "desc": "In 2021-22, I sought out to create a movie with my floormates called Finding Nolan. I wrote, edited, filmed, and directed the entire piece. It is a ~35 min epic on youtube. Check it out.",
+          "desc": "In 2021-22, I sought out to create a movie with my floormates called <i>Finding Nolan</i>. I wrote, edited, filmed, and directed the entire piece. It is a ~35 min epic on <i>YouTube</i>. Check it out.",
           "links": [
             "YouTube", "https://www.youtube.com/watch?v=tXKc5YrpZ4M"
           ],
@@ -194,7 +194,7 @@
         },
         "Septronix": {
           "img": "septronixproject.jpg",
-          "desc": "Off a whim and a *drummer wanted* poster, I joined Brandon and Steven’s band Septronix in 2023. In the last two years, the three of us have bonded to a great trio, working on live music, playing at gigs, and developing original songs for studio release. As of January 2025, we have release one single, No More Chances, with an EP on the way!",
+          "desc": "Off a whim and a *drummer wanted* poster, I joined Brandon and Steven’s band <i>Septronix</i> in 2023. In the last two years, the three of us have bonded to a great trio, working on live music, playing at gigs, and developing original songs for studio release. As of January 2025, we have release one single, No More Chances, with an EP on the way!",
           "links": [
             "Spotify", "https://open.spotify.com/artist/4M1xFt5CVBJlL5VkWCX4Jd"
           ],
@@ -202,7 +202,7 @@
         },
         "The Diner": {
           "img": "diner.jpg",
-          "desc": "A collaborative video created by my group for my final in DANC209 - Dance in Film. The video illustrates the deficit stalking may have on somebody. Selected from the class and presented at the end of the year showcase, Last Chance to Dance.",
+          "desc": "A collaborative video created by my group for my final in DANC209 - Dance in Film. The video illustrates the deficit stalking may have on somebody. Selected from the class and presented at the end of the year showcase, <i>Last Chance to Dance</i>.",
           "links": [
             "Video", "https://drive.google.com/file/d/1pBo8JEaoi3qPXhftr8rPPACy76TxAqRD/view?usp=sharing"
           ],
@@ -251,7 +251,7 @@
       },
       "musician": {
         "img": "septronix.jpg",
-        "text": "From a young age, Gavin was driven by music. He picked up percussion in 4th grade and hasn't put it down since. From then, he has picked up numerous instruments like Piano and Guitar. Additionally, his band (pictured left) Septronix has released their latest single, 'No More Chances', check it out!",
+        "text": "From a young age, Gavin was driven by music. He picked up percussion in 4th grade and hasn't put it down since. From then, he has picked up numerous instruments like Piano and Guitar. Additionally, his band (pictured left) <i>Septronix</i> has released their latest single, 'No More Chances', check it out!",
         "color": "#F49F0A",
         "order": 0,
         "link": [
