@@ -7,8 +7,10 @@
           "img": "clout.jpg",
           "desc": "The main purpose of this tool is to take spotify songs sent through iMessage, using the library imessage-reader, and add them into a playlist owned by me (or the person who changes the code for themself). However, I also implemented a spreadsheet uploader, supported by a google API, in order to keep track of who sent every song.",
           "links": [
-            "GitHub Repo", "https://github.com/gavincaul/iMessageSpotifyScraper",
-            "Playlist", "https://open.spotify.com/playlist/4hTY6FrGjAl26aw9QzrUzM?si=55346e50ca0d4bc9"
+            "GitHub Repo",
+            "https://github.com/gavincaul/iMessageSpotifyScraper",
+            "Playlist",
+            "https://open.spotify.com/playlist/4hTY6FrGjAl26aw9QzrUzM?si=55346e50ca0d4bc9"
           ],
           "hidden": 0
         },
@@ -16,7 +18,8 @@
           "img": "24.jpg",
           "desc": "In preparation for a 26 hour road trip to Colorado, my fellow music-addicted companion and I insisted on making a playlist for the journey. With ~150 songs each, we knew this playlist would be a mess. So, I took the liberty of creating a program to manage this playlist, including reordering of songs (s.t. Time leads into Great Gig) and balancing the playlist (s.t. we don’t listen Thick as a Brick right into 2112)",
           "links": [
-            "GitHub", "https://github.com/gavincaul/SpotifyProjects/blob/master/24hr.py"
+            "GitHub",
+            "https://github.com/gavincaul/SpotifyProjects/blob/master/24hr.py"
           ],
           "hidden": 0
         },
@@ -24,7 +27,8 @@
           "img": "spotifywheel.jpg",
           "desc": "I have a lot of albums saved on Spotify, and I frequently can’t choose which to listen to. For that, I developed a site that’ll pull from a user’s Spotify account and create a wheel of saved albums to spin. ***N.B. Because of Spotify API settings, the project is not for public use, for that, I need to reach out to Spotify***",
           "links": [
-            "GitHub Repo", "https://github.com/gavincaul/SpotifyAlbumWheelSpin"
+            "GitHub Repo",
+            "https://github.com/gavincaul/SpotifyAlbumWheelSpin"
           ],
           "hidden": 0
         },
@@ -32,7 +36,8 @@
           "img": "loooong.jpg",
           "desc": "I have a playlist titled ‘loooooong’, it’s songs I like that are usually 12+ mins. This program automatically updates the playlist.",
           "links": [
-            "GitHub", "https://github.com/gavincaul/SpotifyProjects/blob/master/autoupdateloooong.py"
+            "GitHub",
+            "https://github.com/gavincaul/SpotifyProjects/blob/master/autoupdateloooong.py"
           ],
           "hidden": 0
         },
@@ -40,7 +45,8 @@
           "img": "lfmspot.jpg",
           "desc": "LastFM is an application that tracks every song you listen to on a platform (for me, it’s Spotify). I integrated the Last FM API to find and remove my least listened to songs from my playlists.",
           "links": [
-            "GitHub", "https://github.com/gavincaul/SpotifyProjects/blob/master/LastFMManage.py"
+            "GitHub",
+            "https://github.com/gavincaul/SpotifyProjects/blob/master/LastFMManage.py"
           ],
           "hidden": 0
         },
@@ -48,7 +54,8 @@
           "img": "mix.jpg",
           "desc": "Do you ever get frustrated with Spotify’s Mix creation? If you’re employed, probably not. I do!!!! For that, I wrote a script that’ll create mixes based on Genres (i.e. Rap) that’ll produce a mix of only songs I KNOW! Now I can listen to my mixes",
           "links": [
-            "GitHub", "https://github.com/gavincaul/SpotifyProjects/blob/master/mixmaker.py"
+            "GitHub",
+            "https://github.com/gavincaul/SpotifyProjects/blob/master/mixmaker.py"
           ],
           "hidden": 0
         }
@@ -61,9 +68,12 @@
           "img": "towards.jpg",
           "desc": "This work presents a VR environment with a generative AI virtual assistant to support human anatomy education, allowing the user to communicate verbally with the virtual assistant. I assisted in the development and testing of the program, along with revision to the submitted paper. Won “Honorable Mention” at the AIxVR 2024 Conference",
           "links": [
-            "Paper", "https://ieeexplore.ieee.org/abstract/document/10445563",
-            "Demo", "https://www.youtube.com/watch?v=hYIlLYu_lpk",
-            "Honorable Mention", "https://sites.udel.edu/hci-lab/2024/01/23/2064/"
+            "Paper",
+            "https://ieeexplore.ieee.org/abstract/document/10445563",
+            "Demo",
+            "https://www.youtube.com/watch?v=hYIlLYu_lpk",
+            "Honorable Mention",
+            "https://sites.udel.edu/hci-lab/2024/01/23/2064/"
           ],
           "hidden": 0
         },
@@ -71,7 +81,8 @@
           "img": "enhancing.jpg",
           "desc": "A program to move physical rehabilitation – specifically balance training – onto an augmented reality platform. Developed the program, led and managed a pilot test of the program, including analysis of the effectiveness of VR vs AR, and created and presented poster at NERIC 2023.",
           "links": [
-            "Poster", "https://www.canva.com/design/DAFqUuJjh2M/XswU-kcsR5MxPFSFznI4Bw/edit?utm_content=DAFqUuJjh2M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+            "Poster",
+            "https://www.canva.com/design/DAFqUuJjh2M/XswU-kcsR5MxPFSFznI4Bw/edit?utm_content=DAFqUuJjh2M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
           ],
           "hidden": 0
         },
@@ -79,7 +90,8 @@
           "desc": "This project aims to develop a comprehensive training platform for women’s health and sexual health. The platform will provide nursing students with various scenarios to help them acquire different skills and competencies. Developed in Unity 3D, the program allows communication between a Midwife and nursing students in training via a virtual avatar.",
           "img": "midwifery.jpg",
           "links": [
-            "Demo","https://gitlab.eecis.udel.edu/hci-lab/midwife-project#english"
+            "Demo",
+            "https://gitlab.eecis.udel.edu/hci-lab/midwife-project#english"
           ],
           "hidden": 0
         },
@@ -87,8 +99,10 @@
           "desc": "This project used the Microsoft Hololens 2 to create a quiz environment to probe medical students on anatomical questions related to their field. In the project were two mediums of communication for ChatGPT: a blackboard that supported TTS and STT, and a GPT-embodied virtual avatar.",
           "img": "MRChat.jpg",
           "links": [
-            "GitHub Repo", "https://github.com/HCI-UD/ChatGPTMR",
-            "Demo", "https://github.com/HCI-UD/ChatGPTMR?tab=readme-ov-file#demo-video"
+            "GitHub Repo",
+            "https://github.com/HCI-UD/ChatGPTMR",
+            "Demo",
+            "https://github.com/HCI-UD/ChatGPTMR?tab=readme-ov-file#demo-video"
           ],
           "hidden": 0
         }
@@ -100,17 +114,13 @@
         "HenHacks 2025 (Apr 2024 - May 2025)": {
           "img": "henhacks.jpg",
           "desc": "I am responsible for the volunteers at UD’s 3rd annual Hackathon, HenHacks 2025. Under this role, I recruit, train, and manage over 80+ volunteers for the near 36 hour event.",
-          "links": [
-            "Website", "https://www.henhackshackathon.com/"
-          ],
+          "links": ["Website", "https://www.henhackshackathon.com/"],
           "hidden": 0
         },
         "UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)": {
           "img": "cpus.jpg",
           "desc": "As a UD CPU, I am responsible for collaborating with other undergraduate students to create an inviting and exciting Computer and Information Science community at UD. Some of the events I have managed include...\n\nCISC Career Fair (pictured), Whiteboard interview preparation, Meet Your Professors!, Personal Project Showcase, Career Readiness, Concentration/Advising Nights, and more!",
-          "links": [
-            "Instagram", "https://www.instagram.com/udcpus/"
-          ],
+          "links": ["Instagram", "https://www.instagram.com/udcpus/"],
           "hidden": 0
         },
         "Berkely Technology Services Command Center Analyst (June 2024 - November 2024)": {
@@ -122,9 +132,7 @@
         "Human-Computer Interaction Lab Research Assistant": {
           "img": "hcilab.jpg",
           "desc": "At the HCI Lab, I primarily developed Unity programs in C# and under .NET for various VR related projects. Additionally, I worked with motion-tracking software and facial scanning and rendering within my projects. Outside of development, I assisted in writing and editing research papers in the lab, including my PI’s NSF Career grant (which she was awarded).",
-          "links": [
-            "HCI Website", "https://sites.udel.edu/hci-lab/"
-          ],
+          "links": ["HCI Website", "https://sites.udel.edu/hci-lab/"],
           "hidden": 0
         }
       }
@@ -135,42 +143,36 @@
         "ColtonCaulfield.com": {
           "img": "coltoncaulfield.jpg",
           "desc": "A website dedicated to the works of my brother, Colton Caulfield. Developed and maintained by me; design and data managed by Colton.",
-          "links": [
-            "Website", "https://www.coltoncaulfield.com"
-          ],
+          "links": ["Website", "https://www.coltoncaulfield.com"],
           "hidden": 0
         },
         "HoloFlash": {
           "img": "holoflash.jpg",
           "desc": "Winner of Best Use of AI in Education at 2024 HenHacks \n\nOur application empowers students by utilizing Googles Gemini AI to swiftly convert audio files, pdfs, and images into flashcards relating to the inputs subject matter. On top of this, users can also review their flashcards in augmented reality using the Microsoft Hololens, hence the name of our project \"Holo-Flash\". Developed the HoloLens AR application, along with REST development for the site.",
           "links": [
-            "github", "https://github.com/janahmedprg/flashcards",
-            "devpost", "https://devpost.com/software/holoflash"
+            "github",
+            "https://github.com/janahmedprg/flashcards",
+            "devpost",
+            "https://devpost.com/software/holoflash"
           ],
           "hidden": 0
         },
         "WebsiteSetup": {
           "img": "websitesetup.jpg",
           "desc": "Setting up a website can be a hassle, what if you could do it for free in just a few clicks? WebsiteSetup.py is a script I wrote to help me with that. This script deploys a React Page hosted on GitHub Pages, All managed on CLI.",
-          "links": [
-            
-          ],
+          "links": [],
           "hidden": 0
         },
         "GavinCaulfield.com": {
           "img": "mypage.jpg",
           "desc": "This website! Built in Jan 2025 via React framework, GH-Pages, and love <3",
-          "links": [
-            "...", "/secret"
-          ],
+          "links": ["...", "/secret"],
           "hidden": 0
         },
         "Restaurant Menu": {
           "img": "restaurant.jpg",
           "desc": "A purely frontend React web page built with my group mates for CISC275 - Intro to Software Engineering. The page mocks a restaurant order page, supporting favorites, ratings, cart ‘orders,’ and much more.",
-          "links": [
-            "Website", "https://andrewango.github.io/restaurant-menu/"
-          ],
+          "links": ["Website", "https://andrewango.github.io/restaurant-menu/"],
           "hidden": 0
         },
         "ICPC 2023": {
@@ -187,16 +189,15 @@
         "Finding Nolan": {
           "img": "findingnolan.jpg",
           "desc": "In 2021-22, I sought out to create a movie with my floormates called <i>Finding Nolan</i>. I wrote, edited, filmed, and directed the entire piece. It is a ~35 min epic on <i>YouTube</i>. Check it out.",
-          "links": [
-            "YouTube", "https://www.youtube.com/watch?v=tXKc5YrpZ4M"
-          ],
+          "links": ["YouTube", "https://www.youtube.com/watch?v=tXKc5YrpZ4M"],
           "hidden": 0
         },
         "Septronix": {
           "img": "septronixproject.jpg",
           "desc": "Off a whim and a *drummer wanted* poster, I joined Brandon and Steven’s band <i>Septronix</i> in 2023. In the last two years, the three of us have bonded to a great trio, working on live music, playing at gigs, and developing original songs for studio release. As of January 2025, we have release one single, No More Chances, with an EP on the way!",
           "links": [
-            "Spotify", "https://open.spotify.com/artist/4M1xFt5CVBJlL5VkWCX4Jd"
+            "Spotify",
+            "https://open.spotify.com/artist/4M1xFt5CVBJlL5VkWCX4Jd"
           ],
           "hidden": 0
         },
@@ -204,32 +205,27 @@
           "img": "diner.jpg",
           "desc": "A collaborative video created by my group for my final in DANC209 - Dance in Film. The video illustrates the deficit stalking may have on somebody. Selected from the class and presented at the end of the year showcase, <i>Last Chance to Dance</i>.",
           "links": [
-            "Video", "https://drive.google.com/file/d/1pBo8JEaoi3qPXhftr8rPPACy76TxAqRD/view?usp=sharing"
+            "Video",
+            "https://drive.google.com/file/d/1pBo8JEaoi3qPXhftr8rPPACy76TxAqRD/view?usp=sharing"
           ],
           "hidden": 0
         },
         "Percussion & Drums": {
           "img": "drums.jpg",
           "desc": "Began playing percussion in 2013, drums in 2016, and haven’t put either down since.",
-          "links": [
-            
-          ],
+          "links": [],
           "hidden": 0
         },
         "Piano": {
           "img": "piano.jpg",
           "desc": "Began playing piano in 2016, self taught.",
-          "links": [
-
-          ],
+          "links": [],
           "hidden": 0
         },
         "Other instruments": {
           "img": "otherinstruments.jpg",
           "desc": "There are other instruments I am capable of playing, but don’t consider my main instruments. These include guitar, ukulele, trumpet, and bass (unless you include the recorder too 😉)",
-          "links": [
-
-          ],
+          "links": [],
           "hidden": 0
         }
       }
@@ -247,7 +243,12 @@
         "text": "Attached is the GitHub of Gavin. He specializes in many languages, including Python, C/C++, JS/TSX, etc. Like most projects, Gavin strives for perfection in his code, not dropping a project until it is complete to his measure. Additionally, Gavin frequently will go on a coding binge to exercise his brain, before or after picking up one of his creative arts. \n\nPICTURED: Gavin and his friend Eli celebrating their hackathon submission <a style='color: white;' href='https://www.gavincaulfield.com/experience/potpourri#holoflash' target='_blank' rel='noopener noreferrer'>HoloFlash</a> in 2024.",
         "color": "#7A6174",
         "order": 1,
-        "link": ["Hackathon Project", "https://devpost.com/software/holoflash","Github", "https://github.com/gavincaul"]
+        "link": [
+          "Hackathon Project",
+          "https://devpost.com/software/holoflash",
+          "Github",
+          "https://github.com/gavincaul"
+        ]
       },
       "musician": {
         "img": "septronix.jpg",
@@ -258,6 +259,13 @@
           "Septronix",
           "https://open.spotify.com/artist/4M1xFt5CVBJlL5VkWCX4Jd?si=uUa9QAdPRd-awHPSh_INhA"
         ]
+      },
+      "dancer": {
+        "img": "medance.jpg",
+        "text": "Gavin has been moving his whole life: in response to dopamine stimuli, in a free moving studio environment, or out and about. Dance exhausts Gavin's brain; it grounds him, it connects him to the world around him. Although he is fairly new to dance in education, joining his first Modern Dance class in Fall of 2023, Gavin fell in love with the art, dancing whenever he can.",
+        "color": "#E2C2FF",
+        "order": 1,
+        "link": []
       }
     }
   },
