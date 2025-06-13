@@ -1,0 +1,103 @@
+.experienceItem {
+  width: 50vw;
+  max-width: 600px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  max-height: 100vh;
+  margin: auto;
+  background-color: white;
+  border: 5px solid var(--c1);
+  cursor: pointer;
+  box-sizing: border-box;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s linear;
+}
+
+.boundingBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 50vw;
+
+  max-width: 70vw;
+
+  aspect-ratio: 1 / 1;
+
+  box-sizing: border-box;
+  margin: 0 auto;
+  position: relative;
+}
+
+.experienceItem:hover:not(.scaleDown) {
+  transform: scale(1);
+  animation: experienceItemHover 1.5s infinite;
+}
+
+.experienceItem.scaleDown {
+  display: flex;
+  transform: scale(0.5);
+  z-index: 10;
+}
+
+@keyframes experienceItemHover {
+  0% {
+    border-color: var(--c1);
+  }
+  25% {
+    border-color: var(--c2);
+  }
+  50% {
+    border-color: var(--c3);
+  }
+  75% {
+    border-color: var(--c4);
+  }
+  100% {
+    border-color: var(--c1);
+  }
+}
+
+.gridItem {
+  aspect-ratio: 1 / 1;
+  width: 33.33%;
+  background-color: white;
+  position: absolute;
+  transform: scale(0);
+  top: auto;
+  left: auto;
+  animation-delay: var(--p3) !important;
+  animation: gridMove 1s forwards;
+  z-index: 5;
+}
+
+@keyframes gridMove {
+  from {
+    transform: translate(0%, 0%) scale(0);
+  }
+  to {
+    transform: translate(var(--p1), var(--p2)) scale(1);
+  }
+}
+
+.gridItemClose {
+  aspect-ratio: 1 / 1;
+  width: 33.33%;
+  background-color: white;
+  position: absolute;
+  transform: translate(var(--p1), var(--p2));
+  animation-delay: var(--p3) !important;
+  animation: gridMoveReverse 1s forwards;
+  z-index: 5;
+}
+
+@keyframes gridMoveReverse {
+  from {
+    transform: translate(var(--p1), var(--p2)) scale(1);
+  }
+  to {
+    transform: translate(0%, 0%) scale(0);
+  }
+}
