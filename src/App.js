@@ -5,6 +5,7 @@ import Experience from './pages/Experience.js'
 import Project from './pages/ProjectPage.js'
 import Skills from './pages/SkillsPage.js'
 import Resume from './pages/Resume.js'
+import Stamps from './pages/Stamps.js'
 import AccoladesPage from './pages/AccoladesPage.js';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/experience/skills" element={<Skills />} />
           <Route exact path="/experience/skills/:id" element={<Skills />} />
           <Route exact path="/experience/accolades" element={<AccoladesPage />} />
+          <Route exact path="/stamps" element={<Stamps />} />
           <Route exact path="/resume" element={<Resume />} />
           <Route exact path="*" element={<Home />}/>
         </Routes>

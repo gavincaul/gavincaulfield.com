@@ -724,5 +724,12 @@
       "Description": "At HenHacks 2024, my group and I won the above award for our Study in Augmented Reality tool, Holoflash.",
       "Year": "2024"
     }
+  },
+  "stamps":{
+    "spotify": {
+      "img": "spotifystamp.jpg",
+      "flavor": "I approve of SIrea RALLTY REALLy I do!",
+      "link": "https://spotify.com/"
+    }
   }
 }
