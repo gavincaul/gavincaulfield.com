@@ -5,10 +5,40 @@ import history from "../data/about/history.png";
 import saveimg from "../data/about/save.png";
 import clearsesh from "../data/about/x.png";
 import pagesData from "../data/pages.json";
-import orel from "../data/about/orel.png";
 import NavBar from "../components/NavBar.tsx";
+/*pictures*/
+import orel from "../data/about/orel.png";
+import dhmis3 from "../data/about/dhmis3.png"
+import domo from "../data/about/domo.png";
+import fso from "../data/about/fsociety.png";
+import gliss from "../data/about/glissrif.png";
+import kirby from "../data/about/kirby.png";
+import pc from "../data/about/pc.png"
+
 
 export default function About() {
+  const bottompics = [orel, dhmis3, domo, fso, gliss, kirby, pc];
+  const [currIndex, setCurrIndex] = useState(0);
+
+  useEffect(() => {
+    const randomIndex = Math.floor(Math.random() * bottompics.length);
+    setCurrIndex(randomIndex);
+      // eslint-disable-next-line
+  }, []);
+
+
+  const stored = sessionStorage.getItem("colorPalette");
+  const colorPalette = stored
+    ? JSON.parse(stored)
+    : {
+        name: "Forest",
+        background: "#243119",
+        primary: "#629460",
+        secondary: "#96BE8C",
+        accent: "#ACECA1",
+        text: "#C9F2C7",
+      };
+
   const canvasRef = useRef(null);
   const [isDrawing, setIsDrawing] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -23,7 +53,7 @@ export default function About() {
   }, []);
 
   const aboutData = pagesData.pages.about;
-  const timeout = (delay) => new Promise((res) => setTimeout(res, delay));
+
   let saveValue = sessionStorage.length;
   let letters = [
     [
@@ -572,7 +602,7 @@ export default function About() {
           for (const [x, y] of letter) {
             ctx.lineTo(Math.round(x), Math.round(y));
             ctx.stroke();
-            await timeout(5); //minimum delay
+            await new Promise(requestAnimationFrame); //minimum delay
           }
           ctx.closePath();
         };
@@ -671,14 +701,23 @@ export default function About() {
   };
 
   return (
-    <div className="background">
-      <NavBar></NavBar>
+    <div
+      className="background"
+      style={{
+        "--color0": colorPalette.background,
+        "--color1": colorPalette.primary,
+        "--color2": colorPalette.secondary,
+        "--color3": colorPalette.accent,
+        "--color4": colorPalette.text,
+      }}
+    >
+      <NavBar color={colorPalette}></NavBar>
       <div className="drawCanvas">
         <canvas
           ref={canvasRef}
           width="450"
           height="200"
-          style={{ border: "4px ridge rgb(180, 55, 55)" }}
+          style={{ border: "4px ridge var(--color1)" }}
         />
         {!isMobile && isLoaded && (
           <div className="popupControls">
@@ -714,7 +753,7 @@ export default function About() {
       <div className="aboutItems">
         {Object.keys(aboutData).map((key, index) => {
           // eslint-disable-next-line
-          const { img, text, color, order, link } = aboutData[key];
+          const { img, text, order, link } = aboutData[key];
           const picture = require(`../data/imgs/${img}`);
           console.log(picture);
           return (
@@ -722,7 +761,7 @@ export default function About() {
               className={order === 0 ? "aboutItem" : "aboutItemFlip"}
               key={index}
             >
-              <img src={picture} alt={key} style={{ borderColor: color }} />
+              <img src={picture} alt={key} style={{ borderColor: colorPalette.secondary }} />
               <h1>{key.charAt(0).toUpperCase() + key.slice(1)}</h1>
               <p
                 dangerouslySetInnerHTML={{
@@ -753,7 +792,7 @@ export default function About() {
           );
         })}
       </div>
-      <img src={orel} alt="orel" style={{ height: "100px", width: "auto" }} />
+      <img src={bottompics[currIndex]} alt="bottomImage" onClick={() => setCurrIndex((prev) => (prev + 1) % bottompics.length)} style={{ height: "100px", width: "auto" }} />
     </div>
   );
 }

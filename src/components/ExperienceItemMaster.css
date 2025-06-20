@@ -30,6 +30,13 @@
   margin: 0 auto;
   position: relative;
 }
+@media (max-width: 768px) {
+.boundingBox{
+  max-width: 90vw;
+  width: 90vw;
+}
+}
+
 
 .experienceItem:hover:not(.scaleDown) {
   transform: scale(1);
@@ -38,7 +45,7 @@
 
 .experienceItem.scaleDown {
   display: flex;
-  transform: scale(0.5);
+  transform: scale(30%);
   z-index: 10;
 }
 
@@ -63,13 +70,13 @@
 .gridItem {
   aspect-ratio: 1 / 1;
   width: 33.33%;
-  background-color: white;
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
   transform: scale(0);
-  top: auto;
-  left: auto;
-  animation-delay: var(--p3) !important;
-  animation: gridMove 1s forwards;
+  animation: gridMove 1s ease var(--p3) forwards;
   z-index: 5;
 }
 
@@ -78,16 +85,29 @@
     transform: translate(0%, 0%) scale(0);
   }
   to {
-    transform: translate(var(--p1), var(--p2)) scale(1);
+    transform: translate(var(--p1), var(--p2)) scale(0.98);
+  }
+}
+
+.gridItem.idle {
+  transform-origin: center center;
+  transform: translate(var(--p1), var(--p2)) scale(0.98);
+  animation: none/*float 4s ease-in-out infinite;*/;
+  animation-delay: calc(var(--p3) * 1.5s);
+  :hover {
+    animation: tilt-n-move-shaking 0.5s infinite;
   }
 }
 
 .gridItemClose {
   aspect-ratio: 1 / 1;
   width: 33.33%;
-  background-color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
   position: absolute;
-  transform: translate(var(--p1), var(--p2));
+  transform: translate(var(--p1), var(--p2)) scale(0.98);
   animation-delay: var(--p3) !important;
   animation: gridMoveReverse 1s forwards;
   z-index: 5;
@@ -95,9 +115,39 @@
 
 @keyframes gridMoveReverse {
   from {
-    transform: translate(var(--p1), var(--p2)) scale(1);
+    transform: translate(var(--p1), var(--p2)) scale(0.98);
   }
   to {
     transform: translate(0%, 0%) scale(0);
+  }
+}
+
+@keyframes float {
+  0% {
+    transform: translate(var(--p1), var(--p2)) scale(0.98);
+  }
+  50% {
+    transform: translate(var(--p1), calc(var(--p2) - 4px)) scale(1.002);
+  }
+  100% {
+    transform: translate(var(--p1), var(--p2)) scale(0.98);
+  }
+}
+
+@keyframes tilt-n-move-shaking {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(2.5deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-2.5deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }

@@ -6,6 +6,18 @@ import "./ProjectPage.css";
 import NavBar from "../components/NavBar.tsx";
 
 export default function Projects() {
+  const stored = sessionStorage.getItem("colorPalette");
+  const colorPalette = stored
+    ? JSON.parse(stored)
+    : {
+        name: "Forest",
+        background: "#243119",
+        primary: "#629460",
+        secondary: "#96BE8C",
+        accent: "#ACECA1",
+        text: "#C9F2C7",
+      };
+
   const { id } = useParams();
   const navigate = useNavigate();
   const [data, setData] = useState(null);
@@ -58,8 +70,17 @@ export default function Projects() {
   }
 
   return (
-    <div className="background">
-      <NavBar />
+    <div
+      className="background"
+      style={{
+        "--color0": colorPalette.background,
+        "--color1": colorPalette.primary,
+        "--color2": colorPalette.secondary,
+        "--color3": colorPalette.accent,
+        "--color4": colorPalette.text,
+      }}
+    >
+      <NavBar color={colorPalette} />
       <div className="title">{id}</div>
       <div
         className="why"

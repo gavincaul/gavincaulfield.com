@@ -7,29 +7,48 @@ import chicago from "../data/home/chicago.jpeg";
 import meandyurt from "../data/home/meandyurt.jpeg";
 import arch from "../data/home/arch.jpeg";
 import myhouse from "../data/home/myhouse.jpg";
+import ColorDropdown from "../components/ColorDropdown.tsx";
 
 export default function Home() {
+  const [colorPalette, setColorPalette] = useState(() => {
+    const stored = sessionStorage.getItem("colorPalette");
+    return stored
+      ? JSON.parse(stored)
+      : {
+          name: "Forest",
+          background: "#243119",
+          primary: "#629460",
+          secondary: "#96BE8C",
+          accent: "#ACECA1",
+          text: "#C9F2C7",
+        };
+  });
+
+  useEffect(() => {
+    sessionStorage.setItem("colorPalette", JSON.stringify(colorPalette))
+  }, [colorPalette]);
+
   const [hoveredImage, setHoveredImage] = useState(null);
   const [hoveredTitle, setHoveredTitle] = useState(false);
   const [badgeAnim, setBadgeAnim] = useState(false);
-  // eslint-disable-next-line
+
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
-    // eslint-disable-next-line
+  // eslint-disable-next-line
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
       setIsMobile(!isMobile);
-      setHoveredTitle(!hoveredTitle)
+      setHoveredTitle(!hoveredTitle);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
-  // eslint-disable-next-line react-hooks/exhaustive-deps
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -48,7 +67,18 @@ export default function Home() {
   };
 
   return (
-    <div className="background">
+    <div
+      className="background"
+      style={{
+        "--color0": colorPalette.background,
+        "--color1": colorPalette.primary,
+        "--color2": colorPalette.secondary,
+        "--color3": colorPalette.accent,
+        "--color4": colorPalette.text,
+      }}
+    >
+      <ColorDropdown setColorPalette={setColorPalette} />
+
       <div
         className="name"
         onMouseEnter={() => {
@@ -67,7 +97,9 @@ export default function Home() {
           <div
             className="namebadge"
             style={{
-              animation: isMobile ? "mobile 0.5s forwards, snakeBox 1.5s infinite" : badgeAnim
+              animation: isMobile
+                ? "mobile 0.5s forwards, snakeBox 1.5s infinite"
+                : badgeAnim
                 ? "badge 0.5s forwards, snakeBox 1.5s infinite"
                 : "badgeReverse 0.5s forwards, snakeBox 1.5s infinite",
             }}
@@ -76,7 +108,7 @@ export default function Home() {
           </div>
         )}
       </div>
-      <HomeNavBar />
+      <HomeNavBar borderColor={colorPalette.secondary}/>
       <div className="centerConsole">
         <div className="imgs">
           <div className="stacked-imgs">
@@ -86,7 +118,7 @@ export default function Home() {
             >
               <img
                 src={gotg}
-                style={{ borderColor: "#DB2B39"}}
+                style={{ borderColor: "#DB2B39" }}
                 className="pfp subpics"
                 alt="gardenotg"
               />
@@ -227,7 +259,8 @@ export default function Home() {
             <span className="q">WHEN: </span> Now, today, tomorrow, and always.
           </div>
           <div className="answer">
-            <span className="q">WHY: </span> I can't help my curiosity; it'll kill me one day (^･ｪ･^).
+            <span className="q">WHY: </span> I can't help my curiosity; it'll
+            kill me one day (^･ｪ･^).
           </div>
           <div className="answer">
             <span className="q">HOW: </span> Drink of the month:{" "}

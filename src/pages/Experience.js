@@ -9,6 +9,19 @@ import work from "../data/projects/work.jpg";
 import NavBar from "../components/NavBar.tsx";
 
 export default function Experience() {
+  const [colorPalette, setColorPalette] = useState(() => {
+    const stored = sessionStorage.getItem("colorPalette");
+    return stored
+      ? JSON.parse(stored)
+      : {
+          name: "Forest",
+          background: "#243119",
+          primary: "#629460",
+          secondary: "#96BE8C",
+          accent: "#ACECA1",
+          text: "#C9F2C7",
+        };
+  });
   const [hoveredImage, setHoveredImage] = useState(null);
   const navigate = useNavigate();
 
@@ -28,40 +41,38 @@ export default function Experience() {
 
   const projects = [
     {
-      id: "research",
-      src: research,
-      color: "#4D5382",
-      text: "Shown here is my presentation on the Enhanced Physical Rehabilitation project at CHASE NERIC 2023.",
+      id: "potpourri",
+      src: potpourri,
+      color: colorPalette.accent,
+      text: "In this picture, my brother Colton and I are celebrating my receipt of the prestigious Hatem M. Khalil Award.",
     },
     {
       id: "work",
       src: work,
-      color: "#FF6B35",
+      color: colorPalette.accent,
       text: "This photo captures a moment of celebration with my coworker and friend, Ella Wilkins, after I won my favorite sweatshirt.",
     },
-    {
-      id: "potpourri",
-      src: potpourri,
-      color: "#9BC53D",
-      text: "In this picture, my brother Colton and I are celebrating my receipt of the prestigious Hatem M. Khalil Award.",
-    },
-    {
-      id: "spotify",
-      src: spotify,
-      color: "#80FFEC",
-      text: "Here’s a young Gavin playing the xylophone, marking the beginning of my lifelong love for music.",
-    },
+
     {
       id: "creative",
       src: creative,
-      color: "#F1D302",
+      color: colorPalette.accent,
       text: "Behind the scenes with Phoebe, my dog; the star.",
     },
   ];
 
   return (
-    <div className="background">
-      <NavBar />
+    <div
+      className="background"
+      style={{
+        "--color0": colorPalette.background,
+        "--color1": colorPalette.primary,
+        "--color2": colorPalette.secondary,
+        "--color3": colorPalette.accent,
+        "--color4": colorPalette.text,
+      }}
+    >
+      <NavBar color={colorPalette} />
 
       <div className="title-container">
         <button className="button-45" onClick={handleSkillsClick}>

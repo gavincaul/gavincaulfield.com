@@ -1,16 +1,14 @@
 .experienceItemSquare {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 90%;
+
     border: 5px solid;
     box-sizing: border-box;
     cursor: pointer;
     overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     transition: transform 0.3s ease;
     border-radius: 8px;
+
   }
   
   .experienceItemSquare img {
@@ -34,39 +32,31 @@
     z-index: 1000;
     padding: 20px;
     box-sizing: border-box;
+    z-index: 200;
   }
   
 
   .overlayContent {
     position: absolute;
-    background: white;
+    background: var(--color0);
     padding: 20px;
     max-width: 600px;
     width: 100vw;
     border: 5px solid;
     border-radius: 12px;
     box-sizing: border-box;
-    text-align: center;
     overflow-y: auto;
     max-height: 90vh;
-    left:0;
-    top: 0;
+
   }
   
 
-  .overlayImage {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-  }
-  
+
 
   .closeBtn {
     margin-top: 1rem;
     padding: 0.5rem 1rem;
-    background: #eee;
+    background: var(--color1);
     border: none;
     cursor: pointer;
     border-radius: 5px;

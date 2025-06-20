@@ -1,7 +1,7 @@
 import React, { useRef, useState } from "react";
 import "./ExperienceItemMaster.css";
 
-export default function ExperienceItemMaster({ name, colors, img, items}) {
+export default function ExperienceItemMaster({ name, colors, img, items }) {
   const [open, setOpen] = useState(false);
   const [shrunk, setShrunk] = useState(false);
   const [closing, setClosing] = useState(false);
@@ -23,16 +23,14 @@ export default function ExperienceItemMaster({ name, colors, img, items}) {
     animationsEnded.current = 0;
   };
 
-
   const animationsEnded = useRef(0);
 
   const onGridItemCloseAnimationEnd = () => {
     animationsEnded.current += 1;
-    if (animationsEnded.current === items.length-3) {
+    if (animationsEnded.current === items.length - 3) {
       handleClose();
     }
   };
-
 
   const handleExpClick = () => {
     if (open) {
@@ -44,7 +42,6 @@ export default function ExperienceItemMaster({ name, colors, img, items}) {
   const handleShrink = () => {
     setShrunk(true);
   };
-
 
   return (
     <div>
@@ -60,7 +57,7 @@ export default function ExperienceItemMaster({ name, colors, img, items}) {
             backgroundImage: `url(${img})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
-          }}
+          } as any}
           onClick={handleExpClick}
           onTransitionEnd={handleShrink}
         ></div>
@@ -76,6 +73,10 @@ export default function ExperienceItemMaster({ name, colors, img, items}) {
                     "--p1": positions[i].x,
                     "--p2": positions[i].y,
                     "--p3": `${i * 0.2}s`,
+                  
+                  } as any}
+                  onAnimationEnd={(e) => {
+                    e.currentTarget.classList.add("idle");
                   }}
                 >
                   {item}
@@ -92,8 +93,9 @@ export default function ExperienceItemMaster({ name, colors, img, items}) {
                     "--p1": positions[i].x,
                     "--p2": positions[i].y,
                     "--p3": `${i * 0.2}s`,
-                  }}
-                onAnimationEnd={onGridItemCloseAnimationEnd}>
+                  }as any}
+                  onAnimationEnd={onGridItemCloseAnimationEnd}
+                >
                   {item}
                 </div>
               ))}

@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   width: 30%;
-  gap: 15px;
+  gap: 3rem;
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 20px;
@@ -13,16 +13,9 @@
 
 .skillsRow{
     width: 90vw;
-    height: 40vh;
+    height: 40%;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-evenly;
-}
-.skillsbackground {
-  background: linear-gradient(90deg, #303030, #161616);
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    margin-bottom: 10rem;
 }

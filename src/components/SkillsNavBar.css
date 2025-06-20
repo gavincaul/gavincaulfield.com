@@ -15,10 +15,9 @@
     color: white;
     font-size: medium;
     transition: transform 0.2s ease-in-out;
-    border-radius: 45px;
     padding: 10px 20px;
-    background: radial-gradient(rgb(141, 34, 34), rgb(209, 75, 75));
     cursor: pointer;
+    border: thick double var(--color);
 }
 
 .skillsLink:hover {
@@ -27,8 +26,9 @@
 
 
 .skillsLink.active {
-    background: rgb(100, 150, 200); 
-    color: white;
+    background-color: white;
+    color: black;
+    transform: scale(1.15);
 }
 @media (max-width: 768px) {  
     .navSkills {

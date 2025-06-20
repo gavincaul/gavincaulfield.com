@@ -1,41 +1,27 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./ExperienceItem.css";
+import Overlay from "./Overlay.tsx";
+import Project from "./Project.tsx"; // Make sure path is correct
 
-function ExperienceItem({ img, title, desc, color }) {
+function ExperienceItem({ img, title, desc, color, links, projectKey }) {
   const [clicked, setClicked] = useState(false);
-  const [animating, setAnimating] = useState(false);
-  const [startRect, setStartRect] = useState(null);
-  const imgRef = useRef(null);
 
+  const imgRef = useRef<HTMLDivElement>(null);
 
   const handleClick = () => {
-    if (imgRef.current) {
-      const rect = imgRef.current.getBoundingClientRect();
-      setStartRect(rect);
-    }
     setClicked(true);
-    setAnimating(true);
   };
-
 
   const closeOverlay = () => {
     setClicked(false);
-    setAnimating(false);
-    setStartRect(null);
   };
 
-
   useEffect(() => {
-    if (clicked) {
-      document.body.style.overflow = "hidden";
-    } else {
-      document.body.style.overflow = "";
-    }
+    document.body.style.overflow = clicked ? "hidden" : "";
   }, [clicked]);
 
   return (
     <>
-
       <div
         className="experienceItemSquare"
         style={{ borderColor: color }}
@@ -45,24 +31,20 @@ function ExperienceItem({ img, title, desc, color }) {
         <img src={img} alt={title} />
       </div>
 
-
       {clicked && (
-        <div className="overlay" onClick={closeOverlay}>
-          <div
-            className="overlayContent"
-            onClick={(e) => e.stopPropagation()} // Prevent close on content click
-            style={{ borderColor: color }}
-          >
-            <img src={img} alt={title} className="overlayImage" />
-
-            <h2 style={{ color }}>{title}</h2>
-            <p>{desc}</p>
-
-            <button onClick={closeOverlay} className="closeBtn">
-              Close
-            </button>
-          </div>
-        </div>
+        <Overlay onClose={closeOverlay}>
+          <Project
+            index={0}
+            img={img}
+            text={desc}
+            color={color}
+            links={links}
+            projectKey={projectKey || title}
+          />
+          <button onClick={closeOverlay} className="closeBtn">
+            Close
+          </button>
+        </Overlay>
       )}
     </>
   );
