@@ -7,20 +7,17 @@ interface OverlayProps {
 }
 
 export default function Overlay({ children, onClose }: OverlayProps) {
-  const [colorPalette, setColorPalette] = useState(() => {
-    const stored = sessionStorage.getItem("colorPalette");
-    return stored
-      ? JSON.parse(stored)
-      : {
-          name: "Forest",
-          background: "#243119",
-          primary: "#629460",
-          secondary: "#96BE8C",
-          accent: "#ACECA1",
-          text: "#C9F2C7",
-        };
-  });
-
+  const stored = sessionStorage.getItem("colorPalette");
+  const colorPalette = stored
+    ? JSON.parse(stored)
+    : {
+        name: "Forest",
+        background: "36, 49, 25",
+        primary: "98, 148, 96",
+        secondary: "150, 190, 140",
+        accent: "172, 236, 161",
+        text: "201, 242, 199",
+      };
   return ReactDOM.createPortal(
     <div
       className="overlay"
