@@ -87,9 +87,9 @@ export default function Projects() {
               key={item.key}
               projectKey={i}
               img={item.img}
-              title={item}
+              title={item.title}
               desc={item.desc}
-              color={"#A6D49F"}
+              color={colorPalette.secondary}
               links={item.links}
             />
           ))}

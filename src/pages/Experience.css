@@ -34,7 +34,7 @@
 
 .btn::before {
   content: "";
-  background-color: rgb(var(--color3));
+  background-color: rgb(var(--color2));
   width: 32px;
   height: 32px;
   display: block;

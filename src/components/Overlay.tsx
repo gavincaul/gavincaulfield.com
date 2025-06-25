@@ -1,5 +1,5 @@
 import ReactDOM from "react-dom";
-import React, { ReactNode, useState } from "react";
+import React, { ReactNode } from "react";
 
 interface OverlayProps {
   children: ReactNode;

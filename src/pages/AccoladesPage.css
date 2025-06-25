@@ -126,7 +126,7 @@
 
 @media (max-width: 768px) {
   .awardCenter {
-    width: 90%;
+    width: 80%;
     transform: scale(1.2);
     column-gap: 1.3rem;
   }

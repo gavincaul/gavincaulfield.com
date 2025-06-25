@@ -24,7 +24,7 @@ function Project({ index, img, text, color, links, projectKey }) {
   }
   return (
     <div className={index === 0 ? "projectItemLeft" : "projectItemRight"}>
-      <img src={img || null} alt={projectKey} style={{ border: `4px ridge rgb(${color} `}} />
+      <img src={img || null} alt={projectKey} style={{ border: `4px ridge rgb(${color}) `}} />
       <h1>{projectKey}</h1>
       <p  dangerouslySetInnerHTML={{
                 __html: convertMarkdown(text),

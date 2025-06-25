@@ -286,6 +286,17 @@ export default function Home() {
               Victor Allen's french vanilla k-cup.
             </a>
           </div>
+          <div className="answer">
+            <span className="q">CONTACT: </span> <a
+              style={{ color: "#12EDED" }}
+              href="mailto:gavindcaulfield@gmail.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              gavindcaulfield@gmail.com   
+            </a>{" — "}
+              (845) 793-4757
+          </div>
         </div>
       </div>
     </div>

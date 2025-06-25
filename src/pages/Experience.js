@@ -113,7 +113,7 @@ export default function Experience() {
             />
           </svg>
         </button>
-        <div className="titleexp">Projects</div>
+        <div className="titleexp">Experience</div>
         <button className="btn" onClick={handleAccoladesClick}>
           <span className="textbtn">Awards</span>
           <svg

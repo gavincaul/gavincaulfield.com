@@ -34,14 +34,6 @@ export default function ColorDropdown({ setColorPalette }) {
       secondary: "127, 219, 255",  
       accent: "57, 204, 204",      
       text: "221, 221, 221",       
-    },
-    {
-      name: "PinkiePie",
-      background: "244, 132, 152",
-      primary: "231, 143, 142",
-      secondary:"242, 204, 195",
-      accent:"172, 216, 170",
-      text: "255, 230, 232"
     }
   ];
 
