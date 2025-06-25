@@ -1,0 +1,150 @@
+
+.highlightReel {
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    gap: 20px;
+    margin-bottom: 10rem;
+  }
+  
+  .highlight {
+    width: clamp(100px, 70vw, 90%);
+    font-family: "IBM Plex Sans", sans-serif;
+    aspect-ratio: 16/9;
+    height: clamp(200px, 10vw, 25vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid rgb(var(--color3));
+    background-color: rgba(var(--color2), 0.5);
+    transition: height 0.4s ease, transform 0.4s ease, background-color 0.3s, border-color 0.3s;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 1rem;
+
+
+  }
+  
+
+  .highlight.highlighted {
+    height: 80vh;
+    transform: scale(1);
+    display: grid;
+    grid-template-columns: 1.5fr 2fr;
+    grid-template-rows: auto;
+    column-gap: 20px;
+
+  }
+  .highlightImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    overflow-y: auto;
+  }
+  
+  .highlightImage {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+
+  .highlightTextContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 95%;
+    height: 100%;
+    padding: 1rem;
+    overflow-y: auto;
+    margin-top: 2em;
+    margin-bottom: 2em;
+  }
+  
+  .highlightTitle {
+    font-size: clamp(1.5rem, 2em, 2rem);
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    color: rgb(var(--color4));
+
+  }
+  
+  .highlightDate {
+    font-size: 1rem;
+    color: rgb(var(--color4));
+    opacity: 0.7;
+    margin: 0.5rem 0;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .highlightDesc {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: rgb(var(--color4));
+    flex-grow: 1;
+    width: 100%;
+  }
+
+  @media (max-width: 730px) {
+    .highlight.highlighted {
+      display: flex;
+      flex-direction: column;
+  
+    }
+  
+    .highlightImageContainer {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+  
+    .highlightTextContainer {
+      width: 100%;
+    }
+  
+    .highlightTitle,
+    .highlightDate,
+    .highlightDesc {
+      text-align: left;
+    }
+  }
+  .highlightImageContainer.multiple {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .highlightImageContainer.multiple .highlightImage {
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  .highlightImageContainer.single {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .highlightImageContainer.single .highlightImage {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    object-fit: contain;
+    transform: scale(1.05); 
+    transition: transform 0.3s ease;
+    
+  }
+ 

@@ -7,6 +7,9 @@ import Skills from './pages/SkillsPage.js'
 import Resume from './pages/Resume.js'
 import Stamps from './pages/Stamps.js'
 import AccoladesPage from './pages/AccoladesPage.js';
+import Highlights from './pages/Highlights.js';
+import Playground from './pages/Playground.js'
+import File from './pages/File.js';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 function App() {
@@ -23,6 +26,9 @@ function App() {
           <Route exact path="/experience/accolades" element={<AccoladesPage />} />
           <Route exact path="/stamps" element={<Stamps />} />
           <Route exact path="/resume" element={<Resume />} />
+          <Route exact path="/highlights" element={<Highlights />} />
+          <Route exact path="/admin/playground" element={<Playground />} />
+          <Route exact path="/file" element={<File />} />
           <Route exact path="*" element={<Home />}/>
         </Routes>
       </Router>

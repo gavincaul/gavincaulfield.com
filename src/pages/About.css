@@ -1,11 +1,4 @@
-.background {
-  background: linear-gradient(90deg, #303030, #161616);
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 .drawCanvas {
   display: flex;
   justify-content: center;
@@ -50,9 +43,9 @@ canvas {
   border-radius: 15px;
   padding: 4px 8px;
   text-align: center;
-  color: white;
+  color: rgb(var(--color4));
   margin-bottom: 3rem;
-  background-color: rgb(160, 71, 160);
+  background-color: rgb(var(--color1));
   border: 4px ridge transparent;
   width: 100%;
   height: auto;
@@ -90,7 +83,7 @@ button.savebutton {
   justify-content: center;
   width: 50px;
   height: 50px;
-  background-color: rgb(200, 200, 255);
+  background-color: rgb(var(--color3));
   border: none;
   border-radius: 8px;
   padding: 10px;
@@ -142,7 +135,7 @@ button.savebutton img {
 .historyItem img {
   width: 90px;
   height: 40px;
-  border: 4px ridge rgb(180, 55, 55);
+  border: 4px ridge rgb(var(--color1));
 }
 
 .clearsesh {
@@ -155,9 +148,9 @@ button.savebutton img {
 button.clearsesh {
   width: 22px;
   height: 22px;
-  background-color: rgb(255, 74, 83);
+  background-color: rgb(var(--color4));
   transition: transform 0.1s ease;
-  border: 1px ridge red;
+  border: 1px ridge rgb(var(--color1));
   display: flex;
   justify-content: center;
   align-items: center;
@@ -168,13 +161,14 @@ button.clearsesh img {
 }
 
 .aboutItems {
+  font-family: "IBM Plex Sans", sans-serif;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
   margin-top: 8rem;
   row-gap: 10rem;
-  margin-bottom: 43rem;
+  margin-bottom: 33rem;
 }
 
 .aboutItem {
@@ -198,21 +192,21 @@ button.clearsesh img {
   grid-column: 2;
   grid-row: 1;
   font-size: 2vw;
-  color: white;
+  color: rgb(var(--color3));
 }
 
 .aboutItem p {
   grid-column: 2;
   grid-row: 2 span 3;
   font-size: 1vw;
-  color: white;
+  color: rgb(var(--color4));
 }
 
 .aboutItem a {
   grid-column: 2;
   grid-row: 5;
   font-size: 1vw;
-  color: white;
+  color: rgb(var(--color4));
 }
 
 .aboutItemFlip {
@@ -237,21 +231,21 @@ button.clearsesh img {
   grid-column: 1;
   grid-row: 1;
   font-size: 2vw;
-  color: white;
+  color: rgb(var(--color3));
 }
 
 .aboutItemFlip p {
   grid-column: 1;
   grid-row: 2 span 5;
   font-size: 1vw;
-  color: white;
+  color: rgb(var(--color4));
 }
 
 .aboutItemFlip a {
   grid-column: 1;
   grid-row: 5;
   font-size: 1vw;
-  color: white;
+  color: rgb(var(--color4));
 }
 
 @media (max-width: 768px) {

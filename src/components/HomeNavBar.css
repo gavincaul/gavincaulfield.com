@@ -1,8 +1,11 @@
 #HomeNavBar {
     display: flex;
+
     align-items: center;
     justify-content: center;
+    width: 100%;
     gap: 1rem;
+    flex-wrap: wrap;
 }
 
 .nav-link {
@@ -10,14 +13,14 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-family: "Plus Jakarta Sans", serif;
+    font-family: "IBM Plex Sans", sans-serif;
     font-size: 28px;
     color: white;
     text-decoration: none;
     transition: transform 0.2s ease-in-out;
     text-align: center; 
-    width: 200px; 
-    justify-content: center;
+    width: clamp(10vw, 150px, 20vw); 
+
     
     box-sizing: border-box;
 }
@@ -28,14 +31,29 @@
 }
 
 .bar {
-    border-left: 6px solid rgb(34, 153, 74);
-    height: 50px;
+    border-left: 6px solid rgb(var(--borderColor));
+    height: 5vh;
 }
 
 @media (max-width: 768px) {
+    #HomeNavBar {
+        gap: 0rem;
+        flex-direction: column;
+        padding: 0.5rem 0; 
+    }
+
+    .bar {
+
+        height: 2px;               
+        width: 100%;           
+        border-left: none;        
+        border-top: 4px solid rgb(var(--borderColor)); 
+        margin: 0.25rem 0;        
+    }
+
     .nav-link {
-        font-size: 20px;
-        padding: 0px 5px; 
-        width: 100px; /* Adjust width on mobile */
+        padding: 0.25rem 0;
+        width: auto;              
+        font-size: 2rem;
     }
 }

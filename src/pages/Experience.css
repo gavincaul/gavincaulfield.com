@@ -1,71 +1,62 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital@0;1&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
+.btn {
+  font-size: 1em;
+  font-weight: 600;
+  background-color: rgb(var(--color1));
+  padding: 24px 24px 24px 32px;
+  display: flex;
 
-.button-45 {
-  align-items: center;
-  filter: grayscale(100%);
-  justify-content: center;
-  background-color: #ffe7e7;
-  background-position: 0 0;
-  border: 1px solid #fee0e0;
-  border-radius: 11px;
-  width: 40%;
-  min-width: fit-content;
-  box-sizing: border-box;
-  color: #d33a2c;
+  justify-content: left;
+  border-radius: 99px;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
   cursor: pointer;
-  display: flex;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 33.4929px;
-  list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg)
-    none;
-  padding: 2px 12px;
-  text-align: center;
-  text-decoration: none;
-  text-shadow: none;
-  text-underline-offset: 1px;
-  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  word-break: break-word;
+  border: none;
 }
 
-.button-45:active,
-.button-45:hover,
-.button-45:focus {
-  outline: 0;
+.btn .textbtn {
+  color: rgb(var(--color4));
+  line-height: 1;
+  position: relative;
+  z-index: 5;
+  margin-right: 32px;
 }
 
-.button-45:active {
-  background-color: #d33a2c;
-  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
-  color: #ffffff;
+.btn svg {
+  display: inline-block;
+  position: relative;
+  z-index: 5;
+  transform: rotate(0deg) translateX(0);
+  transform-origin: left;
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-.button-45:hover {
-  background-color: #ffe3e3;
-  border-color: #faa4a4;
+.btn::before {
+  content: "";
+  background-color: rgb(var(--color3));
+  width: 32px;
+  height: 32px;
+  display: block;
+  position: absolute;
+  z-index: 1;
+  border-radius: 99px;
+  top: 50%;
+  right: 16px;
+  transform: translateY(-50%);
+  transition: all 0.5s cubic-bezier(0.77, 0, 0.175, 1);
 }
 
-.button-45:active:hover,
-.button-45:focus:hover,
-.button-45:focus {
-  background-color: #d33a2c;
-  box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
-  color: #ffffff;
+.btn:hover svg {
+  transform: rotate(45deg) translateX(-8px);
 }
-.background {
-  background: linear-gradient(90deg, #303030, #161616);
-  min-height: 100vh;
+
+.btn:hover::before {
   width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  height: 100%;
+  right: 0;
 }
+
 .title-container {
   display: grid;
   grid-template-columns: 2fr 2fr;
@@ -78,7 +69,7 @@
 }
 
 .titleexp {
-  font-family: Source Sans 3, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: 50px;
   color: white;
   text-align: center;
@@ -100,25 +91,55 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  flex-direction: column;
+  width: 90%;
+  flex-direction: row;
   margin-top: 3rem;
-  row-gap: 50px;
+  gap: 5rem;
   margin-bottom: 12rem;
+}
+@media (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+    gap: 0em;
+  }
+  .subtext {
+    width: 90%;
+  }
+  .project{
+    flex: 1 1 350px !important;
+  }
+  .title-container {
+    column-gap: 10vw;
+    width: 90%;
+  }
+  .titleexp {
+    width: 90%;
+  }
+
+  .project-title {
+    background: none !important;
+    opacity: 1 !important;
+    text-shadow:
+    2px 2px 4px rgba(0, 0, 0, 0.8),
+    -2px -2px 4px rgba(0, 0, 0, 0.8),
+    0px 0px 8px rgba(0, 0, 0, 0.7);
+  }
 }
 
 .projectwindow {
   position: absolute;
   background-color: rgba(26, 25, 25, 0.8);
   color: #fff;
-  padding: 5px;
-  bottom: 8px;
+
+  bottom: 5%;
   max-width: 90%;
-  max-height: fit-content;
+  padding: 1% 1%;
   font-size: 1vw;
   text-align: center;
   border-radius: 5px;
   opacity: 0;
   animation: fadeIn 1s linear;
+  row-gap: 1rem;
 }
 
 @keyframes fadeIn {
@@ -143,7 +164,8 @@
 }
 
 .project {
-  width: 40%;
+  flex: 1 1 500px;
+  max-width: 550px;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -173,7 +195,7 @@
   position: absolute;
   transition: transform 0.3s, clip-path 0.3s;
   clip-path: inset(0);
-  font-family: Ubuntu, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-size: x-large;
   letter-spacing: 1vw;
   display: flex;
@@ -207,18 +229,5 @@
   }
   to {
     opacity: 1;
-  }
-}
-@media (max-width: 768px) {
-  .title-container {
-    column-gap: 10px;
-    width: 90%;
-  }
-  .titleexp {
-    width: 90%;
-  }
-
-  .project {
-    width: 80%;
   }
 }

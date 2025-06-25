@@ -1,52 +1,58 @@
-import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import './NavBar.css';
+import React, { useEffect } from "react";
+import { NavLink } from "react-router-dom";
+import "./NavBar.css";
 
-export default function NavBar() {
-  const [isOpen, setIsOpen] = useState(false);
-
-  const toggleNav = () => {
-    setIsOpen(!isOpen);
-  };
-
+export default function NavBar({ color }) {
+  const isMobile = window.innerWidth <= 768;
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <div className="navcontainer">
+    <div
+      className="navcontainer"
+      style={
+        {
+          "--navcolor": color.secondary,
+          "--textcolor": color.text,
+          "--highlightcolor": color.background,
+        } as any
+      }
+    >
       <div
-        className={`button ${isOpen ? '' : 'open'}`}
-        onClick={toggleNav}
+        className={`button`}
         role="button"
         aria-label="Toggle navigation"
         tabIndex={0}
       >
-        <nav className={`nav ${isOpen ? 'open' : ''}`}>
+        <nav className="nav">
           <div className="navlinks">
             <NavLink
               to="/"
               className="navlink"
-              style={{ animationDelay: '300ms' }}
+              style={{ animationDelay: "300ms" }}
             >
-              Home
+              {isMobile ? "🏠" : "Home"}
             </NavLink>
             <NavLink
               to="/about"
               className="navlink"
-              style={{ animationDelay: '400ms' }}
+              style={{ animationDelay: "400ms" }}
             >
-              About
+              {isMobile ? "👤" : "About"}
             </NavLink>
             <NavLink
               to="/experience"
               className="navlink"
-              style={{ animationDelay: '500ms' }}
+              style={{ animationDelay: "500ms" }}
             >
-              Experience
+              {isMobile ? "🧠💻" : "Experience"}
             </NavLink>
             <NavLink
               to="/resume"
               className="navlink"
-              style={{ animationDelay: '600ms' }}
+              style={{ animationDelay: "600ms" }}
             >
-              Resume
+              {isMobile ? "📄" : "Resume"}
             </NavLink>
           </div>
         </nav>

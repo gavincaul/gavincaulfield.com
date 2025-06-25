@@ -3,12 +3,23 @@ import { useNavigate } from "react-router-dom";
 import "./Experience.css";
 import creative from "../data/projects/creative.jpg";
 import potpourri from "../data/projects/potpurri.jpg";
-import research from "../data/projects/research.jpg";
-import spotify from "../data/projects/spotify.jpg";
+import { getProjects } from "../components/GetProjects.ts";
 import work from "../data/projects/work.jpg";
 import NavBar from "../components/NavBar.tsx";
+import ExperienceItem from "../components/ExperienceItem.tsx";
 
 export default function Experience() {
+  const stored = sessionStorage.getItem("colorPalette");
+  const colorPalette = stored
+    ? JSON.parse(stored)
+    : {
+        name: "Forest",
+        background: "36, 49, 25",
+        primary: "98, 148, 96",
+        secondary: "150, 190, 140",
+        accent: "172, 236, 161",
+        text: "201, 242, 199",
+      };
   const [hoveredImage, setHoveredImage] = useState(null);
   const navigate = useNavigate();
 
@@ -28,48 +39,105 @@ export default function Experience() {
 
   const projects = [
     {
-      id: "research",
-      src: research,
-      color: "#4D5382",
-      text: "Shown here is my presentation on the Enhanced Physical Rehabilitation project at CHASE NERIC 2023.",
+      id: "potpourri",
+      src: potpourri,
+      color: `rgb(${colorPalette.accent})`,
+      text: "In this picture, my brother Colton and I are celebrating my receipt of the prestigious Hatem M. Khalil Award.",
     },
     {
       id: "work",
       src: work,
-      color: "#FF6B35",
+      color: `rgb(${colorPalette.accent})`,
       text: "This photo captures a moment of celebration with my coworker and friend, Ella Wilkins, after I won my favorite sweatshirt.",
     },
-    {
-      id: "potpourri",
-      src: potpourri,
-      color: "#9BC53D",
-      text: "In this picture, my brother Colton and I are celebrating my receipt of the prestigious Hatem M. Khalil Award.",
-    },
-    {
-      id: "spotify",
-      src: spotify,
-      color: "#80FFEC",
-      text: "Here’s a young Gavin playing the xylophone, marking the beginning of my lifelong love for music.",
-    },
+
     {
       id: "creative",
       src: creative,
-      color: "#F1D302",
+      color: `rgb(${colorPalette.accent})`,
       text: "Behind the scenes with Phoebe, my dog; the star.",
     },
   ];
+  const allProjects = getProjects({ parent: "all" });
+  const allProjectItems = allProjects.map((item, i) => (
+    <div className="projectElement" key={item.key}>
+      <ExperienceItem
+        projectKey={i}
+        img={item.img}
+        title={item.title}
+        desc={item.desc}
+        color={colorPalette.secondary}
+        links={item.links}
+      />
+    </div>
+  ));
+
+
 
   return (
-    <div className="background">
-      <NavBar />
+    <div
+      className="background"
+      style={{
+        "--color0": colorPalette.background,
+        "--color1": colorPalette.primary,
+        "--color2": colorPalette.secondary,
+        "--color3": colorPalette.accent,
+        "--color4": colorPalette.text,
+      }}
+    >
+      <NavBar color={colorPalette} />
 
       <div className="title-container">
-        <button className="button-45" onClick={handleSkillsClick}>
-          Skills
+        <button className="btn" onClick={handleSkillsClick}>
+          <span className="textbtn">Skills</span>
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.66669 11.3334L11.3334 4.66669"
+              stroke="white"
+              strokeWidth="1.33333"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M4.66669 4.66669H11.3334V11.3334"
+              stroke="white"
+              strokeWidth="1.33333"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
         </button>
         <div className="titleexp">Projects</div>
-        <button className="button-45" onClick={handleAccoladesClick}>
-          Accolades
+        <button className="btn" onClick={handleAccoladesClick}>
+          <span className="textbtn">Awards</span>
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 16 16"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M4.66669 11.3334L11.3334 4.66669"
+              stroke="white"
+              strokeWidth="1.33333"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+            <path
+              d="M4.66669 4.66669H11.3334V11.3334"
+              stroke="white"
+              strokeWidth="1.33333"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+            />
+          </svg>
         </button>
       </div>
       <div className="subtext">
@@ -86,7 +154,7 @@ export default function Experience() {
             onMouseLeave={() => setHoveredImage(null)}
           >
             <img
-              src={project.src}
+              src={project.src || null}
               alt={project.id}
               style={{ borderColor: project.color }}
               onClick={() => handleProjectClick(project.id)}
@@ -101,6 +169,10 @@ export default function Experience() {
           </div>
         ))}
       </div>
+      <div className="allProjectTitle">All  Projects</div>
+        <div className="allProjectsContainer">
+          {allProjectItems}
+        </div>
     </div>
   );
 }

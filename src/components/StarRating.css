@@ -1,7 +1,6 @@
 .star-rating {
     display: flex;
     gap: 5px; 
-    margin-left: 0.5rem;
 }
 
 .star {

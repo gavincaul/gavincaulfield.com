@@ -1,8 +1,9 @@
 .skillCol {
   display: flex;
   flex-direction: column;
+  font-family: "IBM Plex Sans", sans-serif;
   width: 30%;
-  gap: 15px;
+  gap: 3rem;
   align-items: center;
   justify-content: space-evenly;
   margin-bottom: 20px;
@@ -13,16 +14,18 @@
 
 .skillsRow{
     width: 90vw;
-    height: 40vh;
+    height: 40%;
     display: inline-flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-bottom: 10rem;
 }
-.skillsbackground {
-  background: linear-gradient(90deg, #303030, #161616);
-  min-height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+@media (max-width: 768px) {
+
+  .skillCol {
+    width: 80%;
+    margin-bottom: 2rem;
+
+  }
+  
 }

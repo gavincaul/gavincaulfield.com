@@ -1,0 +1,31 @@
+.file-viewer-page {
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .file-image,
+  .file-video,
+  .file-pdf {
+    width: 90vw;
+    height: 80vh;
+    margin: auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  }
+  
+  .file-download {
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    display: inline-block;
+    color: var(--color4, #00f);
+    text-decoration: underline;
+  }
+  
+  .file-error {
+    font-size: 1.4rem;
+    color: red;
+    margin-top: 20rem;
+    text-align: center;
+  }
+  
