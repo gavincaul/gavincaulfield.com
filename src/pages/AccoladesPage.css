@@ -1,4 +1,5 @@
 .awardCenter {
+  font-family: "IBM Plex Sans", sans-serif;
   margin-top: 5rem;
   width: 60%;
 
@@ -8,7 +9,15 @@
   gap: 1rem;
   justify-content: center;
 }
-
+.accoladeTitle{
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 50px;
+  color: white;
+  text-align: center;
+  margin-top: 4rem;
+  text-transform: capitalize;
+  font-weight: 500;
+}
 .bullitenBoard {
   grid-column: 1;
   grid-row: 1;
@@ -94,7 +103,7 @@
   text-align: center;
   padding: 1rem;
   max-width: 500px;
-  color: var(--color4)
+  color: rgb(var(--color4))
 }
 
 .accoladeOverlayContent img {
@@ -112,4 +121,35 @@
   border: none;
   border-radius: 6px;
   cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .awardCenter {
+    width: 90%;
+    transform: scale(1.2);
+    column-gap: 1.3rem;
+  }
+
+  .bullitenBoard, .whiteBoard2 {
+    width: 100%;
+    
+    transform: scale(1.1);
+  }
+
+  .recordCollection {
+    width: 100%;
+    height: auto;
+  }
+  .recordCollection img{
+    transform: scale(120%);
+  }
+  .recordArea{width: 100%;
+
+  }
+
+.accoladeTitle{
+  font-size: 30px;
+}
+  
 }

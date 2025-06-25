@@ -14,10 +14,13 @@ export default function Skill({
   works,
   projects,
 }) {
-  const [mappedProjects, setMappedProjects] = useState([]);
-
+  let isMobile = window.innerWidth <= 768;
+  const [mappedProjects, setMappedProjects] = useState({});
+  const [expanded, setExpanded] = useState(false);
   const navigate = useNavigate();
-
+  const handleToggle = () => {
+    if (isMobile) setExpanded((prev) => !prev);
+  };
   const handleSkillMap = () => {
     if (mappedProjects["projects"]) {
       navigate(`/experience/${encodeURIComponent(name)}#projects`, {
@@ -29,37 +32,35 @@ export default function Skill({
   useEffect(() => {
     if (projects.length > 0) {
       const newMappedProjects = projects.reduce((acc, projectPath) => {
-        let projectData = projectsData["pages"];
-        projectPath.split("/").forEach((index) => {
-          projectData = projectData[index];
-        });
-        const name = projectPath.split("/").pop();
-        if (projectData === undefined) {
-          console.log(projectPath, name);
+        const projectData = projectsData.pages.experience.projects[projectPath];
+        if (!projectData) {
+          console.warn(
+            `Project data missing for: ${projectPath} (Skill: ${name})`
+          );
+          return acc;
         }
-        acc[name] = {
-          //@ts-ignore
-          img: projectData.img,
-          //@ts-ignore
+
+        acc[projectPath] = {
+          img: require(`../data/imgs/${projectData.img}`),
           desc: projectData.desc,
-          //@ts-ignore
           links: projectData.links,
         };
 
         return acc;
       }, {});
 
-      // Set the mapped projects object
       setMappedProjects({ why: "", projects: newMappedProjects });
     }
-  }, [projects]);
-
+  }, [projects, name]);
 
   return (
-    <div className="skill-card">
+    <div
+      className={`skill-card ${expanded ? "expanded" : ""}`}
+      onClick={handleToggle}
+    >
       <header
         className="skill-card__header"
-        style={{ backgroundColor: `${groupcolor}` }}
+        style={{ backgroundColor: `rgb(${groupcolor})` }}
       >
         <img src={img} alt={`${name} Logo`} className="skill-card__icon" />
       </header>
@@ -79,7 +80,10 @@ export default function Skill({
         </ul>
         <div
           className="item"
-          onClick={handleSkillMap}
+          onClick={(e) => {
+            e.stopPropagation();
+            handleSkillMap();
+          }}
           style={{
             color: Boolean(mappedProjects["projects"]) ? "#6564DB" : "#d81e5b",
             textDecoration: "underline",

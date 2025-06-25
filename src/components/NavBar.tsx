@@ -13,7 +13,7 @@ export default function NavBar({ color }) {
       style={
         {
           "--navcolor": color.secondary,
-          "--textcolor": color.textcolor,
+          "--textcolor": color.text,
           "--highlightcolor": color.background,
         } as any
       }

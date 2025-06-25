@@ -7,26 +7,31 @@
   transition: all 0.3s ease;
   word-wrap: break-word;
   overflow-wrap: break-word;
-  white-space: normal; /* This is key */
+  font-family: "IBM Plex Sans", sans-serif;
+  white-space: normal; 
 }
-
-.skill-card:hover {
+.skill-card:hover,
+.skill-card.expanded {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
 
-.skill-card:hover .skill-card__header {
+.skill-card:hover .skill-card__header,
+.skill-card.expanded .skill-card__header {
   height: 40px;
 }
 
-.skill-card:hover .skill-card__icon {
+.skill-card:hover .skill-card__icon,
+.skill-card.expanded .skill-card__icon {
   transform: translate(-50%, -50%) scale(3);
 }
 
-.skill-card:hover .skill-card__body {
+.skill-card:hover .skill-card__body,
+.skill-card.expanded .skill-card__body {
   max-height: 350px;
 }
 
-.skill-card:hover .skill-card__knowledge li {
+.skill-card:hover .skill-card__knowledge li,
+.skill-card.expanded .skill-card__knowledge li {
   transform: translateX(0);
   transition-timing-function: cubic-bezier(0, 1.5, 1, 1);
   transition-duration: 0.5s;
@@ -35,7 +40,7 @@
 .skill-card__header {
   position: relative;
   object-fit: fill;
-  height: 170px;
+  height: clamp(100px, 170px, 200px);
   margin: -20px -20px 20px -20px;
   transition: height 0.5s;
   overflow: hidden;
@@ -56,22 +61,25 @@
 }
 
 .skill-card__body {
-  max-height: 40px;
+  max-height: 47px;
   transition: max-height 0.5s;
   max-width: min-content;
   overflow: hidden;
-  display: flexbox;
-  justify-content: left;
+
+  justify-content: flex-start;
+  
 }
 
 .skill-card__title {
   font-size: 1.4em;
   font-weight: 600;
   text-transform: uppercase;
-  
+  white-space: nowrap;
+  overflow: hidden;         
+  text-overflow: ellipsis;   
   max-width: 100%;       
-  word-wrap: break-word;
-  overflow-wrap: break-word;
+
+
   white-space: normal;   
 }
 
@@ -97,4 +105,27 @@
 }
 .item{
   font-size: 20px;
+}
+
+@media (max-width: 768px) {
+
+
+  .skill-card__header {
+    height: clamp(80px, 120px, 150px);
+  }
+
+  .skill-card__icon {
+    width: 100px;
+    height: 100px;
+  }
+
+  .skill-card__title {
+    font-size: clamp(0.8em, 1em, 1em);
+    width: 100%;
+
+  }
+
+  .skill-card__knowledge li {
+    font-size: 0.9em;
+  }
 }

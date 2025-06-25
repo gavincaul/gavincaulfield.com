@@ -1,70 +1,82 @@
 {
   "pages": {
-    "spotify": {
-      "why": "Music is a very important piece of my life. I dedicate a lot of my free time to listening, playing, and writing music. For that, I, whenever and wherever I can, try to bend my coding capabilities to improve upon my leisure. For that, I am a frequent user of Spotify API, specifically <a style='color: red;' href='https://spotipy.readthedocs.io/en/2.24.0/' target='_blank' rel='noopener noreferrer'>Spotipy</a>.",
-      "projects": {
-        "iMessageToSpotify Scraper": {
-          "img": "clout.jpg",
-          "desc": "The main purpose of this tool is to take spotify songs sent through iMessage, using the library imessage-reader, and add them into a playlist owned by me (or the person who changes the code for themself). However, I also implemented a spreadsheet uploader, supported by a google API, in order to keep track of who sent every song.",
-          "links": [
-            "GitHub Repo",
-            "https://github.com/gavincaul/iMessageSpotifyScraper",
-            "Playlist",
-            "https://open.spotify.com/playlist/4hTY6FrGjAl26aw9QzrUzM?si=55346e50ca0d4bc9"
-          ],
-          "hidden": 0
+    "experience": {
+      "parents": {
+        "work": {
+          "groups": {
+            "Research": {
+              "img": "RESEARCH.png"
+            },
+            "UDCIS": {
+              "img": "UDCIS.png"
+            }
+          },
+          "text": "Across roles—whether organizing hackathons, leading CS events, or coding in labs and internships—I stay hands-on and focused on impact. I like to stay busy, solve problems in real time, and make meaningful contributions. Here's some of what I've done."
         },
-        "24Hour Manager": {
-          "img": "24.jpg",
-          "desc": "In preparation for a 26 hour road trip to Colorado, my fellow music-addicted companion and I insisted on making a playlist for the journey. With ~150 songs each, we knew this playlist would be a mess. So, I took the liberty of creating a program to manage this playlist, including reordering of songs (s.t. Time leads into Great Gig) and balancing the playlist (s.t. we don’t listen Thick as a Brick right into 2112)",
-          "links": [
-            "GitHub",
-            "https://github.com/gavincaul/SpotifyProjects/blob/master/24hr.py"
-          ],
-          "hidden": 0
+        "potpourri": {
+          "groups": {
+            "Spotify": {
+              "img": "SPOTIFY.png"
+            },
+            "FullStack": {
+              "img": "FULLSTACK.png"
+            }
+          },
+          "text": "In my spare time, I work on projects that don’t necessarily fit under a specific category. Following are some of those projects."
         },
-        "Spotify Album Wheel Spinner": {
-          "img": "spotifywheel.jpg",
-          "desc": "I have a lot of albums saved on Spotify, and I frequently can’t choose which to listen to. For that, I developed a site that’ll pull from a user’s Spotify account and create a wheel of saved albums to spin. ***N.B. Because of Spotify API settings, the project is not for public use, for that, I need to reach out to Spotify***",
-          "links": [
-            "GitHub Repo",
-            "https://github.com/gavincaul/SpotifyAlbumWheelSpin"
-          ],
-          "hidden": 0
-        },
-        "AutoUpdateLoooong": {
-          "img": "loooong.jpg",
-          "desc": "I have a playlist titled ‘loooooong’, it’s songs I like that are usually 12+ mins. This program automatically updates the playlist.",
-          "links": [
-            "GitHub",
-            "https://github.com/gavincaul/SpotifyProjects/blob/master/autoupdateloooong.py"
-          ],
-          "hidden": 0
-        },
-        "LastFM Management": {
-          "img": "lfmspot.jpg",
-          "desc": "LastFM is an application that tracks every song you listen to on a platform (for me, it’s Spotify). I integrated the Last FM API to find and remove my least listened to songs from my playlists.",
-          "links": [
-            "GitHub",
-            "https://github.com/gavincaul/SpotifyProjects/blob/master/LastFMManage.py"
-          ],
-          "hidden": 0
-        },
-        "Mix Maker": {
-          "img": "mix.jpg",
-          "desc": "Do you ever get frustrated with Spotify’s Mix creation? If you’re employed, probably not. I do!!!! For that, I wrote a script that’ll create mixes based on Genres (i.e. Rap) that’ll produce a mix of only songs I KNOW! Now I can listen to my mixes",
-          "links": [
-            "GitHub",
-            "https://github.com/gavincaul/SpotifyProjects/blob/master/mixmaker.py"
-          ],
-          "hidden": 0
+        "creative": {
+          "groups": {
+            "Dance": {
+              "img": "DANCE.png"
+            },
+            "Music&Arts": {
+              "img": "MUSIC.png"
+            }
+          },
+          "text": "How I exercise my creativity"
         }
-      }
-    },
-    "research": {
-      "why": "I began working at UD’s HCI Lab in 2023 for Delaware INBRE. Here, I primarily work with VR and AR equipment and C# scripting to create programs that benefit select groups. Frequently work with .NET Framework 6.0 and C# development for REST/API development.",
+      },
       "projects": {
+        "DE Inbre": {
+          "parent": "work",
+          "groups": ["Research"],
+          "img": "Inbre.png",
+          "desc": "**(Jun - Aug 2023)**\nDelaware IDeA Network of Biomedical Research Excellence (INBRE) is a program that supports biomedical research in Delaware. I was a part of the 2023 cohort, where I worked to develop a program to move physical rehabilitation – specifically balance training – onto an augmented reality platform. This program introduced me to the HCI Lab. Click the link below to see my research!",
+          "links": ["Poster", "/file?src=InbrePoster.png"],
+          "hidden": 0
+        },
+        "Teaching Assistant": {
+          "parent": "work",
+          "groups": ["UDCIS"],
+          "img": "TA.png",
+          "desc": "**(2022 - 2023)**\nI was a Teaching Assistant for CISC108 - Introduction to Computer Science. In this role, I assisted students in learning the fundamentals of programming in Python, including data structures, algorithms, and problem-solving techniques. I also helped develop course materials and provided support during lab sessions.\n\n*PICTURED*: My resume for the students in my cohort.",
+          "links": [],
+          "hidden": 0
+        },
+        "Lab Assistant": {
+          "parent": "work",
+          "groups": ["UDCIS"],
+          "img": "LA.png",
+          "desc": "**(2023)**\nI was a Lab Assistant for CISC210 - Intro to Systems Programming. In this role, I assisted students in learning the fundamentals of systems programming in C, including memory management, file I/O, and low-level programming concepts. I also helped develop course materials and provided support during lab sessions.\n\n*PICTURED*: My pre-class computer setup.",
+          "links": [],
+          "hidden": 0
+        },
+        "HenHacks 2025": {
+          "parent": "work",
+          "groups": ["UDCIS"],
+          "img": "henhacks.jpg",
+          "desc": "**(Apr 2024 - May 2025)**\nI was responsible for the volunteers at UD’s 3rd annual Hackathon, HenHacks 2025. Under this role, I recruited, trained, and managed over 80+ volunteers for the near 36 hour event.",
+          "links": [
+            "Website",
+            "https://www.henhackshackathon.com/",
+            "UDaily Article",
+            "https://www.udel.edu/udaily/2025/june/computer-science-students-organize-henhacks-hackathon/"
+          ],
+          "hidden": 0
+        },
         "Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments": {
+          "parent": "work",
+          "groups": ["Research"],
           "img": "towards.jpg",
           "desc": "This work presents a VR environment with a generative AI virtual assistant to support human anatomy education, allowing the user to communicate verbally with the virtual assistant. I assisted in the development and testing of the program, along with revision to the submitted paper. Won “Honorable Mention” at the AIxVR 2024 Conference",
           "links": [
@@ -78,15 +90,16 @@
           "hidden": 0
         },
         "Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality": {
+          "parent": "work",
+          "groups": ["Research"],
           "img": "enhancing.jpg",
           "desc": "A program to move physical rehabilitation – specifically balance training – onto an augmented reality platform. Developed the program, led and managed a pilot test of the program, including analysis of the effectiveness of VR vs AR, and created and presented poster at NERIC 2023.",
-          "links": [
-            "Poster",
-            "https://www.canva.com/design/DAFqUuJjh2M/XswU-kcsR5MxPFSFznI4Bw/edit?utm_content=DAFqUuJjh2M&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-          ],
+          "links": ["Poster", "/file?src=InbrePoster.png"],
           "hidden": 0
         },
         "Virtual Patient Simulation for Nursing Students": {
+          "parent": "work",
+          "groups": ["Research"],
           "desc": "This project aims to develop a comprehensive training platform for women’s health and sexual health. The platform will provide nursing students with various scenarios to help them acquire different skills and competencies. Developed in Unity 3D, the program allows communication between a Midwife and nursing students in training via a virtual avatar.",
           "img": "midwifery.jpg",
           "links": [
@@ -96,6 +109,8 @@
           "hidden": 0
         },
         "ChatGPT-assisted Medical Examination training in Mixed Reality": {
+          "parent": "work",
+          "groups": ["Research"],
           "desc": "This project used the Microsoft Hololens 2 to create a quiz environment to probe medical students on anatomical questions related to their field. In the project were two mediums of communication for ChatGPT: a blackboard that supported TTS and STT, and a GPT-embodied virtual avatar.",
           "img": "MRChat.jpg",
           "links": [
@@ -105,105 +120,287 @@
             "https://github.com/HCI-UD/ChatGPTMR?tab=readme-ov-file#demo-video"
           ],
           "hidden": 0
-        }
-      }
-    },
-    "work": {
-      "why": "I’ve worked in many different areas, but my experience at every place has one thing in common—I like to keep busy and take on roles where I can actually make an impact. Whether it’s organizing a hackathon, running events for UD’s CS department, or writing code in research labs and internships, I enjoy being hands-on and problem-solving in real time. Here’s some of what I’ve accomplished.",
-      "projects": {
-        "HenHacks 2025 (Apr 2024 - May 2025)": {
-          "img": "henhacks.jpg",
-          "desc": "I am responsible for the volunteers at UD’s 3rd annual Hackathon, HenHacks 2025. Under this role, I recruit, train, and manage over 80+ volunteers for the near 36 hour event.",
-          "links": ["Website", "https://www.henhackshackathon.com/"],
+        },
+        "Embedded Embodied": {
+          "parent": "work",
+          "groups": ["Research"],
+          "desc": "This immersive Unity-based application matches participants with virtual mentors using custom avatars and live voice communication. Built with Unity3D, Photon (Multiplayer & Voice), and Google Workspace APIs, the system leverages pre-submitted Google Forms data to pair mentees with mentors using a matching algorithm. Mentors interact via Text-to-Speech (Azure TTS) buttons mapped from their questionnaire responses, while participants use Push-to-Talk (spacebar). Each user is represented by a personalized 3D avatar with animated expressions and lip-sync support via Salsa LipSync. Real-time room management, matchmaking, and communication are handled by Photon servers.\n\n*PICTURED*: My friend, Rana, being [interviewed by UDaily!](https://www.udel.edu/udaily/2025/march/virtual-reality-nurse-training-tool-computer-science-leila-barmaki/)",
+          "img": "heyjulie.png",
+          "links": [
+            "UDaily Interview",
+            "https://www.udel.edu/udaily/2025/march/virtual-reality-nurse-training-tool-computer-science-leila-barmaki/"
+          ],
           "hidden": 0
         },
-        "UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)": {
+        "UD Computing Promotions Undergraduate Officer": {
+          "parent": "work",
+          "groups": ["UDCIS"],
           "img": "cpus.jpg",
-          "desc": "As a UD CPU, I am responsible for collaborating with other undergraduate students to create an inviting and exciting Computer and Information Science community at UD. Some of the events I have managed include...\n\nCISC Career Fair (pictured), Whiteboard interview preparation, Meet Your Professors!, Personal Project Showcase, Career Readiness, Concentration/Advising Nights, and more!",
-          "links": ["Instagram", "https://www.instagram.com/udcpus/"],
+          "desc": "**(Oct 2023 - May 2025)**\nAs a UD CPU, I was responsible for collaborating with other undergraduate students to create an inviting and exciting Computer and Information Science community at UD. Some of the events I have managed include...\n\nCISC Career Fair (pictured), Whiteboard interview preparation, Meet Your Professors!, Personal Project Showcase, Career Readiness, Concentration/Advising Nights, and more!",
+          "links": [
+            "Instagram",
+            "https://www.instagram.com/udcpus/",
+            "Website",
+            "https://sites.google.com/udel.edu/cpus/home"
+          ],
           "hidden": 0
         },
-        "Berkely Technology Services Command Center Analyst (June 2024 - November 2024)": {
+        "Berkely Technology Services Command Center Analyst": {
+          "parent": "work",
           "img": "berkley.jpg",
-          "desc": "At BTS, I worked with enterprise schedulers (TIDAL), computer networking, UNIX/LINUX server management, software development, data center management, and LUMEN & Cisco.",
+          "desc": "(Jun 2024 - Nov 2024)\nAt BTS, I worked with enterprise schedulers (TIDAL), computer networking, UNIX/LINUX server management, software development, data center management, and LUMEN & Cisco.",
           "links": [],
           "hidden": 0
         },
         "Human-Computer Interaction Lab Research Assistant": {
+          "parent": "work",
+          "groups": ["Research"],
           "img": "hcilab.jpg",
-          "desc": "At the HCI Lab, I primarily developed Unity programs in C# and under .NET for various VR related projects. Additionally, I worked with motion-tracking software and facial scanning and rendering within my projects. Outside of development, I assisted in writing and editing research papers in the lab, including my PI’s NSF Career grant (which she was awarded).",
+          "desc": "**(Jun 2023 - present)**\nAt the HCI Lab, I primarily developed Unity programs in C# and under .NET for various VR related projects. Additionally, I worked with motion-tracking software and facial scanning and rendering within my projects. Outside of development, I assisted in writing and editing research papers in the lab, including my PI’s NSF Career grant (which she was awarded).",
           "links": ["HCI Website", "https://sites.udel.edu/hci-lab/"],
           "hidden": 0
-        }
-      }
-    },
-    "potpourri": {
-      "why": "Aside from Spotify, work, and research, I work on projects that don’t fit under a specific category. Following are some of those projects.",
-      "projects": {
+        },
+
+        "iMessageToSpotify Scraper": {
+          "parent": "potpourri",
+          "groups": ["Spotify"],
+          "img": "clout.jpg",
+          "desc": "The main purpose of this tool is to take spotify songs sent through iMessage, using the library imessage-reader, and add them into a playlist owned by me (or the person who changes the code for themself). However, I also implemented a spreadsheet uploader, supported by a google API, in order to keep track of who sent every song.",
+          "links": [
+            "GitHub Repo",
+            "https://github.com/gavincaul/iMessageSpotifyScraper",
+            "Playlist",
+            "https://open.spotify.com/playlist/4hTY6FrGjAl26aw9QzrUzM?si=55346e50ca0d4bc9"
+          ],
+          "hidden": 0
+        },
+        "DeerParkLine": {
+          "parent": "potpourri",
+          "groups": ["FullStack"],
+          "img": "deerparkphon.png",
+          "desc": "DeerParkLine was a project I started with my friend, Eli Brignac, in early 2025 to try and get VIP Cards at the local school bar (ability to skip the line). The program uses geolocation and predictive analysis to suggest the current wait time in total and of your position in the 'Deer Park Line'. We didn't get VIP Cards, so I cancelled the domain.",
+          "links": [
+            "GitHub Repo",
+            "https://github.com/gavincaul/DeerParkLine",
+            "Eli Brignac LinkedIn",
+            "https://www.linkedin.com/in/eli-brignac/"
+          ],
+          "hidden": 0
+        },
+        "AutoUpdateArtistPlaylist": {
+          "parent": "potpourri",
+          "groups": ["Spotify"],
+          "img": "autoupdate.png",
+          "desc": "Spotify frustratingly does not auto filter artist playlists, so I wrote a script to do that for me. The script will automatically update a playlist with my favorite songs from an artist. This is useful for artists with large discographies, like Pink Floyd.\n\n*PICTURED*: A list of some of my autoupdated artist playlists.",
+          "links": [],
+          "hidden": 0
+        },
+        "24Hour Manager": {
+          "parent": "potpourri",
+          "groups": ["Spotify"],
+          "img": "24.jpg",
+          "desc": "In preparation for a 26 hour road trip to Colorado, my fellow music-addicted companion and I insisted on making a playlist for the journey. With ~150 songs each, we knew this playlist would be a mess. So, I took the liberty of creating a program to manage this playlist, including reordering of songs (s.t. Time leads into Great Gig) and balancing the playlist (s.t. we don’t listen [Thick as a Brick](https://open.spotify.com/track/0eufeeCADKlpxLA7HATWBW?si=c91af13957784e86) right into [2112](https://open.spotify.com/track/2DMDV9kUEO2WjUHg5acHBY?si=aeafc05042ba4e99)\n\n",
+          "links": [
+            "GitHub",
+            "https://github.com/gavincaul/SpotifyProjects/blob/master/24hr.py"
+          ],
+          "hidden": 0
+        },
+        "Spotify Album Wheel Spinner": {
+          "parent": "potpourri",
+          "groups": ["Spotify"],
+          "img": "spotifywheel.jpg",
+          "desc": "I have a lot of albums saved on Spotify, and I frequently can’t choose which to listen to. For that, I developed a site that’ll pull from a user’s Spotify account and create a wheel of saved albums to spin. ***N.B. Because of Spotify API settings, the project is not for public use, for that, I need to reach out to Spotify***",
+          "links": [
+            "GitHub Repo",
+            "https://github.com/gavincaul/SpotifyAlbumWheelSpin"
+          ],
+          "hidden": 0
+        },
+        "AutoUpdateLoooong": {
+          "parent": "potpourri",
+          "groups": ["Spotify"],
+          "img": "loooong.jpg",
+          "desc": "I have a playlist titled ‘loooooong’, it’s songs I like that are usually 12+ mins. This program automatically updates the playlist.\n\n*PICTURED*: *the* [loooooooong](https://open.spotify.com/playlist/1TUrTonIwvMuLtkaSBLmgE?si=39070b7a903d43e1) playlist.",
+          "links": [
+            "GitHub",
+            "https://github.com/gavincaul/SpotifyProjects/blob/master/autoupdateloooong.py"
+          ],
+          "hidden": 0
+        },
+        "LastFM Management": {
+          "parent": "potpourri",
+          "groups": ["Spotify"],
+          "img": "lfmspot.jpg",
+          "desc": "LastFM is an application that tracks every song you listen to on a platform (for me, it’s Spotify). I integrated the Last FM API to find and remove my least listened to songs from my playlists.",
+          "links": [
+            "GitHub",
+            "https://github.com/gavincaul/SpotifyProjects/blob/master/LastFMManage.py"
+          ],
+          "hidden": 0
+        },
+        "Scrolling Display": {
+          "parent": "potpourri",
+          "img": "GC.png",
+          "desc": "A pure C built application that responds to input from a keyboard and displays the input on a scrolling display. The program is built to run on a Raspberry Pi, and is used to display messages in my dorm room.\n\n*PICTURED*: The application displaying my intials, GC, without moving.",
+          "links": [
+            "GitHub Repo",
+            "https://github.com/gavincaul/ScrollingDisplay"
+          ],
+          "hidden": 0
+        },
+        "Mix Maker": {
+          "parent": "potpourri",
+          "groups": ["Spotify"],
+          "img": "mix.jpg",
+          "desc": "Do you ever get frustrated with Spotify’s Mix creation? If you’re employed, probably not. I do!!!! For that, I wrote a script that’ll create mixes based on Genres (i.e. Rap) that’ll produce a mix of only songs I KNOW! Now I can listen to my mixes",
+          "links": [
+            "GitHub",
+            "https://github.com/gavincaul/SpotifyProjects/blob/master/mixmaker.py"
+          ],
+          "hidden": 0
+        },
+
         "ColtonCaulfield.com": {
+          "parent": "potpourri",
+          "groups": ["FullStack"],
           "img": "coltoncaulfield.jpg",
           "desc": "A website dedicated to the works of my brother, Colton Caulfield. Developed and maintained by me; design and data managed by Colton.",
           "links": ["Website", "https://www.coltoncaulfield.com"],
           "hidden": 0
         },
         "HoloFlash": {
+          "parent": "potpourri",
+          "groups": ["FullStack"],
           "img": "holoflash.jpg",
           "desc": "Winner of Best Use of AI in Education at 2024 HenHacks \n\nOur application empowers students by utilizing Googles Gemini AI to swiftly convert audio files, pdfs, and images into flashcards relating to the inputs subject matter. On top of this, users can also review their flashcards in augmented reality using the Microsoft Hololens, hence the name of our project \"Holo-Flash\". Developed the HoloLens AR application, along with REST development for the site.",
           "links": [
-            "github",
+            "GitHub Repo",
             "https://github.com/janahmedprg/flashcards",
-            "devpost",
+            "DevPost",
             "https://devpost.com/software/holoflash"
           ],
           "hidden": 0
         },
         "WebsiteSetup": {
+          "parent": "potpourri",
+          "groups": ["FullStack"],
           "img": "websitesetup.jpg",
           "desc": "Setting up a website can be a hassle, what if you could do it for free in just a few clicks? WebsiteSetup.py is a script I wrote to help me with that. This script deploys a React Page hosted on GitHub Pages, All managed on CLI.",
           "links": [],
           "hidden": 0
         },
         "GavinCaulfield.com": {
+          "parent": "potpourri",
+          "groups": ["FullStack"],
           "img": "mypage.jpg",
           "desc": "This website! Built in Jan 2025 via React framework, GH-Pages, and love <3",
-          "links": ["...", "/secret"],
+          "links": ["...", "/about"],
           "hidden": 0
         },
         "Restaurant Menu": {
+          "parent": "potpourri",
+          "groups": ["FullStack"],
           "img": "restaurant.jpg",
           "desc": "A purely frontend React web page built with my group mates for CISC275 - Intro to Software Engineering. The page mocks a restaurant order page, supporting favorites, ratings, cart ‘orders,’ and much more.",
           "links": ["Website", "https://andrewango.github.io/restaurant-menu/"],
           "hidden": 0
         },
         "ICPC 2023": {
+          "parent": "potpourri",
           "img": "icpc.jpg",
-          "desc": "In 2023, I had the privilege of representing University of Delaware CIS at the International Competitive Programming Competition at John Hopkins. My teammates and I diligently brainstormed for 5+ hours on about 8 difficult programming scenarios, submitting solutions as we went.",
+          "desc": "**(2023)**\nI had the privilege of representing University of Delaware CIS at the International Competitive Programming Competition at John Hopkins. My teammates and I diligently brainstormed for 5+ hours on about 8 difficult programming scenarios, submitting solutions as we went.",
           "links": [],
           "hidden": 0
-        }
-      }
-    },
-    "creative": {
-      "why": "Creative outlets for me",
-      "projects": {
+        },
+
         "Finding Nolan": {
+          "parent": "creative",
+          "groups": ["Music&Arts"],
           "img": "findingnolan.jpg",
-          "desc": "In 2021-22, I sought out to create a movie with my floormates called <i>Finding Nolan</i>. I wrote, edited, filmed, and directed the entire piece. It is a ~35 min epic on <i>YouTube</i>. Check it out.",
+          "desc": "In 2021-22, I sought out to create a movie with my floormates called *Finding Nolan*. I wrote, edited, filmed, and directed the entire piece. It is a ~35 min epic on *YouTube*. Check it out.",
           "links": ["YouTube", "https://www.youtube.com/watch?v=tXKc5YrpZ4M"],
           "hidden": 0
         },
+        "Dance Academic Program Review": {
+          "parent": "creative",
+          "groups": ["Dance"],
+          "img": "justdance.jpeg",
+          "desc": "I was invited as one of six students in the School for Dance & Theater at UD attend the bi-decadely Academic Program Review (APR) in 2025. 'The Academic Program Review (APR) provides academic departments with the opportunity to assess the quality of their teaching, research, and service/engagement activities, as appropriate for the department and/or program. Further, the APRs evaluate the effectiveness of their use of resources and determine their progress toward meeting the unit’s, college’s, and University of Delaware’s goals.\n\nI don't have a picture, as they weren't allowed in the meeting. So, \n*PICTURED*: My friends and I playing *Just Dance 2014*.",
+          "links": [],
+          "hidden": 0
+        },
+        "Brennan School's Artsapalooza Day": {
+          "parent": "creative",
+          "groups": ["Dance"],
+          "img": "Brennan1.jpeg",
+          "desc": "I was invited to assist Delaware's Brennan School's 2025 Artsapalooza Day, a day where students from the school come together to involve themselves in the arts. The Brennan School is a school for children with *Level 3* Autism Spectrum Disorder, and got to work with these children through movement. It was a tremendous event and incredibly gratifying. I am very proud of this participation.\n\n*PICTURED*: A still shot of movement with the children at the Brennan School.",
+          "links": ["Brennan School", "https://www.christinak12.org/brennen"],
+          "hidden": 0
+        },
+        "Annamarie Molecule Project": {
+          "parent": "creative",
+          "groups": ["Dance"],
+          "img": "flyingsquirrel.jpeg",
+          "desc": "I participated in a local dance study to translate molecular movement properties into movement arts. The study was conducted by Annamarie Giancarlo, a student at UD, and was a great experience to see how dance can be used to visualize science.\n\n*PICTURED*: Translation of molecular movement over the z-axis.",
+          "links": [
+            "Annamarie Carlo LinkedIn",
+            "https://www.linkedin.com/in/annamarie-carlo-3b02962b3/",
+            "Final Video",
+            "/file?src=dancingatoms.mov"
+          ],
+          "hidden": 0
+        },
+        "Peggle Edits": {
+          "parent": "creative",
+          "groups": ["Music&Arts"],
+          "img": "pegglesc.png",
+          "desc": "Peggle is awesome. In my free time I made a highlight reel, because I felt like it.",
+          "links": ["Video", "/file?src=Peggle1.mov"],
+          "hidden": 0
+        },
+        "Computationally Random Choreography": {
+          "parent": "creative",
+          "groups": ["Dance", "Research", "Music&Arts"],
+          "img": "crc.png",
+          "desc": "I created an original choreography and a computer-generated one, then presented both to an audience to see if they could distinguish between them. What began as a dance-based Turing Test evolved into a deeper exploration of intention in art and the role of computation in creative expression.\nI encourage you to read the paper below.",
+          "links": [
+            "Final Paper",
+            "/file?src=CRC.pdf",
+            "Test your ability to recognize a CRC!",
+            "https://gavincaul.github.io/Computationally-Random-Choreography-Page/",
+            "GitHub Repo",
+            "https://github.com/gavincaul/CRC-Code"
+          ],
+          "hidden": 0
+        },
         "Septronix": {
+          "parent": "creative",
+          "groups": ["Music&Arts"],
           "img": "septronixproject.jpg",
-          "desc": "Off a whim and a *drummer wanted* poster, I joined Brandon and Steven’s band <i>Septronix</i> in 2023. In the last two years, the three of us have bonded to a great trio, working on live music, playing at gigs, and developing original songs for studio release. As of January 2025, we have release one single, No More Chances, with an EP on the way!",
+          "desc": "Off a whim and a *drummer wanted* poster, I joined Brandon and Steven’s band *Septronix* in 2023. In the last two years, the three of us have bonded to a great trio, working on live music, playing at gigs, and developing original songs for studio release. As of June 2025, we have release two singles, *No More Chances* and *Sometimes*, with an EP on the way!",
           "links": [
             "Spotify",
             "https://open.spotify.com/artist/4M1xFt5CVBJlL5VkWCX4Jd"
           ],
           "hidden": 0
         },
+        "Colors of Old College": {
+          "parent": "creative",
+          "groups": ["Dance"],
+          "img": "colorsooc.jpeg",
+          "desc": "Over 5 weeks, a cohort of dancers and I worked with each other to strengthen interpretive movement from art to perform at UD's 'Colors of Old College:  an immersive, multimedia exhibition that unveils the evolving story of Old College, tracing its journey from its 1830s origins to its present-day prominence.' With the assistance of choral singers and an actor, we responded to the words of a journal written by a UD student in 1850! Phenomenal experience.\n\n*PICTURED*: A still frame from the exhibit.",
+          "links": [
+            "Exhibit Page",
+            "https://exhibitions.lib.udel.edu/colors-of-old-college/"
+          ],
+          "hidden": 0
+        },
         "The Diner": {
+          "parent": "creative",
+          "groups": ["Dance", "Music&Arts"],
           "img": "diner.jpg",
-          "desc": "A collaborative video created by my group for my final in DANC209 - Dance in Film. The video illustrates the deficit stalking may have on somebody. Selected from the class and presented at the end of the year showcase, <i>Last Chance to Dance</i>.",
+          "desc": "A collaborative video created by my group for my final in DANC209 - Dance in Film. The video illustrates the deficit stalking may have on somebody. Selected from the class and presented at the end of the year showcase, *Last Chance to Dance*.",
           "links": [
             "Video",
             "https://drive.google.com/file/d/1pBo8JEaoi3qPXhftr8rPPACy76TxAqRD/view?usp=sharing"
@@ -211,67 +408,92 @@
           "hidden": 0
         },
         "Percussion & Drums": {
+          "parent": "creative",
+          "groups": ["Music&Arts"],
           "img": "drums.jpg",
           "desc": "Began playing percussion in 2013, drums in 2016, and haven’t put either down since.",
           "links": [],
           "hidden": 0
         },
         "Piano": {
+          "parent": "creative",
+          "groups": ["Music&Arts"],
           "img": "piano.jpg",
-          "desc": "Began playing piano in 2016, self taught.",
+          "desc": "My second main instrument. I began playing in 2016, learning from my percussive background of xylophone and mallet instruments. I love the piano, and appreciate integrating it into my work as much as I can.",
           "links": [],
           "hidden": 0
         },
         "Other instruments": {
+          "parent": "creative",
+          "groups": ["Music&Arts"],
           "img": "otherinstruments.jpg",
           "desc": "There are other instruments I am capable of playing, but don’t consider my main instruments. These include guitar, ukulele, trumpet, and bass (unless you include the recorder too 😉)",
           "links": [],
           "hidden": 0
         }
+      },
+      "hiddenProjects": {
+        "Barstool Delaware": {
+          "parent": "creative",
+          "img": "24.jpg",
+          "desc": "Made it onto Barstool Delaware. Thought it was kinda tuff.",
+          "links": [],
+          "hidden": 1
+        },
+        "John Rhea Meeting": {
+          "parent": "potpourri",
+          "groups": ["FullStack"],
+          "img": "24.jpg",
+          "desc": "In 2025, I had the opportunity to shadow a developed Web Designer at Virginia Humanities. John Rhea is an active computer scientist and web designer, and I learned a lot about the field from him. I am very grateful for this opportunity. Cool dude!",
+          "links": [],
+          "hidden": 1
+        }
       }
     },
+
     "about": {
       "human": {
         "img": "memountain.jpg",
-        "text": "Driven by creativity, curiosity, and neurodivergency, Gavin strives to create and produce projects to the best of his ability. Every detail, from text font to color scheme, matters to Gavin. Seeking creative outlets from as young as 7 years old, he manages to combine his intellectual abilities with his creativity in his projects, work, and hobbies.",
+        "text": "Driven by creativity, curiosity, and neurodivergence, I approach every project with intention and care—down to the font choice and color palette. Since childhood, I’ve sought creative outlets, and today I blend that creativity with analytical thinking across my work, hobbies, and personal projects.",
 
         "order": 0,
         "link": []
       },
       "programmer": {
         "img": "coding.jpg",
-        "text": "Attached is the GitHub of Gavin. He specializes in many languages, including Python, C/C++, JS/TSX, etc. Like most projects, Gavin strives for perfection in his code, not dropping a project until it is complete to his measure. Additionally, Gavin frequently will go on a coding binge to exercise his brain, before or after picking up one of his creative arts. \n\nPICTURED: Gavin and his friend Eli celebrating their hackathon submission <a style='color: white;' href='https://www.gavincaulfield.com/experience/potpourri#holoflash' target='_blank' rel='noopener noreferrer'>HoloFlash</a> in 2024.",
+        "text": "I work across many languages—including Python, C/C++, and JS/TSX—and I treat each project with care, rarely stepping away until it meets my personal standard. I often code in bursts, sometimes as a way to recharge mentally before diving back into one of my creative outlets. \n\n<i>PICTURED</i>: Gavin and his friend Eli celebrating their hackathon submission <a style='color: white;' href='https://www.gavincaulfield.com/experience/potpourri#holoflash' target='_blank' rel='noopener noreferrer'>HoloFlash</a> in 2024.",
         "order": 1,
         "link": [
           "Hackathon Project",
           "https://devpost.com/software/holoflash",
           "Github",
-          "https://github.com/gavincaul"
+          "https://github.com/gavincaul",
+          "Eli Brignac LinkedIn",
+          "https://www.linkedin.com/in/eli-brignac/"
         ]
       },
       "musician": {
         "img": "septronix.jpg",
-        "text": "From a young age, Gavin was driven by music. He picked up percussion in 4th grade and hasn't put it down since. From then, he has picked up numerous instruments like Piano and Guitar. Additionally, his band (pictured left) <i>Septronix</i> has released their latest single, 'No More Chances', check it out!",
+        "text": "From a young age, I’ve been driven by music. I picked up percussion in 4th grade and haven’t put it down since. Over the years, I’ve added instruments like piano and guitar to the mix. My band, <i>Septronix</i> (pictured left), recently released our latest single, <i>'Sometimes'</i> — check it out!",
 
         "order": 0,
         "link": [
           "Septronix",
-          "https://open.spotify.com/artist/4M1xFt5CVBJlL5VkWCX4Jd?si=uUa9QAdPRd-awHPSh_INhA"
+          "https://open.spotify.com/album/1Xt8LYvs2FwyuV2H7ne9Ra?si=0uawJgXxTJiPKNvypMIXwg"
         ]
       },
       "dancer": {
         "img": "medance.jpg",
-        "text": "Gavin has been moving his whole life: in response to dopamine stimuli, in a free moving studio environment, or out and about. Dance exhausts Gavin's brain; it grounds him, it connects him to the world around him. Although he is fairly new to dance in education, joining his first Modern Dance class in Fall of 2023, Gavin fell in love with the art, dancing whenever he can.",
-
+        "text": "I’ve been moving my whole life—whether in response to dopamine, in a freeform studio space, or just out and about. Dance challenges my brain, grounds me, and connects me to the world around me. Although I’m relatively new to formal dance education—having taken my first Modern Dance class in Fall 2023—I fell in love with the art and now dance whenever I can.",
         "order": 1,
-        "link": []
+        "link": ["Interdisciplinary Research in Dance", "/file?src=CRC.pdf"]
       }
     }
   },
 
   "skills": {
     "programming": {
-      "groupColor": "#B24C63",
+      "groupColor": "178, 76, 99",
       "skills": {
         "Python": {
           "time": "4 years",
@@ -285,16 +507,20 @@
           ],
           "img": "https://upload.wikimedia.org/wikipedia/commons/1/1f/Python_logo_01.svg",
           "projects": [
-            "spotify/projects/iMessageToSpotify Scraper",
-            "spotify/projects/24Hour Manager",
-            "spotify/projects/Spotify Album Wheel Spinner",
-            "spotify/projects/AutoUpdateLoooong",
-            "spotify/projects/LastFM Management",
-            "spotify/projects/Mix Maker",
-            "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)",
-            "potpourri/projects/HoloFlash",
-            "potpourri/projects/WebsiteSetup",
-            "potpourri/projects/ICPC 2023"
+            "iMessageToSpotify Scraper",
+            "24Hour Manager",
+            "Spotify Album Wheel Spinner",
+            "AutoUpdateLoooong",
+            "LastFM Management",
+            "Mix Maker",
+            "Berkely Technology Services Command Center Analyst (June 2024 - November 2024)",
+            "HoloFlash",
+            "WebsiteSetup",
+            "ICPC 2023",
+            "Teaching Assistant",
+            "Lab Assistant",
+            "DeerParkLine",
+            "AutoUpdateArtistPlaylist"
           ]
         },
         "C": {
@@ -303,7 +529,7 @@
 
           "works": ["CUDA", "POSIX Threads", "GDB", "Valgrind", "Makefiles"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png",
-          "projects": ["potpourri/projects/ICPC 2023"]
+          "projects": ["ICPC 2023", "Lab Assistant", "Scrolling Display"]
         },
         "C++": {
           "time": "3 years",
@@ -311,7 +537,7 @@
 
           "works": ["OpenCV", "Competitive Programming"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C%2B%2B_Logo.svg",
-          "projects": ["potpourri/projects/ICPC 2023"]
+          "projects": ["ICPC 2023"]
         },
         "Java": {
           "time": "3 years",
@@ -328,12 +554,14 @@
 
           "img": "https://upload.wikimedia.org/wikipedia/commons/b/b9/JavaScript_shield_logo_%28no_text%29.svg",
           "projects": [
-            "potpourri/projects/HoloFlash",
-            "potpourri/projects/WebsiteSetup",
-            "potpourri/projects/ColtonCaulfield.com",
-            "potpourri/projects/Restaurant Menu",
-            "spotify/projects/Spotify Album Wheel Spinner",
-            "potpourri/projects/GavinCaulfield.com"
+            "HoloFlash",
+            "WebsiteSetup",
+            "ColtonCaulfield.com",
+            "Restaurant Menu",
+            "Spotify Album Wheel Spinner",
+            "GavinCaulfield.com",
+            "DeerParkLine",
+            "Computationally Random Choreography"
           ]
         },
         "Typescript": {
@@ -343,12 +571,14 @@
 
           "img": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Typescript_logo_2020.svg",
           "projects": [
-            "potpourri/projects/HoloFlash",
-            "potpourri/projects/WebsiteSetup",
-            "potpourri/projects/ColtonCaulfield.com",
-            "potpourri/projects/Restaurant Menu",
-            "spotify/projects/Spotify Album Wheel Spinner",
-            "potpourri/projects/GavinCaulfield.com"
+            "HoloFlash",
+            "WebsiteSetup",
+            "ColtonCaulfield.com",
+            "Restaurant Menu",
+            "Spotify Album Wheel Spinner",
+            "GavinCaulfield.com",
+            "DeerParkLine",
+            "Computationally Random Choreography"
           ]
         },
         "Csharp": {
@@ -358,11 +588,13 @@
           "works": [".NET", "Unity", "REST API"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/8/8e/Chord_C%E2%99%AF.svg",
           "projects": [
-            "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
-            "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
-            "work/projects/Human-Computer Interaction Lab Research Assistant",
-            "research/projects/Virtual Patient Simulation for Nursing Students",
-            "research/projects/ChatGPT-assisted Medical Examination training in Mixed Reality"
+            "Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
+            "Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+            "Human-Computer Interaction Lab Research Assistant",
+            "Virtual Patient Simulation for Nursing Students",
+            "ChatGPT-assisted Medical Examination training in Mixed Reality",
+            "Embedded Embodied",
+            "DE Inbre"
           ]
         },
         "R": {
@@ -372,11 +604,13 @@
           "works": ["ggplot2", "dplyr", "anova"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/1/1b/R_logo.svg",
           "projects": [
-            "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
-            "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
-            "work/projects/Human-Computer Interaction Lab Research Assistant",
-            "research/projects/Virtual Patient Simulation for Nursing Students",
-            "research/projects/ChatGPT-assisted Medical Examination training in Mixed Reality"
+            "Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
+            "Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+            "Human-Computer Interaction Lab Research Assistant",
+            "Virtual Patient Simulation for Nursing Students",
+            "ChatGPT-assisted Medical Examination training in Mixed Reality",
+            "Embedded Embodied",
+            "DE Inbre"
           ]
         },
         "SQL": {
@@ -384,7 +618,7 @@
           "experience": 2.5,
           "works": ["Oracle DB", "SQL Queries", "Database Connectivity"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Deepin_Icon_Theme_%E2%80%93_application-sql_%2819%29.svg",
-          "projects": []
+          "projects": ["DeerParkLine"]
         },
         "HTML/CSS": {
           "time": "3 years",
@@ -392,11 +626,15 @@
           "works": ["Tailwind", "Box Model", "ChakraUI", "Static Design"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/1/10/CSS3_and_HTML5_logos_and_wordmarks.svg",
           "projects": [
-            "potpourri/projects/Restaurant Menu",
-            "potpourri/projects/HoloFlash",
-            "potpourri/projects/WebsiteSetup",
-            "potpourri/projects/ColtonCaulfield.com",
-            "potpourri/projects/GavinCaulfield.com"
+            "Restaurant Menu",
+            "HoloFlash",
+            "WebsiteSetup",
+            "ColtonCaulfield.com",
+            "GavinCaulfield.com",
+            "DeerParkLine",
+            "Computationally Random Choreography",
+            "Spotify Album Wheel Spinner",
+            "HenHacks 2025"
           ]
         },
         "Bash": {
@@ -405,8 +643,11 @@
           "works": ["ffmpeg", "Scripting", "CLI Tools", "CRON Jobs"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/5/52/Bash-tip.svg",
           "projects": [
-            "potpourri/projects/WebsiteSetup",
-            "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)"
+            "WebsiteSetup",
+            "Berkely Technology Services Command Center Analyst (June 2024 - November 2024)",
+            "iMessageToSpotify Scraper",
+            "Computationally Random Choreography",
+            "Scrolling Display"
           ]
         },
         "Linux": {
@@ -415,10 +656,12 @@
           "works": ["ZShell", "Systemctl", "SSH", "Access Control Lists"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/3/35/Tux.svg",
           "projects": [
-            "potpourri/projects/WebsiteSetup",
-            "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)",
-            "work/projects/Human-Computer Interaction Lab Research Assistant",
-            "potpourri/projects/GavinCaulfield.com"
+            "WebsiteSetup",
+            "Berkely Technology Services Command Center Analyst (June 2024 - November 2024)",
+            "Human-Computer Interaction Lab Research Assistant",
+            "GavinCaulfield.com",
+            "Computationally Random Choreography",
+            "Scrolling Display"
           ]
         },
         ".NET": {
@@ -427,11 +670,13 @@
           "works": ["Entity Framework", "Unity", "Visual Studio"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg",
           "projects": [
-            "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
-            "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
-            "work/projects/Human-Computer Interaction Lab Research Assistant",
-            "research/projects/Virtual Patient Simulation for Nursing Students",
-            "research/projects/ChatGPT-assisted Medical Examination training in Mixed Reality"
+            "Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
+            "Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+            "Human-Computer Interaction Lab Research Assistant",
+            "Virtual Patient Simulation for Nursing Students",
+            "ChatGPT-assisted Medical Examination training in Mixed Reality",
+            "DE Inbre",
+            "Embedded Embodied"
           ]
         },
         "Parallel Programming": {
@@ -439,12 +684,12 @@
           "experience": 2,
           "works": ["OpenMP", "CUDA", "Multithreading", "Thread Pools"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/1/16/PerturbatedRabbitJuliaSetZoom.png",
-          "projects": []
+          "projects": ["Computationally Random Choreography"]
         }
       }
     },
     "software development and tools": {
-      "groupColor": "#5438DC",
+      "groupColor": "84, 56, 220",
       "skills": {
         "Agile": {
           "time": "2 years",
@@ -452,29 +697,37 @@
           "works": ["Scrum", "Stand-ups", "Kanban", "Retrospectives"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/0/02/Computer_science_education.png",
           "projects": [
-            "potpourri/projects/ColtonCaulfield.com",
-            "spotify/projects/Spotify Album Wheel Spinner",
-            "potpourri/projects/Restaurant Menu",
-            "work/projects/Human-Computer Interaction Lab Research Assistant",
-            "potpourri/projects/GavinCaulfield.com"
+            "ColtonCaulfield.com",
+            "Spotify Album Wheel Spinner",
+            "Restaurant Menu",
+            "Human-Computer Interaction Lab Research Assistant",
+            "GavinCaulfield.com",
+            "Embedded Embodied",
+            "DeerParkLine"
           ]
         },
         "Git": {
           "time": "4 years",
           "experience": 5,
-          "works": ["GitHub Actions", "Submodules"],
+          "works": ["GitHub Actions", "Submodules", "Pages"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/0/03/Git_format.png",
           "projects": [
-            "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
-            "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
-            "potpourri/projects/ColtonCaulfield.com",
-            "potpourri/projects/HoloFlash",
-            "potpourri/projects/WebsiteSetup",
-            "potpourri/projects/Restaurant Menu",
-            "work/projects/Human-Computer Interaction Lab Research Assistant",
-            "potpourri/projects/GavinCaulfield.com",
-            "research/projects/Virtual Patient Simulation for Nursing Students",
-            "research/projects/ChatGPT-assisted Medical Examination training in Mixed Reality"
+            "Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+            "Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
+            "ColtonCaulfield.com",
+            "HoloFlash",
+            "WebsiteSetup",
+            "Restaurant Menu",
+            "Human-Computer Interaction Lab Research Assistant",
+            "GavinCaulfield.com",
+            "Virtual Patient Simulation for Nursing Students",
+            "ChatGPT-assisted Medical Examination training in Mixed Reality",
+            "DE Inbre",
+            "Lab Assistant",
+            "Embedded Embodied",
+            "AutoUpdateArtistPlaylist",
+            "AutoUpdateLoooong",
+            "Computationally Random Choreography"
           ]
         },
         "Virtual/Augmented Reality": {
@@ -489,10 +742,11 @@
           ],
           "img": "https://upload.wikimedia.org/wikipedia/commons/4/42/Realidad_Virtual_-_VR.png",
           "projects": [
-            "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
-            "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
-            "work/projects/Human-Computer Interaction Lab Research Assistant",
-            "research/projects/ChatGPT-assisted Medical Examination training in Mixed Reality"
+            "Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+            "Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
+            "Human-Computer Interaction Lab Research Assistant",
+            "ChatGPT-assisted Medical Examination training in Mixed Reality",
+            "DE Inbre"
           ]
         },
         "React": {
@@ -501,11 +755,15 @@
           "works": ["React Router", "Hooks"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/3/30/React_Logo_SVG.svg",
           "projects": [
-            "spotify/projects/Spotify Album Wheel Spinner",
-            "potpourri/projects/ColtonCaulfield.com",
-            "potpourri/projects/HoloFlash",
-            "potpourri/projects/WebsiteSetup",
-            "potpourri/projects/Restaurant Menu"
+            "Spotify Album Wheel Spinner",
+            "ColtonCaulfield.com",
+            "HoloFlash",
+            "WebsiteSetup",
+            "Restaurant Menu",
+            "HenHacks 2025",
+            "DeerParkLine",
+            "GavinCaulfield.com",
+            "Computationally Random Choreography"
           ]
         },
         "Netlify": {
@@ -513,7 +771,7 @@
           "experience": 1.5,
           "works": ["Backend Development"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Cib-netlify_%28CoreUI_Icons_v1.0.0%29.svg",
-          "projects": ["spotify/projects/Spotify Album Wheel Spinner"]
+          "projects": ["Spotify Album Wheel Spinner", "DeerParkLine"]
         },
         "Domain Management": {
           "time": "2 years",
@@ -521,10 +779,11 @@
           "works": ["DNS Configuration", "WHOIS", "Squarespace"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/1/18/Domains.jpg",
           "projects": [
-            "potpourri/projects/ColtonCaulfield.com",
-            "potpourri/projects/HoloFlash",
-            "potpourri/projects/WebsiteSetup",
-            "potpourri/projects/GavinCaulfield.com"
+            "ColtonCaulfield.com",
+            "HoloFlash",
+            "WebsiteSetup",
+            "GavinCaulfield.com",
+            "DeerParkLine"
           ]
         },
         "Network Management": {
@@ -533,10 +792,11 @@
           "works": ["SNMP", "Ping/Traceroute", "Firewall (UFW)"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/c/c6/SNMP_Setup.png",
           "projects": [
-            "potpourri/projects/ColtonCaulfield.com",
-            "potpourri/projects/HoloFlash",
-            "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)",
-            "work/projects/Human-Computer Interaction Lab Research Assistant"
+            "ColtonCaulfield.com",
+            "HoloFlash",
+            "Berkely Technology Services Command Center Analyst (June 2024 - November 2024)",
+            "Human-Computer Interaction Lab Research Assistant",
+            "DeerParkLine"
           ]
         },
         "REST API": {
@@ -545,9 +805,10 @@
           "works": ["Flask", "JSON", "Backend Development"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/3/36/Web_API.png",
           "projects": [
-            "potpourri/projects/HoloFlash",
-            "potpourri/projects/WebsiteSetup",
-            "spotify/projects/Spotify Album Wheel Spinner"
+            "HoloFlash",
+            "WebsiteSetup",
+            "Spotify Album Wheel Spinner",
+            "DeerParkLine"
           ]
         },
         "NetTools": {
@@ -556,13 +817,13 @@
           "works": ["nmap", "traceroute", "ARP", "netstat"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Nmap-4.53.png",
           "projects": [
-            "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)"
+            "Berkely Technology Services Command Center Analyst (June 2024 - November 2024)"
           ]
         }
       }
     },
     "applications": {
-      "groupColor": "#E9B872",
+      "groupColor": "233, 184, 114",
       "skills": {
         "Visual Studio/Code": {
           "time": "3 years",
@@ -570,21 +831,25 @@
           "works": ["Debugging", "Programming", "React Development"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/9/9a/Visual_Studio_Code_1.35_icon.svg",
           "projects": [
-            "potpourri/projects/ColtonCaulfield.com",
-            "potpourri/projects/HoloFlash",
-            "potpourri/projects/WebsiteSetup",
-            "spotify/projects/iMessageToSpotify Scraper",
-            "spotify/projects/24Hour Manager",
-            "spotify/projects/Spotify Album Wheel Spinner",
-            "spotify/projects/AutoUpdateLoooong",
-            "spotify/projects/LastFM Management",
-            "spotify/projects/Mix Maker",
-            "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
-            "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
-            "work/projects/Human-Computer Interaction Lab Research Assistant",
-            "potpourri/projects/GavinCaulfield.com",
-            "research/projects/Virtual Patient Simulation for Nursing Students",
-            "research/projects/ChatGPT-assisted Medical Examination training in Mixed Reality"
+            "ColtonCaulfield.com",
+            "HoloFlash",
+            "WebsiteSetup",
+            "iMessageToSpotify Scraper",
+            "24Hour Manager",
+            "Spotify Album Wheel Spinner",
+            "AutoUpdateLoooong",
+            "LastFM Management",
+            "Mix Maker",
+            "Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+            "Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
+            "Human-Computer Interaction Lab Research Assistant",
+            "GavinCaulfield.com",
+            "Virtual Patient Simulation for Nursing Students",
+            "ChatGPT-assisted Medical Examination training in Mixed Reality",
+            "Embedded Embodied",
+            "DeerParkLine",
+            "ICPC 2023",
+            "Computationally Random Choreography"
           ]
         },
         "CLI": {
@@ -593,13 +858,16 @@
           "works": ["Bash", "Zsh", "tmux", "grep/sed/awk"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/2/29/Linux_command-line._Bash._GNOME_Terminal._screenshot.png",
           "projects": [
-            "spotify/projects/iMessageToSpotify Scraper",
-            "spotify/projects/24Hour Manager",
-            "spotify/projects/Spotify Album Wheel Spinner",
-            "spotify/projects/AutoUpdateLoooong",
-            "spotify/projects/LastFM Management",
-            "spotify/projects/Mix Maker",
-            "potpourri/projects/WebsiteSetup"
+            "iMessageToSpotify Scraper",
+            "24Hour Manager",
+            "Spotify Album Wheel Spinner",
+            "AutoUpdateLoooong",
+            "LastFM Management",
+            "Mix Maker",
+            "WebsiteSetup",
+            "Computationally Random Choreography",
+            "AutoUpdateArtistPlaylist",
+            "Berkely Technology Services Command Center Analyst"
           ]
         },
         "Wireshark": {
@@ -612,7 +880,7 @@
           ],
           "img": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Wireshark_icon_new.png",
           "projects": [
-            "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)"
+            "Berkely Technology Services Command Center Analyst (June 2024 - November 2024)"
           ]
         },
         "Solarwinds": {
@@ -621,7 +889,7 @@
           "works": ["Network Performance Monitor", "Log Analyzer"],
           "img": "https://images.icon-icons.com/2699/PNG/512/solarwinds_logo_icon_169738.png",
           "projects": [
-            "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)"
+            "Berkely Technology Services Command Center Analyst (June 2024 - November 2024)"
           ]
         },
         "Tidal Enterprise Scheduler": {
@@ -630,7 +898,7 @@
           "works": ["Job Scheduling", "Dependencies"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/6/6e/Tidal-Enterprise-Scheduler-Job-Activity.png",
           "projects": [
-            "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)"
+            "Berkely Technology Services Command Center Analyst (June 2024 - November 2024)"
           ]
         },
         "Unity3D/2D": {
@@ -639,11 +907,13 @@
           "works": ["C# Scripting", "Animation", "XR Toolkit"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/8/80/Unity_Black_icon.svg",
           "projects": [
-            "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
-            "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
-            "work/projects/Human-Computer Interaction Lab Research Assistant",
-            "research/projects/Virtual Patient Simulation for Nursing Students",
-            "research/projects/ChatGPT-assisted Medical Examination training in Mixed Reality"
+            "Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+            "Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
+            "Human-Computer Interaction Lab Research Assistant",
+            "Virtual Patient Simulation for Nursing Students",
+            "ChatGPT-assisted Medical Examination training in Mixed Reality",
+            "DE Inbre",
+            "Embedded Embodied"
           ]
         },
         "Oracle": {
@@ -658,7 +928,7 @@
           "experience": 1,
           "works": ["CRUD", "REST API"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/0/00/Mongodb-svgrepo-com.svg",
-          "projects": ["potpourri/projects/HoloFlash"]
+          "projects": ["HoloFlash", "DeerParkLine"]
         },
         "Google Workspace": {
           "time": "5+ years",
@@ -670,22 +940,28 @@
           ],
           "img": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Apps_Script.png",
           "projects": [
-            "creative/projects/Finding Nolan",
-            "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
-            "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
-            "work/projects/HenHacks 2025 (Apr 2024 - May 2025)",
-            "work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)",
-            "work/projects/Berkely Technology Services Command Center Analyst (June 2024 - November 2024)",
-            "potpourri/projects/Restaurant Menu",
-            "work/projects/Human-Computer Interaction Lab Research Assistant",
-            "research/projects/Virtual Patient Simulation for Nursing Students",
-            "research/projects/ChatGPT-assisted Medical Examination training in Mixed Reality"
+            "Finding Nolan",
+            "Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+            "Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
+            "HenHacks 2025 (Apr 2024 - May 2025)",
+            "UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)",
+            "Berkely Technology Services Command Center Analyst (June 2024 - November 2024)",
+            "Restaurant Menu",
+            "Human-Computer Interaction Lab Research Assistant",
+            "Virtual Patient Simulation for Nursing Students",
+            "ChatGPT-assisted Medical Examination training in Mixed Reality",
+            "Teaching Assistant",
+            "Lab Assistant",
+            "HenHacks 2025",
+            "Embedded Embodied",
+            "Computationally Random Choreography",
+            "The Diner"
           ]
         }
       }
     },
     "additional": {
-      "groupColor": "#90A959",
+      "groupColor": "144, 169, 89",
       "skills": {
         "Clinical Research": {
           "time": "2 years",
@@ -693,11 +969,13 @@
           "works": ["Qualtrics", "IRB Protocols", "Clinical Writing"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Hci_logo.png",
           "projects": [
-            "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
-            "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
-            "work/projects/Human-Computer Interaction Lab Research Assistant",
-            "research/projects/Virtual Patient Simulation for Nursing Students",
-            "research/projects/ChatGPT-assisted Medical Examination training in Mixed Reality"
+            "Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+            "Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
+            "Human-Computer Interaction Lab Research Assistant",
+            "Virtual Patient Simulation for Nursing Students",
+            "ChatGPT-assisted Medical Examination training in Mixed Reality",
+            "DE Inbre",
+            "Embedded Embodied"
           ]
         },
         "Data Analysis": {
@@ -706,12 +984,15 @@
           "works": ["Pandas", "ggplot2", "SPSS", "Correlation Analysis"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/0/09/Plot_of_noisy_data_%2B_Gaussian_fit_%2B_plot_ressduals.svg",
           "projects": [
-            "research/projects/Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
-            "research/projects/Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
-            "potpourri/projects/HoloFlash",
-            "work/projects/Human-Computer Interaction Lab Research Assistant",
-            "research/projects/Virtual Patient Simulation for Nursing Students",
-            "research/projects/ChatGPT-assisted Medical Examination training in Mixed Reality"
+            "Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
+            "Enhanced Physical Rehabilitation: Optimized Balance Training Through Augmented Reality",
+            "HoloFlash",
+            "Human-Computer Interaction Lab Research Assistant",
+            "Virtual Patient Simulation for Nursing Students",
+            "ChatGPT-assisted Medical Examination training in Mixed Reality",
+            "DE Inbre",
+            "Embedded Embodied",
+            "DeerParkLine"
           ]
         },
         "Creative Writing": {
@@ -720,10 +1001,14 @@
           "works": ["Screenwriting", "Storyboarding", "Creativity"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/8/80/Thinking_about_writing.png",
           "projects": [
-            "work/projects/HenHacks 2025 (Apr 2024 - May 2025)",
-            "work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)",
-            "work/projects/Human-Computer Interaction Lab Research Assistant",
-            "creative/projects/Septronix"
+            "HenHacks 2025 (Apr 2024 - May 2025)",
+            "UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)",
+            "Human-Computer Interaction Lab Research Assistant",
+            "Septronix",
+            "Finding Nolan",
+            "Dance APR",
+            "Colors of Old College",
+            "The Diner"
           ]
         },
         "Reportive Writing": {
@@ -732,10 +1017,11 @@
           "works": ["Technical Docs", "LaTeX", "Formal Reports"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/2/2a/Overleaf_Logo.svg",
           "projects": [
-            "work/projects/HenHacks 2025 (Apr 2024 - May 2025)",
-            "work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)",
-            "work/projects/Human-Computer Interaction Lab Research Assistant",
-            "research/projects/Virtual Patient Simulation for Nursing Students"
+            "HenHacks 2025 (Apr 2024 - May 2025)",
+            "UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)",
+            "Human-Computer Interaction Lab Research Assistant",
+            "Virtual Patient Simulation for Nursing Students",
+            "Computationally Random Choreography"
           ]
         },
         "Final Cut Pro": {
@@ -744,9 +1030,10 @@
           "works": ["Keyframing", "Color Correction", "Long-Form Editing"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/0/01/Gnome-applications-video_editing.svg",
           "projects": [
-            "creative/projects/Finding Nolan",
-            "work/projects/Human-Computer Interaction Lab Research Assistant",
-            "creative/projects/The Diner"
+            "Finding Nolan",
+            "Human-Computer Interaction Lab Research Assistant",
+            "The Diner",
+            "Peggle Edits"
           ]
         },
         "Adobe Photoshop": {
@@ -755,9 +1042,10 @@
           "works": ["Layer Masks", "Blending Modes"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg",
           "projects": [
-            "creative/projects/Finding Nolan",
-            "work/projects/Human-Computer Interaction Lab Research Assistant",
-            "creative/projects/The Diner"
+            "Finding Nolan",
+            "Human-Computer Interaction Lab Research Assistant",
+            "The Diner",
+            "Computationally Random Choreography"
           ]
         },
         "Public Speaking": {
@@ -766,9 +1054,11 @@
           "works": ["Slide Design", "Improvisation", "Audience Engagement"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Public_speaker.svg",
           "projects": [
-            "work/projects/HenHacks 2025 (Apr 2024 - May 2025)",
-            "work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)",
-            "work/projects/Human-Computer Interaction Lab Research Assistant"
+            "HenHacks 2025 (Apr 2024 - May 2025)",
+            "UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)",
+            "Human-Computer Interaction Lab Research Assistant",
+            "Computationally Random Choreography",
+            "John Rhea Meeting"
           ]
         },
         "Musical Abilities": {
@@ -783,9 +1073,10 @@
           ],
           "img": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Treble_clef.svg",
           "projects": [
-            "creative/projects/Septronix",
-            "creative/projects/Percussion & Drums",
-            "creative/projects/Piano"
+            "Computationally Random Choreography",
+            "Septronix",
+            "Percussion & Drums",
+            "Piano"
           ]
         },
         "Teamwork": {
@@ -794,11 +1085,13 @@
           "works": ["Agile Collaboration", "Peer Reviews", "Team Dynamics"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Noun_leadership_4199.svg",
           "projects": [
-            "creative/projects/Septronix",
-            "potpourri/projects/ICPC 2023",
-            "work/projects/HenHacks 2025 (Apr 2024 - May 2025)",
-            "work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)",
-            "creative/projects/The Diner"
+            "Septronix",
+            "ICPC 2023",
+            "HenHacks 2025 (Apr 2024 - May 2025)",
+            "UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)",
+            "The Diner",
+            "Brennan School's Artsapalooza Day",
+            "Annamarie Molecule Project"
           ]
         },
         "Leadership": {
@@ -807,8 +1100,12 @@
           "works": ["Team Management", "Event Coordination", "Delegation"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/2/2e/Noun_leadership_4199.svg",
           "projects": [
-            "work/projects/HenHacks 2025 (Apr 2024 - May 2025)",
-            "work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)"
+            "HenHacks 2025 (Apr 2024 - May 2025)",
+            "UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)",
+            "DE Inbre",
+            "Teaching Assistant",
+            "Lab Assistant",
+            "Finding Nolan"
           ]
         },
         "Comms": {
@@ -817,741 +1114,931 @@
           "works": ["Listening"],
           "img": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Noun_counseling_1147698.svg",
           "projects": [
-            "potpourri/projects/ICPC 2023",
-            "work/projects/Human-Computer Interaction Lab Research Assistant",
-            "work/projects/HenHacks 2025 (Apr 2024 - May 2025)",
-            "work/projects/UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)"
+            "ICPC 2023",
+            "Human-Computer Interaction Lab Research Assistant",
+            "HenHacks 2025 (Apr 2024 - May 2025)",
+            "UD Computing Promotions Undergraduate Officer (Oct 2023 - May 2025)",
+            "Colors of Old College",
+            "Computationally Random Choreography",
+            "Brennan School's Artsapalooza Day",
+            "Dance APR",
+            "Finding Nolan"
           ]
         }
       }
     }
   },
 
-  
   "accolades": {
-    "GPA": {
-      "Description": "My college GPA, through CS and Non-CS classes.",
-      "Overall": 3.9,
-      "CS": 3.85,
-      "Years": "2021-2025"
-    },
-    "Dean's List": {
-      "Recipient": "7x (each semester)",
-      "Years": "2021-2025"
-    },
-    "Hatem M. Khalil Memorial Award": {
-      "Description": "Awarded the Hatem M. Khalil Memorial Award in recognition of outstanding achievement in software engineering at the University of Delaware's CIS Department.",
-      "Year": "2024"
-    },
-    "John Philip Sousa Award": {
-      "Description": "Recipient of the John Philip Sousa Award, honoring superior musicianship, outstanding dedication, and exemplary leadership.",
-      "Year": "2021"
-    },
-    "AIxVR 2024 Conference Honorable Mention": {
-      "Project": "Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments",
-      "Recognition": "Honorable Mention",
-      "Conference": "AIxVR 2024"
-      
-    },
-    "Winner of 'Best Use of AI in Education'": {
-      "Project": "Holoflash",
-      "Description": "At HenHacks 2024, my group and I won the above award for our Study in Augmented Reality tool, Holoflash.",
-      "Year": "2024"
-    }
-  },
-  "albums": {
-    "The Ever Dying Bristlecone Man": {
-      "SpotifyLink": "https://open.spotify.com/album/6qHmcy9NMkB2Zh65QEiCLp",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273f5099b44f0bf7b28ed2e7052"
-    },
-    "Blonde": {
-      "SpotifyLink": "https://open.spotify.com/album/3mH6qwIy9crq0I9YQbOuDf",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273c5649add07ed3720be9d5526"
-    },
-    "Ants From Up There": {
-      "SpotifyLink": "https://open.spotify.com/album/21xp7NdU1ajmO1CX0w2Egd",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273af2d88c14cb157d6b851dbb3"
-    },
-    "IGOR": {
-      "SpotifyLink": "https://open.spotify.com/album/5zi7WsKlIiUXv09tbGLKsE",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2737005885df706891a3c182a57"
-    },
-    "Fate": {
-      "SpotifyLink": "https://open.spotify.com/album/1DW0xzBKWQZnXv4Ypt25LZ",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273fa36b27417bf2ac15142afa9"
-    },
-    "OK Computer": {
-      "SpotifyLink": "https://open.spotify.com/album/6dVIqQ8qmQ5GBnJ9shOYGE",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273c8b444df094279e70d0ed856"
-    },
-    "Because the Internet": {
-      "SpotifyLink": "https://open.spotify.com/album/5h0KYWMZIg8xT6eRGYkNMh",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27321b2b485aef32bcc96c1875c"
-    },
-    "The Dark Side of the Moon": {
-      "SpotifyLink": "https://open.spotify.com/album/4LH4d3cOWNNsVw41Gqt2kv",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273ea7caaff71dea1051d49b2fe"
-    },
-    "1 (646) 943 2672 (Extended Play)": {
-      "SpotifyLink": "https://open.spotify.com/album/4w3YFONdsQG33db4Vpjunq",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27310973c3c8f26ebab4f41c13d"
-    },
-    "Swimming": {
-      "SpotifyLink": "https://open.spotify.com/album/5wtE5aLX5r7jOosmPhJhhk",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273175c577a61aa13d4fb4b6534"
-    },
-    "Mr. Morale & the Big Steppers": {
-      "SpotifyLink": "https://open.spotify.com/album/79ONNoS4M9tfIA1mYLBYVX",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2732e02117d76426a08ac7c174f"
-    },
-    "Primitive Initiative": {
-      "SpotifyLink": "https://open.spotify.com/album/4bICIlWuceu3EznEPvbJD8",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273424feb0b9e1fcbe0137768b4"
-    },
-    "The Low End Theory": {
-      "SpotifyLink": "https://open.spotify.com/album/1p12OAWwudgMqfMzjMvl2a",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273f38c6b37a21334e22005b1f7"
-    },
-    "Twin Fantasy": {
-      "SpotifyLink": "https://open.spotify.com/album/6gDtROOIYa6OQxwhDNkDRM",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2732764cdf400a1d859640539a9"
-    },
-    "Teens of Denial": {
-      "SpotifyLink": "https://open.spotify.com/album/3KpYyDP8q8sUBxatHaYEsP",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2734094272fe172643edfdbba48"
-    },
-    "Shame, Shame (Deluxe Edition)": {
-      "SpotifyLink": "https://open.spotify.com/album/16XswZ18xhMs8qUTN51mRl",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2730478062bc04df0947d232fcb"
-    },
-    "To Pimp a Butterfly": {
-      "SpotifyLink": "https://open.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273cdb645498cd3d8a2db4d05e1"
-    },
-    "CALL ME IF YOU GET LOST": {
-      "SpotifyLink": "https://open.spotify.com/album/45ba6QAtNrdv6Ke4MFOKk9",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273696b4e67423edd64784bfbb4"
-    },
-    "...Such is Youth": {
-      "SpotifyLink": "https://open.spotify.com/album/2PnakXxPHEeUpDbcddpTzH",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273d186fc8b675ae0361ad5118c"
-    },
-    "The Bends": {
-      "SpotifyLink": "https://open.spotify.com/album/35UJLpClj5EDrhpNIi4DFg",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2739293c743fa542094336c5e12"
-    },
-    "Apricot Princess": {
-      "SpotifyLink": "https://open.spotify.com/album/4DxNdQzm6cBYuSn4dCimmT",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2731bd6d088d3d81972af4cb81d"
-    },
-    "Imaginal Disk": {
-      "SpotifyLink": "https://open.spotify.com/album/4HTy9WFTYooRjE9giTmzAF",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2735a2ff617de4e51a9a214b56a"
-    },
-    "\"Awaken, My Love!\"": {
-      "SpotifyLink": "https://open.spotify.com/album/4JCybsNZUXWrK2Jpyn12Ni",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2731c29562d6e8c1f55bb1311d5"
-    },
-    "Abbey Road (Remastered)": {
-      "SpotifyLink": "https://open.spotify.com/album/0ETFjACtuP2ADo6LFhL6HN",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273dc30583ba717007b00cceb25"
-    },
-    "Beatopia": {
-      "SpotifyLink": "https://open.spotify.com/album/2rhNQbqRNxiNQkDXTffe1V",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273384d10f967c2b914de7e2713"
-    },
-    "Parachutes": {
-      "SpotifyLink": "https://open.spotify.com/album/6ZG5lRT77aJ3btmArcykra",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2739164bafe9aaa168d93f4816a"
-    },
-    "High Tops": {
-      "SpotifyLink": "https://open.spotify.com/album/67LSq5qR5QJ5iNFwmOASH8",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273023d3cc22387c5779a16e48a"
-    },
-    "Transatlanticism": {
-      "SpotifyLink": "https://open.spotify.com/album/5UKAhD2VmFAuThgq4OQyEe",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273c988bbfb15aca7928323d2ff"
-    },
-    "In Rainbows": {
-      "SpotifyLink": "https://open.spotify.com/album/5vkqYmiPBYLaalcmjujWxK",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273de3c04b5fc750b68899b20a9"
-    },
-    "Over the Garden Wall (Original Television Soundtrack)": {
-      "SpotifyLink": "https://open.spotify.com/album/2uuFLUwbjRiiQ89t4mgC0d",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273b0730ee8b8ac046e1f5f750d"
-    },
-    "Plateaus": {
-      "SpotifyLink": "https://open.spotify.com/album/15XVmpLlyeWXv5QINxWcwo",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2732d40758385ee073d7cabff2b"
-    },
-    "Fuzzybrain": {
-      "SpotifyLink": "https://open.spotify.com/album/7GYzQIMfdDWo2XC4BDLHPk",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2735160eaecb31b739ea1c2eaa5"
-    },
-    "Sound of Silver": {
-      "SpotifyLink": "https://open.spotify.com/album/1R8kkopLT4IAxzMMkjic6X",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273e6272ad26e7a55bc342a6dd0"
-    },
-    "Wild Heart": {
-      "SpotifyLink": "https://open.spotify.com/album/6vQngf6iEG8xC6ArsIurXq",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273e341c520c154f89b77bd2aaf"
-    },
-    "Evil Funds the Football Club": {
-      "SpotifyLink": "https://open.spotify.com/album/467lnDCZhtqGNoYOt7FNKT",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273495f32ac6d269bcf2ccf0bdb"
-    },
-    "A Different Age": {
-      "SpotifyLink": "https://open.spotify.com/album/00we7Dqa5Y4Z1MBv2z9bUd",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273df7a61e9fdf9fec7df7bd72a"
-    },
-    "TRICK": {
-      "SpotifyLink": "https://open.spotify.com/album/1i8WVUZhMVNurF8rmlMeSH",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273967a4c16d8a54f634979cceb"
-    },
-    "The Wall": {
-      "SpotifyLink": "https://open.spotify.com/album/5Dbax7G8SWrP9xyzkOvy2F",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2735d48e2f56d691f9a4e4b0bdf"
-    },
-    "BALLADS 1": {
-      "SpotifyLink": "https://open.spotify.com/album/5mIImcsuqpiSXg8XvFr81I",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2734cc52cd7a712842234e4fce2"
-    },
-    "Ivory": {
-      "SpotifyLink": "https://open.spotify.com/album/5z7TD11Qh81Gbf52hd5zAv",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27390cf5d1ccfca2beb86149a19"
-    },
-    "Breakfast In America (Deluxe Edition)": {
-      "SpotifyLink": "https://open.spotify.com/album/1zcm3UvHNHpseYOUfd0pna",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2735405ef9e393f5f1e53b4b42e"
-    },
-    "We Will Always Love You": {
-      "SpotifyLink": "https://open.spotify.com/album/755yBlrk0Sz8tIgMMTgyr1",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273b0b3bd1a5f3967705579e6f1"
-    },
-    "Dogrel": {
-      "SpotifyLink": "https://open.spotify.com/album/2lK23mYbRD6bCJpjI8BbdC",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27341097c26aa8fd44a2986ad26"
-    },
-    "Even in the Quietest Moments": {
-      "SpotifyLink": "https://open.spotify.com/album/4X87hQ57jTYQTcYTaJWK5w",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273bddcc30c6a3288e725aec2df"
-    },
-    "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?": {
-      "SpotifyLink": "https://open.spotify.com/album/0S0KGZnfBGSIssfF54WSJh",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27350a3147b4edd7701a876c6ce"
-    },
-    "Real Estate": {
-      "SpotifyLink": "https://open.spotify.com/album/0vEt6UkpYZOpKxVO7H7j9Y",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273ce232f93379cb33a6643db82"
-    },
-    "For Emma, Forever Ago": {
-      "SpotifyLink": "https://open.spotify.com/album/7EJ0OT5ZqybXxcYRa6mccM",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273bf7c317a63c4f128b8823406"
-    },
-    "Shadowglow": {
-      "SpotifyLink": "https://open.spotify.com/album/5QBZf1SnKE7WtjivYO74KE",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27347ef2f2cf44354754f7845d2"
-    },
-    "American Boyfriend: A Suburban Love Story": {
-      "SpotifyLink": "https://open.spotify.com/album/1yyCXBEu27Ia1Y3torWIwC",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273030b3a60e1041ebec36d2a73"
-    },
-    "Circles": {
-      "SpotifyLink": "https://open.spotify.com/album/5sY6UIQ32GqwMLAfSNEaXb",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27326b7dd89810cc1a40ada642c"
-    },
-    "When We Were Friends": {
-      "SpotifyLink": "https://open.spotify.com/album/3TSMSh5dai7WEnEGOoMXBZ",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2738386795a636d72e74c958590"
-    },
-    "Stankonia": {
-      "SpotifyLink": "https://open.spotify.com/album/2tm3Ht61kqqRZtIYsBjxEj",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2732350e31bc346a6c20e9de166"
-    },
-    "The Rise and Fall of Ziggy Stardust and the Spiders from Mars (2012 Remaster)": {
-      "SpotifyLink": "https://open.spotify.com/album/48D1hRORqJq52qsnUYZX56",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273c41f4e1133b0e6c5fcf58680"
-    },
-    "Axis: Bold as Love": {
-      "SpotifyLink": "https://open.spotify.com/album/3uFZf8rykoHo7XMIQVYW6r",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27319dcd95d28b63d10164327f2"
-    },
-    "The Muppets (Original Motion Picture Soundtrack)": {
-      "SpotifyLink": "https://open.spotify.com/album/0mahHDhPnuYMbo3sXOEW50",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27349975a26b5562064db3a552b"
-    },
-    "HOMESICK": {
-      "SpotifyLink": "https://open.spotify.com/album/00lH27Je9yW7Y4dxZmmO6C",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273400e3d7b35c50f3d26012d22"
-    },
-    "B-Room (Deluxe Edition)": {
-      "SpotifyLink": "https://open.spotify.com/album/0YfNZx0s2EdfINsSoxqDe8",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2731a3b42ed1308bdd42492c031"
-    },
-    "Sling": {
-      "SpotifyLink": "https://open.spotify.com/album/32ium7Cxb1Xwp2MLzH2459",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2732624442cf48e4962d1422da8"
-    },
-    "Gourmet Ravioli": {
-      "SpotifyLink": "https://open.spotify.com/album/3lc6UHJcaT9nHoF6p1GRFV",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27392ec2f57abae929fc66492f6"
-    },
-    "DAMN.": {
-      "SpotifyLink": "https://open.spotify.com/album/4eLPsYPBmXABThSJ821sqY",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2738b52c6b9bc4e43d873869699"
-    },
-    "2": {
-      "SpotifyLink": "https://open.spotify.com/album/2XgBQwGRxr4P7cHLDYiqrO",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2739d377496c6bc8724b521222d"
-    },
-    "Flower Boy": {
-      "SpotifyLink": "https://open.spotify.com/album/2nkto6YNI4rUYTLqEwWJ3o",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2738940ac99f49e44f59e6f7fb3"
-    },
-    "Grown Backwards": {
-      "SpotifyLink": "https://open.spotify.com/album/5nO9veX2scY0HX8RXHkImV",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2738b9719a98ddb60c13efcc458"
-    },
-    "I LAY DOWN MY LIFE FOR YOU": {
-      "SpotifyLink": "https://open.spotify.com/album/1ezs1QD5SYQ6LtxpC9y5I2",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27314ed6f5625ea349c7bda4181"
-    },
-    "Hurry Up, We're Dreaming": {
-      "SpotifyLink": "https://open.spotify.com/album/6R0ynY7RF20ofs9GJR5TXR",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27390e9adff5f77dd1ff6d24e47"
-    },
-    "Punisher": {
-      "SpotifyLink": "https://open.spotify.com/album/6Pp6qGEywDdofgFC1oFbSH",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273a91b75c9ef65ed8d760ff600"
-    },
-    "Melt My Eyez See Your Future": {
-      "SpotifyLink": "https://open.spotify.com/album/7KtyUeiJidoZO0ybxBXw0Q",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2735b924aa009b61b6b9d831eec"
-    },
-    "Fleet Foxes": {
-      "SpotifyLink": "https://open.spotify.com/album/5GRnydamKvIeG46dycID6v",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2733818b4c636e2a7fdea3bf965"
-    },
-    "Capacity": {
-      "SpotifyLink": "https://open.spotify.com/album/0ttVHlYJDFPoy54J3uziQd",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273dad9b8008908208073bb4fae"
-    },
-    "channel ORANGE": {
-      "SpotifyLink": "https://open.spotify.com/album/392p3shh2jkxUxY2VHvlH8",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5"
-    },
-    "Ways to Get Out": {
-      "SpotifyLink": "https://open.spotify.com/album/54oELqxteSoJx5I6bqQ3vI",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273ee2f8756e8f1f8de144f8a41"
-    },
-    "The Glow, Pt. 2": {
-      "SpotifyLink": "https://open.spotify.com/album/6QYoRO2sXThCORAifrP4Bl",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27300c91ccec6800014b8513717"
-    },
-    "15 Billion Eyes": {
-      "SpotifyLink": "https://open.spotify.com/album/5pfhP1iYLLOTTXOlDQ58rY",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273d6d6b791995f7f7ef7fb18de"
-    },
-    "The Beatles (Remastered)": {
-      "SpotifyLink": "https://open.spotify.com/album/1klALx0u4AavZNEvC4LrTL",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2734ce8b4e42588bf18182a1ad2"
-    },
-    "Late Registration": {
-      "SpotifyLink": "https://open.spotify.com/album/5ll74bqtkcXlKE7wwkMq4g",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273428d2255141c2119409a31b2"
-    },
-    "Norman Fucking Rockwell!": {
-      "SpotifyLink": "https://open.spotify.com/album/5XpEKORZ4y6OrCZSKsi46A",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273879e9318cb9f4e05ee552ac9"
-    },
-    "How to Be a Human Being": {
-      "SpotifyLink": "https://open.spotify.com/album/6qb9MDR0lfsN9a2pw77uJy",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273ec3d15eab5bd77027abc4b23"
-    },
-    "GUTS": {
-      "SpotifyLink": "https://open.spotify.com/album/1xJHno7SmdVtZAtXbdbDZp",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273e85259a1cae29a8d91f2093d"
-    },
-    "GO:OD AM": {
-      "SpotifyLink": "https://open.spotify.com/album/2Tyx5dLhHYkx6zeAdVaTzN",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273ee0f38410382a255e4fb15f4"
-    },
-    "The Pilgrim, Their God and the King of My Decrepit Mountain": {
-      "SpotifyLink": "https://open.spotify.com/album/4btBSwAto3RPLs2o4VLQJb",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27390885dd3f92567502448f3d0"
-    },
-    "Sorry I Am": {
-      "SpotifyLink": "https://open.spotify.com/album/1OckLS0LTnxNRWqGJ8ojoy",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273244162092293b6eec5e99b42"
-    },
-    "Doopee Time": {
-      "SpotifyLink": "https://open.spotify.com/album/4ZrrsbXBe0byye7R0Spx1x",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2732d5e36429eb8cd31cd67ca4c"
-    },
-    "Out of the Blue": {
-      "SpotifyLink": "https://open.spotify.com/album/3usnShwygMXVZB4IV5dwnU",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273ae954a17f0cfa013c364bb06"
-    },
-    "Good News For People Who Love Bad News": {
-      "SpotifyLink": "https://open.spotify.com/album/0TGTGuc2vXv6ZECoAf52N0",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273cc68329bfbf34037df965dc1"
-    },
-    "Holland": {
-      "SpotifyLink": "https://open.spotify.com/album/5f5LwfmsBt8kDA3U0OF5L1",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2731b673dbdb6b6cad5743ff8d2"
-    },
-    "Bright Green Field": {
-      "SpotifyLink": "https://open.spotify.com/album/219LGvgmAhhwlfc3unDhUt",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273861ba1ede840b614d5c87dcd"
-    },
-    "Melophobia": {
-      "SpotifyLink": "https://open.spotify.com/album/4EK8gtQfdVsmDTji7gBFlz",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273fb1cb900d28642e668d77b12"
-    },
-    "bcos u will never b free": {
-      "SpotifyLink": "https://open.spotify.com/album/2PdLUS263cFyd7efyWH5B8",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273fe1854cea6c63b2ba726a299"
-    },
-    "The Melodic Blue": {
-      "SpotifyLink": "https://open.spotify.com/album/3r46DPIQeBQbjvjjV5mXGg",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2731bfa23b13d0504fb90c37b39"
-    },
-    "Voyager": {
-      "SpotifyLink": "https://open.spotify.com/album/4TK6lK86akSJC3vQlF9tvi",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273b55ee7e4c155178b31fa1eec"
-    },
-    "1 (646) 943 2672 [Extended Play]": {
-      "SpotifyLink": "https://open.spotify.com/album/4w3YFONdsQG33db4Vpjunq",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27310973c3c8f26ebab4f41c13d"
-    },
-    "Between Days": {
-      "SpotifyLink": "https://open.spotify.com/album/3P8SSE7Y0fa4c8JHFLH5co",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273e7a1fbcf9266e0650624328c"
-    },
-    "Ten Hours": {
-      "SpotifyLink": "https://open.spotify.com/album/1znMWltOicOVXcixhLFdtr",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27369752a45da26f31a459bcbbf"
-    },
-    "Camp": {
-      "SpotifyLink": "https://open.spotify.com/album/01MRGgNbfWrE291tQjw9ta",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2736182cfe2e2a090d125c81dc0"
-    },
-    "The Sailor": {
-      "SpotifyLink": "https://open.spotify.com/album/4BmpDhIUZ6x3cdleJkocVq",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27343460a075329cfcb79d32f47"
-    },
-    "A New World Record": {
-      "SpotifyLink": "https://open.spotify.com/album/7a35UzxXYuKQGMGImyB0Un",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273de42189c1036bb5a74e1e511"
-    },
-    "In The Court Of The Crimson King (Expanded & Remastered Original Album Mix)": {
-      "SpotifyLink": "https://open.spotify.com/album/75ol9OP8bJaRqzGimpFHDm",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273da7b326bd7ffa7b6b95b0660"
-    },
-    "Moving Pictures (2011 Remaster)": {
-      "SpotifyLink": "https://open.spotify.com/album/2xg7iIKoSqaDNpDbJnyCjY",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27372833c1ae3343cbfb4617073"
-    },
-    "Abandoned Mansion": {
-      "SpotifyLink": "https://open.spotify.com/album/298WNanMReraImGBQRGxio",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27348e684cba47b83454e361c5c"
-    },
-    "Blue Slide Park": {
-      "SpotifyLink": "https://open.spotify.com/album/17mAoDs7T8EA9zzlj6QPBv",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273febab2761d0e72b3ce422a2b"
-    },
-    "Pony": {
-      "SpotifyLink": "https://open.spotify.com/album/5CNckxfLf4TCoMOoxgAU8l",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273733e6d7818eef87d20df86b5"
-    },
-    "Wolf": {
-      "SpotifyLink": "https://open.spotify.com/album/40QTqOBBxCEIQlLNdSjFQB",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27322007a4aa8a55fe7b1de5632"
-    },
-    "Faces": {
-      "SpotifyLink": "https://open.spotify.com/album/5SKnXCvB4fcGSZu32o3LRY",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273e4251cf5331ad74eaaeca36e"
-    },
-    "Hellfire": {
-      "SpotifyLink": "https://open.spotify.com/album/68z6MWYYNmvTcru1QMcYId",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273079bc2bd9ea16956274efc24"
-    },
-    "The Last Remaining Light": {
-      "SpotifyLink": "https://open.spotify.com/album/6Ld86qHWesBIXFGhSysnVY",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273457a53f2bd8257417fc94e68"
-    },
-    "This Is Why": {
-      "SpotifyLink": "https://open.spotify.com/album/6tG8sCK4htJOLjlWwb7gZB",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273f633b71861897348253993f4"
-    },
-    "Eagle, Idaho": {
-      "SpotifyLink": "https://open.spotify.com/album/1NKTNi0HMBHs4KH1QPrO2l",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2731483cf8c59fb34a3637f3ac2"
-    },
-    "Circles (Deluxe)": {
-      "SpotifyLink": "https://open.spotify.com/album/1YZ3k65Mqw3G8FzYlW1mmp",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2738cbe65eb023c2f2b5cdf5a91"
-    },
-    "AT.LONG.LAST.A$AP": {
-      "SpotifyLink": "https://open.spotify.com/album/3arNdjotCvtiiLFfjKngMc",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27316b101f81a8284ec71048d91"
-    },
-    "CANNED LAUGHTER (REMASTERED EDITION)": {
-      "SpotifyLink": "https://open.spotify.com/album/5HytJs3WKLHRTIEMFQu9LD",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273bfb13dd57cbe1c48505ee1b7"
-    },
-    "GREAT SHAKES (REMASTERED EDITION)": {
-      "SpotifyLink": "https://open.spotify.com/album/55T2sFm2JNJjNkcv38kNVU",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273a7c87672717aa0286352c6c7"
-    },
-    "Sound & Color": {
-      "SpotifyLink": "https://open.spotify.com/album/5CNzzqPfB7fho8J4vG37jE",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273df1884a7ebca0168bdcaf69e"
-    },
-    "Easy Beat": {
-      "SpotifyLink": "https://open.spotify.com/album/11dyj7y5mPVMQ1utHdfHlZ",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273fb5a8ac5c2f22d7a2c116acb"
-    },
-    "Peoples' Instinctive Travels & the Paths of Rhythm": {
-      "SpotifyLink": "https://open.spotify.com/album/5DMRGZTzA3vVcLDNQS1ynv",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27346bf2c803146e4f89d31ff70"
-    },
-    "This Old Dog": {
-      "SpotifyLink": "https://open.spotify.com/album/4NNq2vwTapv4fSJcrZbPH7",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2739f1b21f21b13ff2d3e891f6b"
-    },
-    "Unpeeled": {
-      "SpotifyLink": "https://open.spotify.com/album/4zpN41aGAYPWX3dzE19rH7",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27372b478dedd009d6b8d6e7971"
-    },
-    "We All Belong": {
-      "SpotifyLink": "https://open.spotify.com/album/6Z11R1BJBjK6IrqqhRV7iE",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273d5f4c1f316f3f961c33e1e18"
-    },
-    "Songs for Dads": {
-      "SpotifyLink": "https://open.spotify.com/album/7eEnyVrd7HMt0JuPcbgflS",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273772586de2b9ea3e7d214ff8e"
-    },
-    "ABBA Gold": {
-      "SpotifyLink": "https://open.spotify.com/album/2cKZfaz7GiGtZEeQNj1RyR",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273f7ecaf9daf2c1d5ca89f7312"
-    },
-    "The Divine Feminine": {
-      "SpotifyLink": "https://open.spotify.com/album/6f6tko6NWoH00cyFOl4VYQ",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2732e92f776279eaf45d14a33fd"
-    },
-    "Oracular Spectacular": {
-      "SpotifyLink": "https://open.spotify.com/album/6mm1Skz3JE6AXneya9Nyiv",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2738b32b139981e79f2ebe005eb"
-    },
-    "Bojack Horseman (Music from the Netflix Original Series)": {
-      "SpotifyLink": "https://open.spotify.com/album/1TCONwUgvvjqSYJFPUCUTW",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2738c71f034556adae8d540c46f"
-    },
-    "Light Upon the Lake": {
-      "SpotifyLink": "https://open.spotify.com/album/3UhUTuYtGypQWuhqqoImsv",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27306e9db385d0f3f8aec617963"
-    },
-    "The Colour and the Shape": {
-      "SpotifyLink": "https://open.spotify.com/album/30ly6F6Xl0TKmyBCU50Khv",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2730389027010b78a5e7dce426b"
-    },
-    "All Things Must Pass (Remastered 2014)": {
-      "SpotifyLink": "https://open.spotify.com/album/7j7lsExGJtBHLgDYzjclwk",
-      "albumCover": "https://i.scdn.co/image/ab67616d00001e026c6610322fc60bfb41481273"
-    },
-    "Can't Buy A Thrill": {
-      "SpotifyLink": "https://open.spotify.com/album/6DlSUW5gmq6Byc3osKDJ2p",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2730ddd7e736f870994f4707947"
-    },
-    "Happier Than Ever": {
-      "SpotifyLink": "https://open.spotify.com/album/0JGOiO34nwfUdDrD612dOp",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2732a038d3bf875d23e4aeaa84e"
-    },
-    "Gliss Riffer": {
-      "SpotifyLink": "https://open.spotify.com/album/7c0DRALsdT9K7FLQBTR9PS",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273b5f0f447f0b9d080d970b758"
-    },
-    "A Hero's Death": {
-      "SpotifyLink": "https://open.spotify.com/album/307RtUHysY6w6RO29i9YNL",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273a9552ae3fd8261f0e5ad7606"
-    },
-    "Songs About Jane": {
-      "SpotifyLink": "https://open.spotify.com/album/5zClcGCSWj926AMjvBNSLc",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27392f2d790c6a97b195f66d51e"
-    },
-    "to hell with it": {
-      "SpotifyLink": "https://open.spotify.com/album/65YAjLCn7Jp33nJpOxIPMe",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27312c2eefb1d28509c632d915d"
-    },
-    "Hasta el Fin Del Mundo": {
-      "SpotifyLink": "https://open.spotify.com/album/7M4AeOUpTfAHk1Ch4xKUC7",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273a7558dd7d6526ad0856de685"
-    },
-    "Making a Door Less Open": {
-      "SpotifyLink": "https://open.spotify.com/album/0p6P42zHY2W8Zd7BKBcKQg",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273df4ad77584998cd01e3a0c96"
-    },
-    "Honey Moon - EP": {
-      "SpotifyLink": "https://open.spotify.com/album/5gq1zd8rGb8le0PXpH5m4M",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2730b62101bfd308d19dddfc559"
-    },
-    "Parasite (Original Motion Picture Soundtrack)": {
-      "SpotifyLink": "https://open.spotify.com/album/32wOhLTLnq6kis3xkRN2ei",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27309eb26d1d49d2b3156ce0a1a"
-    },
-    "Everything So Far": {
-      "SpotifyLink": "https://open.spotify.com/album/7zlf5gmgcFBUSLZpVsh9EE",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2734e48dddf8b7fa7f224015588"
-    },
-    "Moontan": {
-      "SpotifyLink": "https://open.spotify.com/album/2Npk7lWupjix8NIkm7MiQH",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273aaad9cc8209b05f314ca1179"
-    },
-    "Did you know that there's a tunnel under Ocean Blvd": {
-      "SpotifyLink": "https://open.spotify.com/album/5HOHne1wzItQlIYmLXLYfZ",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27359ae8cf65d498afdd5585634"
-    },
-    "Mary's Voice": {
-      "SpotifyLink": "https://open.spotify.com/album/7JuPXxv6Kg89fOM3gtXfuV",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2730dab8677cbda57bc8109ab9b"
-    },
-    "Best Buds": {
-      "SpotifyLink": "https://open.spotify.com/album/0KzElSxcfAvleUIuOg0TOQ",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273fecc9c415baa03d82caf4677"
-    },
-    "DSU": {
-      "SpotifyLink": "https://open.spotify.com/album/5vLZ3lKEpbRyjTIFPrdGwU",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273010f9ec0935571f6760f4405"
-    },
-    "Either/Or": {
-      "SpotifyLink": "https://open.spotify.com/album/5bmpvyP7UGqB4VuXmrJUMy",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2732f3552dc6f9e4e2748c5b8ba"
-    },
-    "Crime of the Century (Remastered)": {
-      "SpotifyLink": "https://open.spotify.com/album/2wrHaulTgqqkVKx0k7Kq4r",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27389d7032603b62e9aedb03fa2"
-    },
-    "Masterpiece": {
-      "SpotifyLink": "https://open.spotify.com/album/3dtiO2Vs4YZQOFCOCDgtxL",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27319c446121fcfc0dc1f62b2d6"
-    },
-    "Casiopea": {
-      "SpotifyLink": "https://open.spotify.com/album/3uFgYgCEvCSACjB8XHl3hb",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273648478cb25e3e302454e40e1"
-    },
-    "Discovery": {
-      "SpotifyLink": "https://open.spotify.com/album/1CvVSn2MtKDBR6aWMkNkem",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2736f5a9bf7c8093763dd2a4a82"
-    },
-    "Led Zeppelin IV (Deluxe Edition)": {
-      "SpotifyLink": "https://open.spotify.com/album/44Ig8dzqOkvkGDzaUof9lK",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91a982d086afc69"
-    },
-    "Chinese Fountain": {
-      "SpotifyLink": "https://open.spotify.com/album/1J8bCuVSRL57pkdIEuYio6",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273f334626f3f2dbf4e2f811fb6"
-    },
-    "Tainted Lunch": {
-      "SpotifyLink": "https://open.spotify.com/album/1OayjjI9jcTkZuliqxYpzJ",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2736eab489782ffba38b7b92c57"
-    },
-    "30": {
-      "SpotifyLink": "https://open.spotify.com/album/21jF5jlMtzo94wbxmJ18aa",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273c6b577e4c4a6d326354a89f7"
-    },
-    "Where we've been, Where we go from here": {
-      "SpotifyLink": "https://open.spotify.com/album/2ci8WTUkswu4PgtLVPJFeU",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273915031f5719e931d1f5a0ea7"
-    },
-    "ARIZONA BABY": {
-      "SpotifyLink": "https://open.spotify.com/album/6wi40lIjhukePWyXRKY7qO",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273595101c281d7e229e1f0e6c4"
-    },
-    "Stranger in the Alps": {
-      "SpotifyLink": "https://open.spotify.com/album/0qWcLfCZ8wtcoOdX14oGNI",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27368b90c3b34c3ac22856ddab8"
-    },
-    "Drukqs": {
-      "SpotifyLink": "https://open.spotify.com/album/2oJo7cB45gMVuRsaWNwDq2",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2732e261a0b1b19d0ff95e346b3"
-    },
-    "The King": {
-      "SpotifyLink": "https://open.spotify.com/album/27UVPGKePLLUlHX7xDQb7m",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2733518fc5a457d66a382cac029"
-    },
-    "If I Can Dream: Elvis Presley with the Royal Philharmonic Orchestra": {
-      "SpotifyLink": "https://open.spotify.com/album/3BYCjGZjrTkilIY7U25fNt",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2737adaca103b3a58a478bac9f4"
-    },
-    "You'd Prefer an Astronaut": {
-      "SpotifyLink": "https://open.spotify.com/album/2qx0YtBEDcbpclLlqzRi2o",
-      "albumCover": "https://i.scdn.co/image/ab67616d00001e02f2237ba7c0eb6326738ad6ad"
-    },
-    "HiLo": {
-      "SpotifyLink": "https://open.spotify.com/album/4RsjXMHyCUigESP74GkNHB",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273fee675d419fff85e03ae61b1"
-    },
-    "In the Mountain in the Cloud": {
-      "SpotifyLink": "https://open.spotify.com/album/1OWNvsDzhEwT5cXLlo9iO7",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273420aa10cb7b13d35920c92b1"
-    },
-    "Merriweather Post Pavilion": {
-      "SpotifyLink": "https://open.spotify.com/album/6BRq5g6CWiFgN3NrjLGAYq",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273a7f85f2df08fbeb6dac5677c"
-    },
-    "Clash the Truth": {
-      "SpotifyLink": "https://open.spotify.com/album/4qC8mysA680i7chkL3JQQw",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27390aad1d96f5394861be9dcc7"
-    },
-    "I Need to Start a Garden": {
-      "SpotifyLink": "https://open.spotify.com/album/4I8BEAiq1kPqRRlvWLTo5B",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2732590c2d33bd70c8bf059591b"
-    },
-    "WORRY.": {
-      "SpotifyLink": "https://open.spotify.com/album/6ZiwdJgvbvWILwuObZc8wS",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273649a3a7d78c5ff15f2665e97"
-    },
-    "Wish You Were Here": {
-      "SpotifyLink": "https://open.spotify.com/album/0bCAjiUamIFqKJsekOYuRw",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2731a84d71391df7469c5ab8539"
-    },
-    "Carousel": {
-      "SpotifyLink": "https://open.spotify.com/album/0p1FXoXfgIfVtDOYW1BtAn",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273684f23bffba05d70cb759edd"
-    },
-    "Lamplight": {
-      "SpotifyLink": "https://open.spotify.com/album/1vqxyUR8okdL1W0KIPvE4d",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2734d8cb2d94612dd405ce17d80"
-    },
-    "good kid, m.A.A.d city (Deluxe)": {
-      "SpotifyLink": "https://open.spotify.com/album/3DGQ1iZ9XKUQxAUWjfC34w",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273d58e537cea05c2156792c53d"
-    },
+    "accoladesDataLeft": [
+      {
+        "id": 1,
+        "style": { "width": "35%" },
+        "x": "40%",
+        "y": "70%",
+        "img": "hatem.png",
+        "title": "Hatem M. Khalil Memorial Award",
+        "desc": "Awarded the Hatem M. Khalil Memorial Award in recognition of outstanding achievement in software engineering at the University of Delaware's CIS Department.",
+        "year": "2024"
+      },
+      {
+        "id": 3,
+        "style": { "width": "35%" },
+        "x": "80%",
+        "y": "70%",
+        "img": "interdance.png",
+        "title": "Interdisciplinary Study in Dance Award",
+        "desc": "Awarded yearly to strongest interdisciplinary research in dance. See 'Computationally Random Computing'",
+        "year": "2025"
+      },
+      {
+        "id": 5,
+        "style": { "width": "35%" },
+        "x": "80%",
+        "y": "29%",
+        "img": "aivr.jpg",
+        "title": "AIxVR 2024 Conference Honorable Mention",
+        "desc": "Awarded to 'Towards Anatomy Education with Generative AI-based Virtual Assistants in Immersive Virtual Reality Environments'",
+        "year": "2024"
+      },
+      {
+        "id": 6,
+        "style": { "width": "35%" },
+        "x": "40%",
+        "y": "30%",
+        "img": "sgeracimos.png",
+        "title": "Steven Geracimos Memorial Award",
+        "desc": "Recipient of the Steven Geracimos Memorial Award in recognition of 'an outstanding computer science major who has demonstrated both interest and aptitude for the subject'",
+        "year": "2025"
+      }
+    ],
+    "accoladesDataRight": [
+      {
+        "id": 7,
+        "style": { "width": "12.5%" },
+        "x": "43%",
+        "y": "20%",
+        "img": "ud.png",
+        "title": "Dean's List: Fall 2021",
+        "desc": "Dean's List Recipient in Fall 2021; GPA: 3.73",
+        "year": "2021"
+      },
+      {
+        "id": 8,
+        "style": { "width": "12.5%" },
+        "x": "55%",
+        "y": "20%",
+        "img": "ud.png",
+        "title": "Dean's List: Spring 2022",
+        "desc": "Dean's List Recipient in Spring 2022; GPA: 3.75",
+        "year": "2022"
+      },
+      {
+        "id": 9,
+        "style": { "width": "12.5%" },
+        "x": "43%",
+        "y": "40%",
+        "img": "ud.png",
+        "title": "Dean's List: Fall 2022",
+        "desc": "Dean's List Recipient in Fall 2022; GPA: 3.75",
+        "year": "2022"
+      },
+      {
+        "id": 10,
+        "style": { "width": "12.5%" },
+        "x": "55%",
+        "y": "40%",
+        "img": "ud.png",
+        "title": "Dean's List: Spring 2023",
+        "desc": "Dean's List Recipient in Spring 2023; GPA: 3.88",
+        "year": "2023"
+      },
+      {
+        "id": 11,
+        "style": { "width": "12.5%" },
+        "x": "43%",
+        "y": "60%",
+        "img": "ud.png",
+        "title": "Dean's List: Fall 2023",
+        "desc": "Dean's List Recipient in Fall 2023; GPA: 3.88",
+        "year": "2023"
+      },
+      {
+        "id": 12,
+        "style": { "width": "12.5%" },
+        "x": "55%",
+        "y": "60%",
+        "img": "ud.png",
+        "title": "Dean's List: Spring 2024",
+        "desc": "Dean's List Recipient in Spring 2024; GPA: 3.95",
+        "year": "2024"
+      },
+      {
+        "id": 13,
+        "style": { "width": "12.5%" },
+        "x": "43%",
+        "y": "80%",
+        "img": "ud.png",
+        "title": "Dean's List: Fall 2024",
+        "desc": "Dean's List Recipient in Fall 2024; GPA: 3.93",
+        "year": "2024"
+      },
+      {
+        "id": 14,
+        "style": { "width": "12.5%" },
+        "x": "55%",
+        "y": "80%",
+        "img": "ud.png",
+        "title": "Dean's List: Spring 2025",
+        "desc": "Dean's List Recipient in Spring 2025; GPA: 3.75",
+        "year": "2025"
+      },
+      {
+        "id": 15,
+        "style": { "width": "43%" },
+        "x": "21%",
+        "y": "49%",
+        "img": "obama08.png",
+        "title": "Signed Obama, Biden 08' T-Shirt",
+        "desc": "An Obama, Biden 08' T-Shirt signed by Jeremy Strong and Michael Imperioli",
+        "year": "2024"
+      },
+      {
+        "id": 4,
+        "style": { "width": "15%" },
+        "x": "67%",
+        "y": "31%",
+        "img": "holoflash.png",
+        "title": "Winner of 'Best Use of AI in Education'",
+        "desc": "At HenHacks 2024, my group and I won the above award for our Study in Augmented Reality tool, Holoflash.",
+        "year": "2024"
+      },
+      {
+        "id": 2,
+        "style": { "width": "15%" },
+        "x": "67%",
+        "y": "71%",
+        "img": "sousa.png",
+        "title": "John Philip Sousa Award",
+        "desc": "Recipient of the John Philip Sousa Award, honoring superior musicianship, outstanding dedication, and exemplary leadership.",
+        "year": "2021"
+      }
+    ],
+    "albums": {
+      "The Ever Dying Bristlecone Man": {
+        "SpotifyLink": "https://open.spotify.com/album/6qHmcy9NMkB2Zh65QEiCLp",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273f5099b44f0bf7b28ed2e7052"
+      },
+      "Blonde": {
+        "SpotifyLink": "https://open.spotify.com/album/3mH6qwIy9crq0I9YQbOuDf",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273c5649add07ed3720be9d5526"
+      },
+      "Ants From Up There": {
+        "SpotifyLink": "https://open.spotify.com/album/21xp7NdU1ajmO1CX0w2Egd",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273af2d88c14cb157d6b851dbb3"
+      },
+      "IGOR": {
+        "SpotifyLink": "https://open.spotify.com/album/5zi7WsKlIiUXv09tbGLKsE",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2737005885df706891a3c182a57"
+      },
+      "Fate": {
+        "SpotifyLink": "https://open.spotify.com/album/1DW0xzBKWQZnXv4Ypt25LZ",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273fa36b27417bf2ac15142afa9"
+      },
+      "OK Computer": {
+        "SpotifyLink": "https://open.spotify.com/album/6dVIqQ8qmQ5GBnJ9shOYGE",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273c8b444df094279e70d0ed856"
+      },
+      "Because the Internet": {
+        "SpotifyLink": "https://open.spotify.com/album/5h0KYWMZIg8xT6eRGYkNMh",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27321b2b485aef32bcc96c1875c"
+      },
+      "The Dark Side of the Moon": {
+        "SpotifyLink": "https://open.spotify.com/album/4LH4d3cOWNNsVw41Gqt2kv",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273ea7caaff71dea1051d49b2fe"
+      },
+      "1 (646) 943 2672 (Extended Play)": {
+        "SpotifyLink": "https://open.spotify.com/album/4w3YFONdsQG33db4Vpjunq",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27310973c3c8f26ebab4f41c13d"
+      },
+      "Swimming": {
+        "SpotifyLink": "https://open.spotify.com/album/5wtE5aLX5r7jOosmPhJhhk",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273175c577a61aa13d4fb4b6534"
+      },
+      "Mr. Morale & the Big Steppers": {
+        "SpotifyLink": "https://open.spotify.com/album/79ONNoS4M9tfIA1mYLBYVX",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2732e02117d76426a08ac7c174f"
+      },
+      "Primitive Initiative": {
+        "SpotifyLink": "https://open.spotify.com/album/4bICIlWuceu3EznEPvbJD8",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273424feb0b9e1fcbe0137768b4"
+      },
+      "The Low End Theory": {
+        "SpotifyLink": "https://open.spotify.com/album/1p12OAWwudgMqfMzjMvl2a",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273f38c6b37a21334e22005b1f7"
+      },
+      "Twin Fantasy": {
+        "SpotifyLink": "https://open.spotify.com/album/6gDtROOIYa6OQxwhDNkDRM",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2732764cdf400a1d859640539a9"
+      },
+      "Teens of Denial": {
+        "SpotifyLink": "https://open.spotify.com/album/3KpYyDP8q8sUBxatHaYEsP",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2734094272fe172643edfdbba48"
+      },
+      "Shame, Shame (Deluxe Edition)": {
+        "SpotifyLink": "https://open.spotify.com/album/16XswZ18xhMs8qUTN51mRl",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2730478062bc04df0947d232fcb"
+      },
+      "To Pimp a Butterfly": {
+        "SpotifyLink": "https://open.spotify.com/album/7ycBtnsMtyVbbwTfJwRjSP",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273cdb645498cd3d8a2db4d05e1"
+      },
+      "CALL ME IF YOU GET LOST": {
+        "SpotifyLink": "https://open.spotify.com/album/45ba6QAtNrdv6Ke4MFOKk9",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273696b4e67423edd64784bfbb4"
+      },
+      "...Such is Youth": {
+        "SpotifyLink": "https://open.spotify.com/album/2PnakXxPHEeUpDbcddpTzH",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273d186fc8b675ae0361ad5118c"
+      },
+      "The Bends": {
+        "SpotifyLink": "https://open.spotify.com/album/35UJLpClj5EDrhpNIi4DFg",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2739293c743fa542094336c5e12"
+      },
+      "Apricot Princess": {
+        "SpotifyLink": "https://open.spotify.com/album/4DxNdQzm6cBYuSn4dCimmT",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2731bd6d088d3d81972af4cb81d"
+      },
+      "Imaginal Disk": {
+        "SpotifyLink": "https://open.spotify.com/album/4HTy9WFTYooRjE9giTmzAF",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2735a2ff617de4e51a9a214b56a"
+      },
+      "\"Awaken, My Love!\"": {
+        "SpotifyLink": "https://open.spotify.com/album/4JCybsNZUXWrK2Jpyn12Ni",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2731c29562d6e8c1f55bb1311d5"
+      },
+      "Abbey Road (Remastered)": {
+        "SpotifyLink": "https://open.spotify.com/album/0ETFjACtuP2ADo6LFhL6HN",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273dc30583ba717007b00cceb25"
+      },
+      "Beatopia": {
+        "SpotifyLink": "https://open.spotify.com/album/2rhNQbqRNxiNQkDXTffe1V",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273384d10f967c2b914de7e2713"
+      },
+      "Parachutes": {
+        "SpotifyLink": "https://open.spotify.com/album/6ZG5lRT77aJ3btmArcykra",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2739164bafe9aaa168d93f4816a"
+      },
+      "High Tops": {
+        "SpotifyLink": "https://open.spotify.com/album/67LSq5qR5QJ5iNFwmOASH8",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273023d3cc22387c5779a16e48a"
+      },
+      "Transatlanticism": {
+        "SpotifyLink": "https://open.spotify.com/album/5UKAhD2VmFAuThgq4OQyEe",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273c988bbfb15aca7928323d2ff"
+      },
+      "In Rainbows": {
+        "SpotifyLink": "https://open.spotify.com/album/5vkqYmiPBYLaalcmjujWxK",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273de3c04b5fc750b68899b20a9"
+      },
+      "Over the Garden Wall (Original Television Soundtrack)": {
+        "SpotifyLink": "https://open.spotify.com/album/2uuFLUwbjRiiQ89t4mgC0d",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273b0730ee8b8ac046e1f5f750d"
+      },
+      "Plateaus": {
+        "SpotifyLink": "https://open.spotify.com/album/15XVmpLlyeWXv5QINxWcwo",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2732d40758385ee073d7cabff2b"
+      },
+      "Fuzzybrain": {
+        "SpotifyLink": "https://open.spotify.com/album/7GYzQIMfdDWo2XC4BDLHPk",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2735160eaecb31b739ea1c2eaa5"
+      },
+      "Sound of Silver": {
+        "SpotifyLink": "https://open.spotify.com/album/1R8kkopLT4IAxzMMkjic6X",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273e6272ad26e7a55bc342a6dd0"
+      },
+      "Wild Heart": {
+        "SpotifyLink": "https://open.spotify.com/album/6vQngf6iEG8xC6ArsIurXq",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273e341c520c154f89b77bd2aaf"
+      },
+      "Evil Funds the Football Club": {
+        "SpotifyLink": "https://open.spotify.com/album/467lnDCZhtqGNoYOt7FNKT",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273495f32ac6d269bcf2ccf0bdb"
+      },
+      "A Different Age": {
+        "SpotifyLink": "https://open.spotify.com/album/00we7Dqa5Y4Z1MBv2z9bUd",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273df7a61e9fdf9fec7df7bd72a"
+      },
+      "TRICK": {
+        "SpotifyLink": "https://open.spotify.com/album/1i8WVUZhMVNurF8rmlMeSH",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273967a4c16d8a54f634979cceb"
+      },
+      "The Wall": {
+        "SpotifyLink": "https://open.spotify.com/album/5Dbax7G8SWrP9xyzkOvy2F",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2735d48e2f56d691f9a4e4b0bdf"
+      },
+      "BALLADS 1": {
+        "SpotifyLink": "https://open.spotify.com/album/5mIImcsuqpiSXg8XvFr81I",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2734cc52cd7a712842234e4fce2"
+      },
+      "Ivory": {
+        "SpotifyLink": "https://open.spotify.com/album/5z7TD11Qh81Gbf52hd5zAv",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27390cf5d1ccfca2beb86149a19"
+      },
+      "Breakfast In America (Deluxe Edition)": {
+        "SpotifyLink": "https://open.spotify.com/album/1zcm3UvHNHpseYOUfd0pna",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2735405ef9e393f5f1e53b4b42e"
+      },
+      "We Will Always Love You": {
+        "SpotifyLink": "https://open.spotify.com/album/755yBlrk0Sz8tIgMMTgyr1",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273b0b3bd1a5f3967705579e6f1"
+      },
+      "Dogrel": {
+        "SpotifyLink": "https://open.spotify.com/album/2lK23mYbRD6bCJpjI8BbdC",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27341097c26aa8fd44a2986ad26"
+      },
+      "Even in the Quietest Moments": {
+        "SpotifyLink": "https://open.spotify.com/album/4X87hQ57jTYQTcYTaJWK5w",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273bddcc30c6a3288e725aec2df"
+      },
+      "WHEN WE ALL FALL ASLEEP, WHERE DO WE GO?": {
+        "SpotifyLink": "https://open.spotify.com/album/0S0KGZnfBGSIssfF54WSJh",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27350a3147b4edd7701a876c6ce"
+      },
+      "Real Estate": {
+        "SpotifyLink": "https://open.spotify.com/album/0vEt6UkpYZOpKxVO7H7j9Y",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273ce232f93379cb33a6643db82"
+      },
+      "For Emma, Forever Ago": {
+        "SpotifyLink": "https://open.spotify.com/album/7EJ0OT5ZqybXxcYRa6mccM",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273bf7c317a63c4f128b8823406"
+      },
+      "Shadowglow": {
+        "SpotifyLink": "https://open.spotify.com/album/5QBZf1SnKE7WtjivYO74KE",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27347ef2f2cf44354754f7845d2"
+      },
+      "American Boyfriend: A Suburban Love Story": {
+        "SpotifyLink": "https://open.spotify.com/album/1yyCXBEu27Ia1Y3torWIwC",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273030b3a60e1041ebec36d2a73"
+      },
+      "Circles": {
+        "SpotifyLink": "https://open.spotify.com/album/5sY6UIQ32GqwMLAfSNEaXb",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27326b7dd89810cc1a40ada642c"
+      },
+      "When We Were Friends": {
+        "SpotifyLink": "https://open.spotify.com/album/3TSMSh5dai7WEnEGOoMXBZ",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2738386795a636d72e74c958590"
+      },
+      "Stankonia": {
+        "SpotifyLink": "https://open.spotify.com/album/2tm3Ht61kqqRZtIYsBjxEj",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2732350e31bc346a6c20e9de166"
+      },
+      "The Rise and Fall of Ziggy Stardust and the Spiders from Mars (2012 Remaster)": {
+        "SpotifyLink": "https://open.spotify.com/album/48D1hRORqJq52qsnUYZX56",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273c41f4e1133b0e6c5fcf58680"
+      },
+      "Axis: Bold as Love": {
+        "SpotifyLink": "https://open.spotify.com/album/3uFZf8rykoHo7XMIQVYW6r",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27319dcd95d28b63d10164327f2"
+      },
+      "The Muppets (Original Motion Picture Soundtrack)": {
+        "SpotifyLink": "https://open.spotify.com/album/0mahHDhPnuYMbo3sXOEW50",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27349975a26b5562064db3a552b"
+      },
+      "HOMESICK": {
+        "SpotifyLink": "https://open.spotify.com/album/00lH27Je9yW7Y4dxZmmO6C",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273400e3d7b35c50f3d26012d22"
+      },
+      "B-Room (Deluxe Edition)": {
+        "SpotifyLink": "https://open.spotify.com/album/0YfNZx0s2EdfINsSoxqDe8",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2731a3b42ed1308bdd42492c031"
+      },
+      "Sling": {
+        "SpotifyLink": "https://open.spotify.com/album/32ium7Cxb1Xwp2MLzH2459",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2732624442cf48e4962d1422da8"
+      },
+      "Gourmet Ravioli": {
+        "SpotifyLink": "https://open.spotify.com/album/3lc6UHJcaT9nHoF6p1GRFV",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27392ec2f57abae929fc66492f6"
+      },
+      "DAMN.": {
+        "SpotifyLink": "https://open.spotify.com/album/4eLPsYPBmXABThSJ821sqY",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2738b52c6b9bc4e43d873869699"
+      },
+      "2": {
+        "SpotifyLink": "https://open.spotify.com/album/2XgBQwGRxr4P7cHLDYiqrO",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2739d377496c6bc8724b521222d"
+      },
+      "Flower Boy": {
+        "SpotifyLink": "https://open.spotify.com/album/2nkto6YNI4rUYTLqEwWJ3o",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2738940ac99f49e44f59e6f7fb3"
+      },
+      "Grown Backwards": {
+        "SpotifyLink": "https://open.spotify.com/album/5nO9veX2scY0HX8RXHkImV",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2738b9719a98ddb60c13efcc458"
+      },
+      "I LAY DOWN MY LIFE FOR YOU": {
+        "SpotifyLink": "https://open.spotify.com/album/1ezs1QD5SYQ6LtxpC9y5I2",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27314ed6f5625ea349c7bda4181"
+      },
+      "Hurry Up, We're Dreaming": {
+        "SpotifyLink": "https://open.spotify.com/album/6R0ynY7RF20ofs9GJR5TXR",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27390e9adff5f77dd1ff6d24e47"
+      },
+      "Punisher": {
+        "SpotifyLink": "https://open.spotify.com/album/6Pp6qGEywDdofgFC1oFbSH",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273a91b75c9ef65ed8d760ff600"
+      },
+      "Melt My Eyez See Your Future": {
+        "SpotifyLink": "https://open.spotify.com/album/7KtyUeiJidoZO0ybxBXw0Q",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2735b924aa009b61b6b9d831eec"
+      },
+      "Fleet Foxes": {
+        "SpotifyLink": "https://open.spotify.com/album/5GRnydamKvIeG46dycID6v",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2733818b4c636e2a7fdea3bf965"
+      },
+      "Capacity": {
+        "SpotifyLink": "https://open.spotify.com/album/0ttVHlYJDFPoy54J3uziQd",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273dad9b8008908208073bb4fae"
+      },
+      "channel ORANGE": {
+        "SpotifyLink": "https://open.spotify.com/album/392p3shh2jkxUxY2VHvlH8",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2737aede4855f6d0d738012e2e5"
+      },
+      "Ways to Get Out": {
+        "SpotifyLink": "https://open.spotify.com/album/54oELqxteSoJx5I6bqQ3vI",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273ee2f8756e8f1f8de144f8a41"
+      },
+      "The Glow, Pt. 2": {
+        "SpotifyLink": "https://open.spotify.com/album/6QYoRO2sXThCORAifrP4Bl",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27300c91ccec6800014b8513717"
+      },
+      "15 Billion Eyes": {
+        "SpotifyLink": "https://open.spotify.com/album/5pfhP1iYLLOTTXOlDQ58rY",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273d6d6b791995f7f7ef7fb18de"
+      },
+      "The Beatles (Remastered)": {
+        "SpotifyLink": "https://open.spotify.com/album/1klALx0u4AavZNEvC4LrTL",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2734ce8b4e42588bf18182a1ad2"
+      },
+      "Late Registration": {
+        "SpotifyLink": "https://open.spotify.com/album/5ll74bqtkcXlKE7wwkMq4g",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273428d2255141c2119409a31b2"
+      },
+      "Norman Fucking Rockwell!": {
+        "SpotifyLink": "https://open.spotify.com/album/5XpEKORZ4y6OrCZSKsi46A",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273879e9318cb9f4e05ee552ac9"
+      },
+      "How to Be a Human Being": {
+        "SpotifyLink": "https://open.spotify.com/album/6qb9MDR0lfsN9a2pw77uJy",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273ec3d15eab5bd77027abc4b23"
+      },
+      "GUTS": {
+        "SpotifyLink": "https://open.spotify.com/album/1xJHno7SmdVtZAtXbdbDZp",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273e85259a1cae29a8d91f2093d"
+      },
+      "GO:OD AM": {
+        "SpotifyLink": "https://open.spotify.com/album/2Tyx5dLhHYkx6zeAdVaTzN",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273ee0f38410382a255e4fb15f4"
+      },
+      "The Pilgrim, Their God and the King of My Decrepit Mountain": {
+        "SpotifyLink": "https://open.spotify.com/album/4btBSwAto3RPLs2o4VLQJb",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27390885dd3f92567502448f3d0"
+      },
+      "Sorry I Am": {
+        "SpotifyLink": "https://open.spotify.com/album/1OckLS0LTnxNRWqGJ8ojoy",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273244162092293b6eec5e99b42"
+      },
+      "Doopee Time": {
+        "SpotifyLink": "https://open.spotify.com/album/4ZrrsbXBe0byye7R0Spx1x",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2732d5e36429eb8cd31cd67ca4c"
+      },
+      "Out of the Blue": {
+        "SpotifyLink": "https://open.spotify.com/album/3usnShwygMXVZB4IV5dwnU",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273ae954a17f0cfa013c364bb06"
+      },
+      "Good News For People Who Love Bad News": {
+        "SpotifyLink": "https://open.spotify.com/album/0TGTGuc2vXv6ZECoAf52N0",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273cc68329bfbf34037df965dc1"
+      },
+      "Holland": {
+        "SpotifyLink": "https://open.spotify.com/album/5f5LwfmsBt8kDA3U0OF5L1",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2731b673dbdb6b6cad5743ff8d2"
+      },
+      "Bright Green Field": {
+        "SpotifyLink": "https://open.spotify.com/album/219LGvgmAhhwlfc3unDhUt",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273861ba1ede840b614d5c87dcd"
+      },
+      "Melophobia": {
+        "SpotifyLink": "https://open.spotify.com/album/4EK8gtQfdVsmDTji7gBFlz",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273fb1cb900d28642e668d77b12"
+      },
+      "bcos u will never b free": {
+        "SpotifyLink": "https://open.spotify.com/album/2PdLUS263cFyd7efyWH5B8",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273fe1854cea6c63b2ba726a299"
+      },
+      "The Melodic Blue": {
+        "SpotifyLink": "https://open.spotify.com/album/3r46DPIQeBQbjvjjV5mXGg",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2731bfa23b13d0504fb90c37b39"
+      },
+      "Voyager": {
+        "SpotifyLink": "https://open.spotify.com/album/4TK6lK86akSJC3vQlF9tvi",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273b55ee7e4c155178b31fa1eec"
+      },
+      "1 (646) 943 2672 [Extended Play]": {
+        "SpotifyLink": "https://open.spotify.com/album/4w3YFONdsQG33db4Vpjunq",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27310973c3c8f26ebab4f41c13d"
+      },
+      "Between Days": {
+        "SpotifyLink": "https://open.spotify.com/album/3P8SSE7Y0fa4c8JHFLH5co",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273e7a1fbcf9266e0650624328c"
+      },
+      "Ten Hours": {
+        "SpotifyLink": "https://open.spotify.com/album/1znMWltOicOVXcixhLFdtr",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27369752a45da26f31a459bcbbf"
+      },
+      "Camp": {
+        "SpotifyLink": "https://open.spotify.com/album/01MRGgNbfWrE291tQjw9ta",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2736182cfe2e2a090d125c81dc0"
+      },
+      "The Sailor": {
+        "SpotifyLink": "https://open.spotify.com/album/4BmpDhIUZ6x3cdleJkocVq",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27343460a075329cfcb79d32f47"
+      },
+      "A New World Record": {
+        "SpotifyLink": "https://open.spotify.com/album/7a35UzxXYuKQGMGImyB0Un",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273de42189c1036bb5a74e1e511"
+      },
+      "In The Court Of The Crimson King (Expanded & Remastered Original Album Mix)": {
+        "SpotifyLink": "https://open.spotify.com/album/75ol9OP8bJaRqzGimpFHDm",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273da7b326bd7ffa7b6b95b0660"
+      },
+      "Moving Pictures (2011 Remaster)": {
+        "SpotifyLink": "https://open.spotify.com/album/2xg7iIKoSqaDNpDbJnyCjY",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27372833c1ae3343cbfb4617073"
+      },
+      "Abandoned Mansion": {
+        "SpotifyLink": "https://open.spotify.com/album/298WNanMReraImGBQRGxio",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27348e684cba47b83454e361c5c"
+      },
+      "Blue Slide Park": {
+        "SpotifyLink": "https://open.spotify.com/album/17mAoDs7T8EA9zzlj6QPBv",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273febab2761d0e72b3ce422a2b"
+      },
+      "Pony": {
+        "SpotifyLink": "https://open.spotify.com/album/5CNckxfLf4TCoMOoxgAU8l",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273733e6d7818eef87d20df86b5"
+      },
+      "Wolf": {
+        "SpotifyLink": "https://open.spotify.com/album/40QTqOBBxCEIQlLNdSjFQB",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27322007a4aa8a55fe7b1de5632"
+      },
+      "Faces": {
+        "SpotifyLink": "https://open.spotify.com/album/5SKnXCvB4fcGSZu32o3LRY",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273e4251cf5331ad74eaaeca36e"
+      },
+      "Hellfire": {
+        "SpotifyLink": "https://open.spotify.com/album/68z6MWYYNmvTcru1QMcYId",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273079bc2bd9ea16956274efc24"
+      },
+      "The Last Remaining Light": {
+        "SpotifyLink": "https://open.spotify.com/album/6Ld86qHWesBIXFGhSysnVY",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273457a53f2bd8257417fc94e68"
+      },
+      "This Is Why": {
+        "SpotifyLink": "https://open.spotify.com/album/6tG8sCK4htJOLjlWwb7gZB",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273f633b71861897348253993f4"
+      },
+      "Eagle, Idaho": {
+        "SpotifyLink": "https://open.spotify.com/album/1NKTNi0HMBHs4KH1QPrO2l",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2731483cf8c59fb34a3637f3ac2"
+      },
+      "Circles (Deluxe)": {
+        "SpotifyLink": "https://open.spotify.com/album/1YZ3k65Mqw3G8FzYlW1mmp",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2738cbe65eb023c2f2b5cdf5a91"
+      },
+      "AT.LONG.LAST.A$AP": {
+        "SpotifyLink": "https://open.spotify.com/album/3arNdjotCvtiiLFfjKngMc",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27316b101f81a8284ec71048d91"
+      },
+      "CANNED LAUGHTER (REMASTERED EDITION)": {
+        "SpotifyLink": "https://open.spotify.com/album/5HytJs3WKLHRTIEMFQu9LD",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273bfb13dd57cbe1c48505ee1b7"
+      },
+      "GREAT SHAKES (REMASTERED EDITION)": {
+        "SpotifyLink": "https://open.spotify.com/album/55T2sFm2JNJjNkcv38kNVU",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273a7c87672717aa0286352c6c7"
+      },
+      "Sound & Color": {
+        "SpotifyLink": "https://open.spotify.com/album/5CNzzqPfB7fho8J4vG37jE",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273df1884a7ebca0168bdcaf69e"
+      },
+      "Easy Beat": {
+        "SpotifyLink": "https://open.spotify.com/album/11dyj7y5mPVMQ1utHdfHlZ",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273fb5a8ac5c2f22d7a2c116acb"
+      },
+      "Peoples' Instinctive Travels & the Paths of Rhythm": {
+        "SpotifyLink": "https://open.spotify.com/album/5DMRGZTzA3vVcLDNQS1ynv",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27346bf2c803146e4f89d31ff70"
+      },
+      "This Old Dog": {
+        "SpotifyLink": "https://open.spotify.com/album/4NNq2vwTapv4fSJcrZbPH7",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2739f1b21f21b13ff2d3e891f6b"
+      },
+      "Unpeeled": {
+        "SpotifyLink": "https://open.spotify.com/album/4zpN41aGAYPWX3dzE19rH7",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27372b478dedd009d6b8d6e7971"
+      },
+      "We All Belong": {
+        "SpotifyLink": "https://open.spotify.com/album/6Z11R1BJBjK6IrqqhRV7iE",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273d5f4c1f316f3f961c33e1e18"
+      },
+      "Songs for Dads": {
+        "SpotifyLink": "https://open.spotify.com/album/7eEnyVrd7HMt0JuPcbgflS",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273772586de2b9ea3e7d214ff8e"
+      },
+      "ABBA Gold": {
+        "SpotifyLink": "https://open.spotify.com/album/2cKZfaz7GiGtZEeQNj1RyR",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273f7ecaf9daf2c1d5ca89f7312"
+      },
+      "The Divine Feminine": {
+        "SpotifyLink": "https://open.spotify.com/album/6f6tko6NWoH00cyFOl4VYQ",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2732e92f776279eaf45d14a33fd"
+      },
+      "Oracular Spectacular": {
+        "SpotifyLink": "https://open.spotify.com/album/6mm1Skz3JE6AXneya9Nyiv",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2738b32b139981e79f2ebe005eb"
+      },
+      "Bojack Horseman (Music from the Netflix Original Series)": {
+        "SpotifyLink": "https://open.spotify.com/album/1TCONwUgvvjqSYJFPUCUTW",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2738c71f034556adae8d540c46f"
+      },
+      "Light Upon the Lake": {
+        "SpotifyLink": "https://open.spotify.com/album/3UhUTuYtGypQWuhqqoImsv",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27306e9db385d0f3f8aec617963"
+      },
+      "The Colour and the Shape": {
+        "SpotifyLink": "https://open.spotify.com/album/30ly6F6Xl0TKmyBCU50Khv",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2730389027010b78a5e7dce426b"
+      },
+      "All Things Must Pass (Remastered 2014)": {
+        "SpotifyLink": "https://open.spotify.com/album/7j7lsExGJtBHLgDYzjclwk",
+        "albumCover": "https://i.scdn.co/image/ab67616d00001e026c6610322fc60bfb41481273"
+      },
+      "Can't Buy A Thrill": {
+        "SpotifyLink": "https://open.spotify.com/album/6DlSUW5gmq6Byc3osKDJ2p",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2730ddd7e736f870994f4707947"
+      },
+      "Happier Than Ever": {
+        "SpotifyLink": "https://open.spotify.com/album/0JGOiO34nwfUdDrD612dOp",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2732a038d3bf875d23e4aeaa84e"
+      },
+      "Gliss Riffer": {
+        "SpotifyLink": "https://open.spotify.com/album/7c0DRALsdT9K7FLQBTR9PS",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273b5f0f447f0b9d080d970b758"
+      },
+      "A Hero's Death": {
+        "SpotifyLink": "https://open.spotify.com/album/307RtUHysY6w6RO29i9YNL",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273a9552ae3fd8261f0e5ad7606"
+      },
+      "Songs About Jane": {
+        "SpotifyLink": "https://open.spotify.com/album/5zClcGCSWj926AMjvBNSLc",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27392f2d790c6a97b195f66d51e"
+      },
+      "to hell with it": {
+        "SpotifyLink": "https://open.spotify.com/album/65YAjLCn7Jp33nJpOxIPMe",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27312c2eefb1d28509c632d915d"
+      },
+      "Hasta el Fin Del Mundo": {
+        "SpotifyLink": "https://open.spotify.com/album/7M4AeOUpTfAHk1Ch4xKUC7",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273a7558dd7d6526ad0856de685"
+      },
+      "Making a Door Less Open": {
+        "SpotifyLink": "https://open.spotify.com/album/0p6P42zHY2W8Zd7BKBcKQg",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273df4ad77584998cd01e3a0c96"
+      },
+      "Honey Moon - EP": {
+        "SpotifyLink": "https://open.spotify.com/album/5gq1zd8rGb8le0PXpH5m4M",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2730b62101bfd308d19dddfc559"
+      },
+      "Parasite (Original Motion Picture Soundtrack)": {
+        "SpotifyLink": "https://open.spotify.com/album/32wOhLTLnq6kis3xkRN2ei",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27309eb26d1d49d2b3156ce0a1a"
+      },
+      "Everything So Far": {
+        "SpotifyLink": "https://open.spotify.com/album/7zlf5gmgcFBUSLZpVsh9EE",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2734e48dddf8b7fa7f224015588"
+      },
+      "Moontan": {
+        "SpotifyLink": "https://open.spotify.com/album/2Npk7lWupjix8NIkm7MiQH",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273aaad9cc8209b05f314ca1179"
+      },
+      "Did you know that there's a tunnel under Ocean Blvd": {
+        "SpotifyLink": "https://open.spotify.com/album/5HOHne1wzItQlIYmLXLYfZ",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27359ae8cf65d498afdd5585634"
+      },
+      "Mary's Voice": {
+        "SpotifyLink": "https://open.spotify.com/album/7JuPXxv6Kg89fOM3gtXfuV",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2730dab8677cbda57bc8109ab9b"
+      },
+      "Best Buds": {
+        "SpotifyLink": "https://open.spotify.com/album/0KzElSxcfAvleUIuOg0TOQ",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273fecc9c415baa03d82caf4677"
+      },
+      "DSU": {
+        "SpotifyLink": "https://open.spotify.com/album/5vLZ3lKEpbRyjTIFPrdGwU",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273010f9ec0935571f6760f4405"
+      },
+      "Either/Or": {
+        "SpotifyLink": "https://open.spotify.com/album/5bmpvyP7UGqB4VuXmrJUMy",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2732f3552dc6f9e4e2748c5b8ba"
+      },
+      "Crime of the Century (Remastered)": {
+        "SpotifyLink": "https://open.spotify.com/album/2wrHaulTgqqkVKx0k7Kq4r",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27389d7032603b62e9aedb03fa2"
+      },
+      "Masterpiece": {
+        "SpotifyLink": "https://open.spotify.com/album/3dtiO2Vs4YZQOFCOCDgtxL",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27319c446121fcfc0dc1f62b2d6"
+      },
+      "Casiopea": {
+        "SpotifyLink": "https://open.spotify.com/album/3uFgYgCEvCSACjB8XHl3hb",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273648478cb25e3e302454e40e1"
+      },
+      "Discovery": {
+        "SpotifyLink": "https://open.spotify.com/album/1CvVSn2MtKDBR6aWMkNkem",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2736f5a9bf7c8093763dd2a4a82"
+      },
+      "Led Zeppelin IV (Deluxe Edition)": {
+        "SpotifyLink": "https://open.spotify.com/album/44Ig8dzqOkvkGDzaUof9lK",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273c8a11e48c91a982d086afc69"
+      },
+      "Chinese Fountain": {
+        "SpotifyLink": "https://open.spotify.com/album/1J8bCuVSRL57pkdIEuYio6",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273f334626f3f2dbf4e2f811fb6"
+      },
+      "Tainted Lunch": {
+        "SpotifyLink": "https://open.spotify.com/album/1OayjjI9jcTkZuliqxYpzJ",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2736eab489782ffba38b7b92c57"
+      },
+      "30": {
+        "SpotifyLink": "https://open.spotify.com/album/21jF5jlMtzo94wbxmJ18aa",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273c6b577e4c4a6d326354a89f7"
+      },
+      "Where we've been, Where we go from here": {
+        "SpotifyLink": "https://open.spotify.com/album/2ci8WTUkswu4PgtLVPJFeU",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273915031f5719e931d1f5a0ea7"
+      },
+      "ARIZONA BABY": {
+        "SpotifyLink": "https://open.spotify.com/album/6wi40lIjhukePWyXRKY7qO",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273595101c281d7e229e1f0e6c4"
+      },
+      "Stranger in the Alps": {
+        "SpotifyLink": "https://open.spotify.com/album/0qWcLfCZ8wtcoOdX14oGNI",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27368b90c3b34c3ac22856ddab8"
+      },
+      "Drukqs": {
+        "SpotifyLink": "https://open.spotify.com/album/2oJo7cB45gMVuRsaWNwDq2",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2732e261a0b1b19d0ff95e346b3"
+      },
+      "The King": {
+        "SpotifyLink": "https://open.spotify.com/album/27UVPGKePLLUlHX7xDQb7m",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2733518fc5a457d66a382cac029"
+      },
+      "If I Can Dream: Elvis Presley with the Royal Philharmonic Orchestra": {
+        "SpotifyLink": "https://open.spotify.com/album/3BYCjGZjrTkilIY7U25fNt",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2737adaca103b3a58a478bac9f4"
+      },
+      "You'd Prefer an Astronaut": {
+        "SpotifyLink": "https://open.spotify.com/album/2qx0YtBEDcbpclLlqzRi2o",
+        "albumCover": "https://i.scdn.co/image/ab67616d00001e02f2237ba7c0eb6326738ad6ad"
+      },
+      "HiLo": {
+        "SpotifyLink": "https://open.spotify.com/album/4RsjXMHyCUigESP74GkNHB",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273fee675d419fff85e03ae61b1"
+      },
+      "In the Mountain in the Cloud": {
+        "SpotifyLink": "https://open.spotify.com/album/1OWNvsDzhEwT5cXLlo9iO7",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273420aa10cb7b13d35920c92b1"
+      },
+      "Merriweather Post Pavilion": {
+        "SpotifyLink": "https://open.spotify.com/album/6BRq5g6CWiFgN3NrjLGAYq",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273a7f85f2df08fbeb6dac5677c"
+      },
+      "Clash the Truth": {
+        "SpotifyLink": "https://open.spotify.com/album/4qC8mysA680i7chkL3JQQw",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27390aad1d96f5394861be9dcc7"
+      },
+      "I Need to Start a Garden": {
+        "SpotifyLink": "https://open.spotify.com/album/4I8BEAiq1kPqRRlvWLTo5B",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2732590c2d33bd70c8bf059591b"
+      },
+      "WORRY.": {
+        "SpotifyLink": "https://open.spotify.com/album/6ZiwdJgvbvWILwuObZc8wS",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273649a3a7d78c5ff15f2665e97"
+      },
+      "Wish You Were Here": {
+        "SpotifyLink": "https://open.spotify.com/album/0bCAjiUamIFqKJsekOYuRw",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2731a84d71391df7469c5ab8539"
+      },
+      "Carousel": {
+        "SpotifyLink": "https://open.spotify.com/album/0p1FXoXfgIfVtDOYW1BtAn",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273684f23bffba05d70cb759edd"
+      },
+      "Lamplight": {
+        "SpotifyLink": "https://open.spotify.com/album/1vqxyUR8okdL1W0KIPvE4d",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2734d8cb2d94612dd405ce17d80"
+      },
+      "good kid, m.A.A.d city (Deluxe)": {
+        "SpotifyLink": "https://open.spotify.com/album/3DGQ1iZ9XKUQxAUWjfC34w",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273d58e537cea05c2156792c53d"
+      },
 
-    "ALL-AMERIKKKAN BADA$$": {
-      "SpotifyLink": "",
-      "albumCover": ""
-    },
-    "Sgt. Pepper's Lonely Hearts Club Band (Remastered)": {
-      "SpotifyLink": "https://open.spotify.com/album/6QaVfG1pHYl1z15ZxkvVDW",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b27334ef8f7d06cf2fc2146f420a"
-    },
-    "Meddle": {
-      "SpotifyLink": "https://open.spotify.com/album/468ZwCchVtzEbt9BHmXopb",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b2739449d3adaa0f6e26af288c0d"
-    },
-    "The New Abnormal": {
-      "SpotifyLink": "https://open.spotify.com/album/2xkZV2Hl1Omi8rk2D7t5lN",
-      "albumCover": "https://i.scdn.co/image/ab67616d0000b273bfa99afb5ef0d26d5064b23b"
+      "ALL-AMERIKKKAN BADA$$": {
+        "SpotifyLink": "",
+        "albumCover": ""
+      },
+      "Sgt. Pepper's Lonely Hearts Club Band (Remastered)": {
+        "SpotifyLink": "https://open.spotify.com/album/6QaVfG1pHYl1z15ZxkvVDW",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b27334ef8f7d06cf2fc2146f420a"
+      },
+      "Meddle": {
+        "SpotifyLink": "https://open.spotify.com/album/468ZwCchVtzEbt9BHmXopb",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b2739449d3adaa0f6e26af288c0d"
+      },
+      "The New Abnormal": {
+        "SpotifyLink": "https://open.spotify.com/album/2xkZV2Hl1Omi8rk2D7t5lN",
+        "albumCover": "https://i.scdn.co/image/ab67616d0000b273bfa99afb5ef0d26d5064b23b"
+      }
     }
   },
 
   "stamps": {
-    "spotify": {
-      "img": "spotifystamp.jpg",
-      "flavor": "I approve of SIrea RALLTY REALLy I do!",
-      "link": "https://spotify.com/"
+    "Ecologies": {
+      "img": "ecol.png",
+      "flavor": "Ecologies is a card game to build and destroy ecosystems. Fun!"
+    },
+    "Three Billboards Outside Ebbing Missouri": {
+      "img": "threebill.png",
+      "flavor": "Great movie for the fam."
+    },
+    "Peggle": {
+      "img": "peggle.png",
+      "flavor": "Goated game made by intricate developers."
+    },
+    "The Köln Concert": {
+      "img": "koln.jpg",
+      "flavor": "Rightfully the best-selling piano album of all time. Incredible and mystifying performance."
+    },
+    "Pint of Guinness": {
+      "img": "pint.jpeg",
+      "flavor": "The best beer in the world. Period."
+    },
+    "Kirby Air Ride": {
+      "img": "kirbyair.jpg",
+      "flavor": "A cult classic racing game with a phenomenal soundtrack. Goated Kirby Game."
+    },
+    "Hulu/Max Account Procedure": {
+      "img": "max-hulu.png",
+      "flavor": "Instead of downright limiting the number of devices for an account, Hulu/Max will sign out of the oldest device, like a *stack* of devices. Hell yea."
+    }
+  },
+  "highlights": {
+    "UD Graduation": {
+      "img": ["gradDennis.jpeg", "YouDee.png"],
+      "desc": "Today, I graduated from the University of Delaware with a Bachelor of Science in Computer Science; Cybersecurity, and a minor in Dance. After four, long years of education, growth, friendships, and crative expression,  I truly am proud to call myself a Blue Hen Alumni. I am not able to summarize my gratitude for those who spent the four years with me, and I would struggle to summarize my academic achievements and quarrels. I am excited to see what the future holds for me.\n\nRoll Hens.",
+      "date": "05/24/2025"
+    },
+    "UD CPUs": {
+      "img": ["CPUS.jpeg"],
+      "desc": "Today marked my final day as a CPU. I am tremendously torn at this bittersweet goodbye, where I leave a group of people who have become some of my closest friends. I am so grateful for the time I spent with my fellow CPUs, and I will cherish the memories we made together. Thank you to everyone who made my time as a CPU so special. I will miss you all dearly.\n\n\nGoodbye, @[UDCPUs](https://www.instagram.com/udcpus/).",
+      "date": "05/14/2025"
+    },
+    "Computationally Random Choreography": {
+      "img": ["CRC.png"],
+      "desc": "Today, I participated in my Dance Capstone Symposium: a collection of interdisciplinary dance research projects from over 20 dance minors @ UD! I am tremendously proud to share the completion of my research: Computationally Random Choreography. I am tremendously proud of myself and my work as this integrated all important components to my life: computing, dance, and (original!) music. I have included the Abstract to the paper below, along with the project link, with more information. I encourage you to read the paper.\n\n\n[Final Paper](/file?src=CRC.pdf)\n\n\nABSTRACT: Often considered divergent disciplines, computer science and dance share limited intellectual crossover in research and literature. Where work exists, the resources are often unidirectional; dance will support or frame the computer science-driven investigation, and rarely be reversed. Under these constraints, the implications of computer science in a dance (creative) environment are not adequately covered. This study investigates the gap between creative ambiguity and computational determinism. I propose two choreographed performances and a collection of interpreted results from a 10-person pilot study. The first performance features original choreography prepared for film, accompanied by original (non-movement-influential) music. The second performance, known as a Computationally Random Choreography (CRC), was created by a Bash script with FFmpeg software to shuffle the frames of the original performance; code excerpts are available in the Appendix. The randomized sequence was interpreted and performed on film with another original musical accompaniment. A pilot study analyzing the interpretation and perception of both videos revealed insight into computational perception and artistic intent. Surprisingly, the randomized choreography did not hinder emotional resonance—participants often described the CRC as expressive, deliberate, and even more emotionally complex than the original. These findings suggest that randomness, when interpreted through human movement, can generate compelling artistic outcomes and challenge assumptions about authorship, creativity, and meaning in dance. Moreover, the integration of creative ambition into computer science development and education is essential, fostering interdisciplinary innovation and redefining how we perceive both artistic and computational possibility. ",
+      "date": "05/12/2025"
+    },
+    "Barstool Delaware": {
+      "img": ["barstool.png"],
+      "desc": "I made barstool delaware holding up Ed Sheeran. Thought it was tuff.\n\n\n[Like the post](https://www.instagram.com/p/DHUH1tIRF9E/?img_index=6)",
+      "date": "03/14/2025"
+    },
+    "HENHACKS!!!": {
+      "img": ["HHCrowd.png", "HHRebecca.jpeg", "HHTeam.jpeg"],
+      "desc": "For the past seven months, I've had the privilege, honor, and absolute pleasure of planning HenHacks 2025, the University of Delaware’s very own hackathon. From hacking in past years to recruiting, organizing, managing, training, and hiring volunteers, I’ve experienced an indescribable whirlwind of excitement, challenge, and intensity. \n\nI don’t believe I can translate the emotions of this experience into words—let alone a Highlight post. I don't believe I can convince you of the energy, the camaraderie, or the sheer love that fueled this team. I don't believe that it’s over. \n\nBut I do believe, and I can say with absolute certainty, that we built something incredible: I believe we made the most unforgettable, innovative, and well-executed CIS hackathon to date.\n\nI’d revel in my emotions and pour my heart onto this screen to share the overwhelming love this event has left me with—but I’d miss the feeling too much to let it go. So instead, I’ll share the stats that mean the most to me and express my deepest gratitude to those who made HenHacks 2025 possible.\n\nIn one weekend, we had\n---- ---- ---- ---- ---- ---- ---- \n| $11.5K in prizes awarded to our winners 🏆 \n| Nearly 500 participants! 🫂 \n| FIFTY-THREE UNIVERSITIES 🤯 \n| one ripped pants 👖 \n\nTo all the interns, and especially to my very own Volunteering Committee Intern, and my newfound friend, Rebecca Forman, thank you -- you all inspire me to be better.\n\nTo my fellow committee heads and new friends, thank you. Your trust, leadership, and unwavering support convinced me to believe—in this event, in this team, and in myself.\n\nTo my admins—Ella Wilkins, Giovanna Scozzaro, Nazim Karaca, and Debra Yarrington—your courage, transparency, and relentless dedication pushed this hackathon to its fullest potential. None of this would have been possible without you.\n\nTo my internship at Berkley Technology Services, your commitment and sponsorship elevated HenHacks 2025 to new heights. Your support didn't just fuel this event—it fueled innovation, collaboration, and an unforgettable experience for all. Thank you.\n\nFinally, thank you HenHacks. 🩷",
+      "date": "03/09/2025"
+    },
+    "Battle of the Bands": {
+      "img": ["septron.jpeg"],
+      "desc": "Last week, my band Septronix won Battle of the Bands at a fundraiser for the University of Delaware's annual UDance—an organization dedicated to combating childhood cancer. While this might deviate from my usual professional content, I believe it's important and exciting to share personal achievements. Thank you to everyone who supported us! I cherish every opportunity to step away from the keyboard and move to the kit 🥁 Maintaining a healthy work-life balance is INSTRUMENTal to a happy and successful career 😉 😄",
+      "date": "04/20/2024"
+    },
+
+    "HoloFlash Wins!": {
+      "img": ["eliHolo.jpg"],
+      "desc": "Excited to share my team's win in UD's annual hackathon HenHacks. Our full-stack studying application won us the 'Best Use of AI in Education.' Had a great team around me, couldn't have done it without them!\n\n[DevPost](https://devpost.com/software/holoflash)",
+      "date": "03/04/2024"
     }
   }
 }

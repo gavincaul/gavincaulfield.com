@@ -11,13 +11,13 @@
 }
 
 .skillsLink {
-    font-family: Ubuntu, sans-serif;
+    font-family: "IBM Plex Sans", sans-serif;
     color: white;
     font-size: medium;
     transition: transform 0.2s ease-in-out;
     padding: 10px 20px;
     cursor: pointer;
-    border: thick double var(--color);
+    border: thick double rgb(var(--color));
 }
 
 .skillsLink:hover {

@@ -4,15 +4,17 @@
   width: 45%;
   height: auto;
   object-fit: contain;
-  border: ridge 3mm var(--color2);
+  border: ridge 3mm rgb(var(--color2));
 }
 .resume-container {
   display: flex;
+  
   width: 100%;
   justify-content: center;
   text-align: center;
 }
 .button-container {
+  font-family: "IBM Plex Sans", sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
@@ -52,7 +54,7 @@
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: linear-gradient(45deg, var(--color1), var(--color2));
+  background: linear-gradient(45deg, rgb(var(--color1)), rgb(var(--color2)));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,9 +72,9 @@
 }
 .icon-bg:hover {
   transform: scale(1.15);
-  box-shadow: 0 0 15px rgba(0, 181, 245, 0.7);
+  box-shadow: 0 0 15px rgba(var(--color3), 0.7);
 }
 
 .icon-bg:hover img {
-  filter: drop-shadow(0 0 5px rgba(0, 181, 245, 0.8));
+  filter: drop-shadow(0 0 5px rgba(var(--color3) 0.8));
 }

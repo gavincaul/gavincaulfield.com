@@ -11,13 +11,13 @@ export default function SkillsPage() {
   const colorPalette = stored
     ? JSON.parse(stored)
     : {
-        name: "Forest",
-        background: "#243119",
-        primary: "#629460",
-        secondary: "#96BE8C",
-        accent: "#ACECA1",
-        text: "#C9F2C7",
-      };
+      name: "Forest",
+      background: "36, 49, 25",
+      primary: "98, 148, 96",
+      secondary: "150, 190, 140",
+      accent: "172, 236, 161",
+      text: "201, 242, 199",
+    };
   const { id } = useParams();
   const navigate = useNavigate();
 
@@ -28,7 +28,6 @@ export default function SkillsPage() {
   }, []);
   useEffect(() => {
     const skills = skillsData.skills[id];
-    console.log(skills);
     if (skills && skills.skills) {
       setSkillMap(skills.skills);
       setGroupColor(skills.groupColor);
@@ -38,15 +37,37 @@ export default function SkillsPage() {
   }, [id, navigate]);
 
   
+function useWindowSize() {
+  const [size, setSize] = useState({
+    width: window.innerWidth,
+    height: window.innerHeight,
+  });
+
+  useEffect(() => {
+    const handleResize = () => {
+      setSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    };
+
+    window.addEventListener("resize", handleResize);
+
+
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  return size;
+}
 
   const skillsArray = Object.keys(skillMap).map((key) => {
     const { time, experience, works, img, projects} =
       skillMap[key];
-    console.log(groupColor);
     return (
       <Skill
         groupcolor={groupColor}
         img={img}
+        key={key}
         name={key}
         time={time}
         works={works}
@@ -55,10 +76,12 @@ export default function SkillsPage() {
       />
     );
   });
-  let rowCount = 4;
-  const cols = [[], [], [], []];
+  let colCount = Math.round(useWindowSize().width / 200);
+  if (colCount < 1) colCount = 1;
+  if (colCount > 4) colCount = 4;
+  const cols = Array.from({ length: colCount }, () => []);
   for (let i = 0; i < skillsArray.length; i += 1) {
-    cols[i % rowCount].push(skillsArray[i]);
+    cols[i % colCount].push(skillsArray[i]);
   }
 
   return (

@@ -9,7 +9,6 @@
 .projectItemLeft img {
   width: 100%;
   height: auto;
-  border: 4px ridge;
   grid-column: 1;
   grid-row: span 5;
 }
@@ -46,7 +45,7 @@
 .projectItemRight img {
   width: 100%;
   height: auto;
-  border: 4px ridge;
+
   grid-column: 2;
   grid-row: span 5;
 }

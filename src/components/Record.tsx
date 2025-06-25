@@ -8,7 +8,7 @@ export default function Record({ name, imgSrc, albumSource }) {
     if (enlarged && albumSource) {
       window.open(albumSource, "_blank"); 
     }
-    setEnlarged(true);
+    setEnlarged(!enlarged);
   };
 
   return (

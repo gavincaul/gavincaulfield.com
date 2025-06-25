@@ -2,12 +2,33 @@ import React from "react";
 import "./Project.css";
 
 function Project({ index, img, text, color, links, projectKey }) {
-  // Destructure props
+  function convertMarkdown(text) {
+    return text
+      
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+     
+      .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>")
+      .replace(/__(.*?)__/g, "<strong>$1</strong>")
+    
+      .replace(/(^|[^*])\*(?!\*)([^*]+)\*(?!\*)/g, '$1<em>$2</em>')
+      .replace(/(^|[^_])_(?!_)([^_]+)_(?!_)/g, '$1<em>$2</em>')
+
+      .replace(
+        /\[([^\]]+)\]\(([^)]+)\)/g,
+        '<a href="$2" target="_blank" rel="noopener noreferrer">$1</a>'
+      )
+      // Newlines
+      .replace(/\n/g, "<br />");
+  }
   return (
     <div className={index === 0 ? "projectItemLeft" : "projectItemRight"}>
-      <img src={img} alt={projectKey} style={{ borderColor: color }} />
+      <img src={img || null} alt={projectKey} style={{ border: `4px ridge rgb(${color} `}} />
       <h1>{projectKey}</h1>
-      <p dangerouslySetInnerHTML={{ __html: text.replace(/\n/g, "<br />") }} />
+      <p  dangerouslySetInnerHTML={{
+                __html: convertMarkdown(text),
+              }} />
       <div
         style={{
           display: "flex",

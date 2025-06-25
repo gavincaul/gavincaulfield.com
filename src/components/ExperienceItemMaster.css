@@ -5,6 +5,7 @@
   aspect-ratio: 1 / 1;
   max-height: 100vh;
   margin: auto;
+  font-family: "IBM Plex Sans", sans-serif;
   background-color: white;
   border: 5px solid var(--c1);
   cursor: pointer;
@@ -32,8 +33,11 @@
 }
 @media (max-width: 768px) {
 .boundingBox{
-  max-width: 90vw;
-  width: 90vw;
+  max-width: 95vw;
+  width: 95vw;
+}
+.experienceItem{
+  width: 85vw;
 }
 }
 

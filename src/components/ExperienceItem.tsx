@@ -39,7 +39,7 @@ function ExperienceItem({ img, title, desc, color, links, projectKey }) {
             text={desc}
             color={color}
             links={links}
-            projectKey={projectKey || title}
+            projectKey={title}
           />
           <button onClick={closeOverlay} className="closeBtn">
             Close

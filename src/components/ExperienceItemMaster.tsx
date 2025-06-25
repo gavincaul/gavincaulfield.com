@@ -45,7 +45,7 @@ export default function ExperienceItemMaster({ name, colors, img, items }) {
 
   return (
     <div>
-      <div style={{ marginTop: "10rem" }}></div>
+      <div style={{ marginTop: "1rem", marginBottom: "1rem" }}></div>
       <div className="boundingBox">
         <div
           className={`experienceItem ${open ? "scaleDown" : ""}`}

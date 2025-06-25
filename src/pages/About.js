@@ -31,13 +31,13 @@ export default function About() {
   const colorPalette = stored
     ? JSON.parse(stored)
     : {
-        name: "Forest",
-        background: "#243119",
-        primary: "#629460",
-        secondary: "#96BE8C",
-        accent: "#ACECA1",
-        text: "#C9F2C7",
-      };
+      name: "Forest",
+      background: "36, 49, 25",
+      primary: "98, 148, 96",
+      secondary: "150, 190, 140",
+      accent: "172, 236, 161",
+      text: "201, 242, 199",
+    };
 
   const canvasRef = useRef(null);
   const [isDrawing, setIsDrawing] = useState(false);
@@ -717,7 +717,7 @@ export default function About() {
           ref={canvasRef}
           width="450"
           height="200"
-          style={{ border: "4px ridge var(--color1)" }}
+          style={{ border: "4px ridge rgb(var(--color1))" }}
         />
         {!isMobile && isLoaded && (
           <div className="popupControls">
@@ -755,13 +755,12 @@ export default function About() {
           // eslint-disable-next-line
           const { img, text, order, link } = aboutData[key];
           const picture = require(`../data/imgs/${img}`);
-          console.log(picture);
           return (
             <div
               className={order === 0 ? "aboutItem" : "aboutItemFlip"}
               key={index}
             >
-              <img src={picture} alt={key} style={{ borderColor: colorPalette.secondary }} />
+              <img src={picture} alt={key} style={{ borderColor: `rgb(${colorPalette.secondary})` }} />
               <h1>{key.charAt(0).toUpperCase() + key.slice(1)}</h1>
               <p
                 dangerouslySetInnerHTML={{

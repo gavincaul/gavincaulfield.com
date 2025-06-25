@@ -2,6 +2,7 @@ import { useState, useEffect } from "react";
 import "./Home.css";
 import HomeNavBar from "../components/HomeNavBar.tsx";
 import LinkedInPFP from "../data/home/LinkedInPFP.jpg";
+import LinkedInMogg from "../data/home/linkedinMogg.jpg";
 import gotg from "../data/home/gotg.jpeg";
 import chicago from "../data/home/chicago.jpeg";
 import meandyurt from "../data/home/meandyurt.jpeg";
@@ -16,19 +17,21 @@ export default function Home() {
       ? JSON.parse(stored)
       : {
           name: "Forest",
-          background: "#243119",
-          primary: "#629460",
-          secondary: "#96BE8C",
-          accent: "#ACECA1",
-          text: "#C9F2C7",
+          background: "36, 49, 25",
+          primary: "98, 148, 96",
+          secondary: "150, 190, 140",
+          accent: "172, 236, 161",
+          text: "201, 242, 199",
         };
   });
 
   useEffect(() => {
-    sessionStorage.setItem("colorPalette", JSON.stringify(colorPalette))
+    sessionStorage.setItem("colorPalette", JSON.stringify(colorPalette));
   }, [colorPalette]);
 
   const [hoveredImage, setHoveredImage] = useState(null);
+  const [pfpClick, setPfpClick] = useState(false);
+  const [washAnimate, setWashAnimate] = useState(false);
   const [hoveredTitle, setHoveredTitle] = useState(false);
   const [badgeAnim, setBadgeAnim] = useState(false);
 
@@ -58,7 +61,13 @@ export default function Home() {
       setHoveredTitle(true);
     }
   }, [isMobile]);
-
+  const handlePfpClick = () => {
+    
+    setWashAnimate(true);
+    setTimeout(() => {
+      setPfpClick(true);
+    }, 100);
+  };
   const iframeData = {
     gotg: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3106.2950710952705!2d-104.88626000502411!3d38.871490358429114!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x87135012b5cc9c93%3A0x4e9df5263bf6dab!2sGarden%20of%20the%20Gods!5e0!3m2!1sen!2sus!4v1735935741255!5m2!1sen!2sus",
     arch: "https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d1558.5240655614928!2d-90.18584880225833!3d38.62477378654032!3m2!1i1024!2i768!4f13.1!2m1!1sst%20louis%20arch!5e0!3m2!1sen!2sus!4v1735940144832!5m2!1sen!2sus",
@@ -77,7 +86,7 @@ export default function Home() {
         "--color4": colorPalette.text,
       }}
     >
-      <ColorDropdown setColorPalette={setColorPalette} />
+    
 
       <div
         className="name"
@@ -93,13 +102,11 @@ export default function Home() {
         }}
       >
         Gavin Caulfield
-        {hoveredTitle && (
+        {hoveredTitle && !isMobile && (
           <div
             className="namebadge"
             style={{
-              animation: isMobile
-                ? "mobile 0.5s forwards, snakeBox 1.5s infinite"
-                : badgeAnim
+              animation: badgeAnim
                 ? "badge 0.5s forwards, snakeBox 1.5s infinite"
                 : "badgeReverse 0.5s forwards, snakeBox 1.5s infinite",
             }}
@@ -108,7 +115,8 @@ export default function Home() {
           </div>
         )}
       </div>
-      <HomeNavBar borderColor={colorPalette.secondary}/>
+      <ColorDropdown setColorPalette={setColorPalette} />
+      <HomeNavBar borderColor={colorPalette.secondary} />
       <div className="centerConsole">
         <div className="imgs">
           <div className="stacked-imgs">
@@ -159,7 +167,14 @@ export default function Home() {
               )}
             </div>
           </div>
-          <img src={LinkedInPFP} className="pfp" alt="LinkedIn Profile" />
+          <div className="pfp-container" onClick={handlePfpClick}>
+            <img
+              src={pfpClick ? LinkedInMogg : LinkedInPFP}
+              className="pfp"
+              alt="LinkedIn Profile"
+            />
+            <div className={`washEffect ${washAnimate ? "animate" : ""}`}></div>
+          </div>
           <div className="stacked-imgs">
             <div
               onMouseEnter={() => setHoveredImage("arch")}
@@ -225,16 +240,7 @@ export default function Home() {
         </div>
         <div className="questions">
           <div className="answer">
-            <span className="q">WHO: </span> A UD student,{" "}
-            <a
-              style={{ color: "#12EDED" }}
-              href="https://www.instagram.com/udcpus/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              CPU
-            </a>
-            , musician, dancer, software developer, and human with a passion for
+            <span className="q">WHO: </span> A UD graduate, musician, dancer, software developer, and human with a passion for
             learning and problem solving.
           </div>
           <div className="answer">
@@ -248,11 +254,18 @@ export default function Home() {
             >
               HCI research
             </a>
-            , modern dance, data analysis, and system hardening. Passionate
-            about problem-solving and interdisciplinary collaboration.
+            , modern dance, {" "}
+            <a
+              style={{ color: "#12EDED" }}
+              href="/file?src=CRC.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              interdisciplinary research,
+            </a> and system hardening.
           </div>
           <div className="answer">
-            <span className="q">WHERE: </span> Newark, Delaware -- New York, New
+            <span className="q">WHERE: </span> Frankford, Delaware -- New York, New
             York.
           </div>
           <div className="answer">
@@ -266,11 +279,11 @@ export default function Home() {
             <span className="q">HOW: </span> Drink of the month:{" "}
             <a
               style={{ color: "#12EDED" }}
-              href="https://m.media-amazon.com/images/I/71NYrDMBZ3L.jpg"
+              href="https://m.media-amazon.com/images/I/71CdoaKygBL._UF894,1000_QL80_.jpg"
               target="_blank"
               rel="noopener noreferrer"
             >
-              celsius kiwi guava.
+              Victor Allen's french vanilla k-cup.
             </a>
           </div>
         </div>

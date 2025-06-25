@@ -36,7 +36,7 @@
 .nav {
   opacity: 1;
   transition: all 0.5s ease-in-out;
-  background: linear-gradient(90deg, var(--navcolor), var(--navcolor));
+  background: linear-gradient(90deg, rgb(var(--navcolor)), rgb(var(--navcolor)));
   width: 100%;
   height: 10vh;
   padding: 5px 0px;
@@ -52,14 +52,14 @@
 }
 
 .navlink {
-  font-family: Ubuntu, sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   opacity: 0;
   width: fit-content;
   transform: translateY(60px);
   animation: itop 300ms linear forwards;
   text-decoration: none;
   font-size: 30px;
-  color: var(--textcolor);
+  color: rgb(var(--textcolor));
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,7 +70,7 @@
 }
 
 .navlink:hover {
-  color: var(--highlightcolor);
+  color: rgb(var(--highlightcolor));
 }
 
 
@@ -86,11 +86,9 @@
 }
 
 @media (max-width: 768px) {
-  .navcontainer {
-    width: 105vw;
-  }
+
   .navlink{
-    font-size: 40px;
+    font-size: 35px;
   }
   .button{
     width: 100%;
