@@ -356,7 +356,7 @@
           "groups": ["Music&Arts"],
           "img": "pegglesc.png",
           "desc": "Peggle is awesome. In my free time I made a highlight reel, because I felt like it.",
-          "links": ["Video", "/file?src=Peggle1.mov"],
+          "links": ["Video", "https://drive.google.com/file/d/1vZcc_hyqPAIwrgDHfsOrzpeowc1lWH_b/view?usp=sharing"],
           "hidden": 0
         },
         "Computationally Random Choreography": {
