@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import NavBar from "../components/NavBar.tsx";
-import myresume from "../data/files/Caulfield, Gavin Resume.jpg";
+import myresume from "../data/files/Caulfield, Gavin Resume.pdf";
 import "./Resume.css";
 import { useNavigate } from "react-router-dom";
 import githubLogo from "../data/logos/githublogo.png";
@@ -13,13 +13,13 @@ export default function Resume() {
   const colorPalette = stored
     ? JSON.parse(stored)
     : {
-        name: "Forest",
-        background: "36, 49, 25",
-        primary: "98, 148, 96",
-        secondary: "150, 190, 140",
-        accent: "172, 236, 161",
-        text: "201, 242, 199",
-      };
+      name: "Forest",
+      background: "36, 49, 25",
+      primary: "98, 148, 96",
+      secondary: "150, 190, 140",
+      accent: "172, 236, 161",
+      text: "201, 242, 199",
+    };
   const navigate = useNavigate();
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -145,7 +145,12 @@ export default function Resume() {
 
       <div className="resume-container">
         <a href={myresume} target="_blank" rel="noopener noreferrer">
-          <img src={myresume} alt="Resume" className="resume-image" />
+          <iframe
+            src={myresume}
+            title="Master Resume"
+            width="100%"
+            height="500px"
+          />
         </a>
       </div>
     </div>
