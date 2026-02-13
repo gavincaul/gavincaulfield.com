@@ -142,15 +142,14 @@ export default function Resume() {
           </a>
         </div>
       </div>
-	<div className="resume-container">
-	  <a href={myresume} target="_blank" rel="noopener noreferrer">
-	    <iframe
-	      src={myresume}
-	      title="Master Resume"
-	      height="500px"
-	    />
-	  </a>
-	</div>
+      <div className="resume-container">
+        <a href={myresume} target="_blank" rel="noopener noreferrer">
+          <iframe
+            src={myresume}
+            title="Master Resume"
+          />
+        </a>
+      </div>
     </div>
   );
 }
