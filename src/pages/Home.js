@@ -279,11 +279,11 @@ export default function Home() {
             <span className="q">HOW: </span> Drink of the month:{" "}
             <a
               style={{ color: "#12EDED" }}
-              href="https://m.media-amazon.com/images/I/71CdoaKygBL._UF894,1000_QL80_.jpg"
+              href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRT7qkCk-MgyleoULxXKt0fD7CmvSbi4EYJ6w&s"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Victor Allen's french vanilla k-cup.
+              Ready Coffee's Raspberry Tilt
             </a>
           </div>
           <div className="answer">
